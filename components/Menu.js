@@ -1,0 +1,53 @@
+import React, { useState } from "react";
+
+export default function Menu() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  return (
+    <>
+      <div
+        className="HAMBURGER-ICON space-y-2 pl-4 absolute  top-4 left-2 z-50"
+        onClick={() => setIsNavOpen((prev) => !prev)}
+        style={{ display: isNavOpen ? "none" : "block" }}
+      >
+        <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+        <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+        <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+      </div>
+
+      <div
+        className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
+        style={{ transition: "2s" }}
+      >
+        <div
+          className="absolute top-2 left-0 pl-4 "
+          onClick={() => setIsNavOpen(false)}
+        >
+          <svg
+            className="h-8 w-8 text-black"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+        <ul className="flex flex-col items-center justify-between min-h-[250px] text-black">
+          <li className="border-b border-gray-400 my-8 uppercase">
+            <a href="/about">About</a>
+          </li>
+          <li className="border-b border-gray-400 my-8 uppercase">
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li className="border-b border-gray-400 my-8 uppercase">
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+}
