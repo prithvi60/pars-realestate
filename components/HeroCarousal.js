@@ -1,23 +1,43 @@
 import React, { Component } from "react";
 import Image from "next/image";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
 export const HeroCarousal = ({ images }) => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 3500,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    fade: true,
+  };
   return (
-    <Carousel
-      autoPlay={true}
-      infiniteLoop={true}
-      dynamicHeight={true}
-      showThumbs={false}
-    >
+    <Slider {...settings}>
       {images.map((image, idx) => {
         return (
           <div key={idx}>
-            <Image src={image} alt="Picture of the artist" placeholder="blur" />
+            <Image
+              src={image}
+              alt="Picture of the artist"
+              placeholder="blur"
+              style={{
+                height: "100vh",
+                width:"100vw",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                objectFit:"cover"
+              }}
+            />
             {/* <p className="legend">Artist {idx + 1}</p> */}
           </div>
         );
       })}
-    </Carousel>
+    </Slider>
   );
 };

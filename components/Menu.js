@@ -6,21 +6,39 @@ export default function Menu() {
   return (
     <>
       <div
-        className="HAMBURGER-ICON space-y-2 pl-4 absolute  top-4 left-2 z-50"
+        className="absolute HAMBURGER-ICON space-y-2 left-4 p-4 top-3.5 rounded-sm z-20 cursor-pointer"
         onClick={() => setIsNavOpen((prev) => !prev)}
-        style={{ display: isNavOpen ? "none" : "block" }}
+        style={{
+          display: isNavOpen ? "none" : "block",
+          // background: "#e1bf71",
+          transform: "translateY(-14%)",
+        }}
       >
-        <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
-        <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
-        <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+        <span className="block h-0.5 w-5 bg-black"></span>
+        <span
+          className="block h-0.5 w-5 "
+          style={{ background: "#e7a646" }}
+        ></span>
+        <span className="block h-0.5 w-5 bg-black"></span>
       </div>
-
+      <div
+        className="absolute top-20 md:top-4 flex flex-row justify-center w-screen text-center rounded-full shadow-lg"
+        style={{ background: "#ffffff6a", borderBottom: "2px solid #e7a646" }}
+      >
+        {/* <img src={"/favicon.png"} alt="logo" width={"50px"} height={"50px"}></img> */}
+        <a
+          href="/"
+          className="font-crimson font-bold text-md md:text-3xl text-black  "
+        >
+          PARS ENGINEERING INDIA PVT LTD
+        </a>
+      </div>
       <div
         className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
         style={{ transition: "2s" }}
       >
         <div
-          className="absolute top-2 left-0 pl-4 "
+          className="absolute top-4 left-0 pl-4 "
           onClick={() => setIsNavOpen(false)}
         >
           <svg
@@ -37,13 +55,22 @@ export default function Menu() {
           </svg>
         </div>
         <ul className="flex flex-col items-center justify-between min-h-[250px] text-black">
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li
+            className="border-b  my-8 uppercase"
+            style={{ borderBottomColor: "#e7a646" }}
+          >
             <a href="/about">About</a>
           </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li
+            className="border-b my-8 uppercase"
+            style={{ borderBottomColor: "#e7a646" }}
+          >
             <a href="/portfolio">Portfolio</a>
           </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li
+            className="border-b my-8 uppercase"
+            style={{ borderBottomColor: "#e7a646" }}
+          >
             <a href="/contact">Contact</a>
           </li>
         </ul>
