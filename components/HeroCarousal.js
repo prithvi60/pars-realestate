@@ -13,8 +13,9 @@ export const HeroCarousal = ({ images }) => {
     cssEase: "linear",
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
-    fade: true,
+    // adaptiveHeight: true,
+    // fade: true,
+    arrows:true
   };
   return (
     <Slider {...settings}>

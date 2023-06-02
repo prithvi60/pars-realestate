@@ -17,28 +17,32 @@ export default function Menu({ home }) {
         <span className="block h-0.5 w-5 bg-black"></span>
         <span
           className="block h-0.5 w-5 "
-          style={{ background: "#e7a646" }}
+          style={{ background: home ? "#e7a646" : "black" }}
         ></span>
         <span className="block h-0.5 w-5 bg-black"></span>
       </div>
       <div
-        className="absolute  md:top-4 flex flex-row justify-center h-screen w-screen text-center rounded-full"
-        style={{ alignItems: home ? "center" : "initial" }}
+        className="absolute md:top-4 flex flex-row justify-center w-screen text-center"
+        style={{
+          alignItems: home ? "center" : "initial",
+          background: home ? "transparent" : "orange",
+          height: home ? "100vh" : "unset",
+        }}
       >
         <div className="flex flex-col">
           {home ? (
-            <div className="font-semibold text-xl">Welcome To</div>
+            <div className="font-semibold text-2xl">Welcome To</div>
           ) : null}
           {/* <img src={"/favicon.png"} alt="logo" width={"50px"} height={"50px"}></img> */}
           <a
             href="/"
-            className="font-nudista font-bold text-md md:text-3xl text-white-200  "
+            className="font-nudista font-bold text-md md:text-4xl text-white-200  "
             style={{ textShadow: "2px 2px #e7a646" }}
           >
             PARS ENGINEERING INDIA PVT LTD
           </a>
           {home ? (
-            <a href={"/projects/one"} className="font-sm pt-4">
+            <a href={"/about"} className="font-sm pt-4 underline">
               Read More
             </a>
           ) : null}
