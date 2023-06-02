@@ -1,23 +1,29 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import FloatingButton from "../components/FloatingButton";
 
 export default function projects() {
   return (
-    <div >
-
+    <div>
       <Header />
-      <section className="h-screen px-4"
-            style={{
-                backgroundImage: "url(/pattern.svg)",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "bottom",
-              }}
+      <section
+        className="h-screen px-4"
+        style={{
+          backgroundImage: "url(/pattern.svg)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom",
+        }}
       >
-        <div className="font-bold text-black text-3xl pt-20 pb-8"
-          style={{ textDecoration:"underline",textDecorationColor: "#e7a646", }}
-        
-        >Projects</div>
+        <div
+          className="font-bold text-black text-3xl pt-20 pb-8"
+          style={{
+            textDecoration: "underline",
+            textDecorationColor: "#e7a646",
+          }}
+        >
+          Projects
+        </div>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="text-left text-sm font-semibold text-black">
             Intermont Living is the brand of Pars Engineering India Pvt Ltd for
@@ -36,6 +42,7 @@ export default function projects() {
         </div>
       </section>
       <Footer />
+      <FloatingButton />
     </div>
   );
 }

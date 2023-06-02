@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero1 from "../public/images/hero/1.jpg";
 import Image from "next/image";
+import FloatingButton from "../components/FloatingButton";
 
 export default function about() {
   return (
@@ -18,7 +19,10 @@ export default function about() {
       >
         <div
           className="font-bold text-black text-3xl pt-20 pb-8"
-          style={{ textDecoration:"underline",textDecorationColor: "#e7a646", }}
+          style={{
+            textDecoration: "underline",
+            textDecorationColor: "#e7a646",
+          }}
         >
           About PARS
         </div>
@@ -53,6 +57,7 @@ export default function about() {
         </div>
       </section>
       <Footer />
+      <FloatingButton />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Main from "../components/Main";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 import { useRef } from "react";
+import FloatingButton from "../components/FloatingButton";
 
 export default function Home() {
   const videoRef = useRef(null);
@@ -26,6 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Main />
+      <FloatingButton />
     </div>
   );
 }

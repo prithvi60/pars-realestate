@@ -26,7 +26,7 @@ export default function Main() {
       <div className="">
         <HeroCarousal images={hero} />
       </div>
-      <div
+      {/* <div
         className="absolute top-2 md:text-3xl flex h-screen w-screen justify-center items-center font-bold text-black shadow-md z-30"
         style={{
           textDecoration: "underline",
@@ -34,8 +34,7 @@ export default function Main() {
         }}
       >
         OUR COMPANY MOTO
-      </div>
-      <FloatingButton />
+      </div> */}
     </section>
   );
 }

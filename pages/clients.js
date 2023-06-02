@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import FloatingButton from "../components/FloatingButton";
 
 export default function clients() {
   return (
@@ -41,6 +42,8 @@ export default function clients() {
         </div>
       </section>
       <Footer />
+      <FloatingButton />
+
     </div>
   );
 }
