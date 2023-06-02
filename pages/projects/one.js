@@ -20,6 +20,9 @@ export default function one() {
       >
         <section class="mb-32">
           <div class="flex flex-wrap">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+              <TabsComponent />
+            </div>
             <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
               <h2
                 class="mb-6 text-3xl font-bold"
@@ -126,9 +129,6 @@ export default function one() {
                   </button>
                 </div>
               </form>
-            </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-            <TabsComponent/>
             </div>
           </div>
         </section>
