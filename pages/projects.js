@@ -1,27 +1,23 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Hero1 from "../public/images/hero/1.jpg";
-import Image from "next/image";
 
-export default function about() {
+export default function projects() {
   return (
-    <div>
+    <div >
+
       <Header />
-      <section
-        className="md:h-screen px-4 relative"
-        style={{
-          backgroundImage: "url(/pattern.svg)",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "bottom",
-        }}
+      <section className="h-screen px-4"
+            style={{
+                backgroundImage: "url(/pattern.svg)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "bottom",
+              }}
       >
-        <div
-          className="font-bold text-black text-3xl pt-20 pb-8"
+        <div className="font-bold text-black text-3xl pt-20 pb-8"
           style={{ textDecoration:"underline",textDecorationColor: "#e7a646", }}
-        >
-          About PARS
-        </div>
+        
+        >Projects</div>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="text-left text-sm font-semibold text-black">
             Intermont Living is the brand of Pars Engineering India Pvt Ltd for
@@ -37,19 +33,6 @@ export default function about() {
             trust in the market as the result of their approach with the
             stakeholders and supportive nature towards customers after sales.
           </div>
-          <Image
-            src={Hero1}
-            alt="Picture of the artist"
-            placeholder="blur"
-            style={{
-              // height: "100vh",
-              // width:"100vw",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              objectFit: "cover",
-            }}
-          />
         </div>
       </section>
       <Footer />
