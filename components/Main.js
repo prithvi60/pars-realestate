@@ -19,7 +19,7 @@ export default function Main() {
     >
       <nav className="flex h-10   w-screen absolute z-40">
         <section className="MOBILE-MENU flex ">
-          <Menu />
+          <Menu home={true}/>
         </section>
       </nav>
 

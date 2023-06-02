@@ -31,7 +31,9 @@ export const HeroCarousal = ({ images }) => {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                objectFit:"cover"
+                objectFit:"cover",
+                filter: "brightness(0.4)"
+
               }}
             />
             {/* <p className="legend">Artist {idx + 1}</p> */}

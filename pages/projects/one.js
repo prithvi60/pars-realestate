@@ -8,7 +8,7 @@ import TabsComponent from "../../components/Tabs";
 
 export default function one() {
   return (
-    <div>
+    <div className="z-5">  
       <Header />
       <div
         class="container my-24 mx-auto px-4 md:px-6 text-black"

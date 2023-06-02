@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         crimson: ["Crimson", "helvatica"],
         eczar: ["Eczar", "sans-serif"],
+        nudista:["Nudista","sans"]
       },
       colors: {
         white: {

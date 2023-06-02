@@ -22,19 +22,27 @@ export default function Menu({ home }) {
         <span className="block h-0.5 w-5 bg-black"></span>
       </div>
       <div
-        className="absolute top-20 md:top-4 flex flex-row justify-center w-screen text-center rounded-full shadow-lg"
-        style={{
-          background: home ? "#ffffff6a" : "#6666667d",
-          borderBottom: "2px solid #e7a646",
-        }}
+        className="absolute  md:top-4 flex flex-row justify-center h-screen w-screen text-center rounded-full"
+        style={{ alignItems: home ? "center" : "initial" }}
       >
-        {/* <img src={"/favicon.png"} alt="logo" width={"50px"} height={"50px"}></img> */}
-        <a
-          href="/"
-          className="font-crimson font-bold text-md md:text-3xl text-white-200  "
-        >
-          PARS ENGINEERING INDIA PVT LTD
-        </a>
+        <div className="flex flex-col">
+          {home ? (
+            <div className="font-semibold text-xl">Welcome To</div>
+          ) : null}
+          {/* <img src={"/favicon.png"} alt="logo" width={"50px"} height={"50px"}></img> */}
+          <a
+            href="/"
+            className="font-nudista font-bold text-md md:text-3xl text-white-200  "
+            style={{ textShadow: "2px 2px #e7a646" }}
+          >
+            PARS ENGINEERING INDIA PVT LTD
+          </a>
+          {home ? (
+            <a href={"/projects/one"} className="font-sm pt-4">
+              Read More
+            </a>
+          ) : null}
+        </div>
       </div>
       <div
         className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
