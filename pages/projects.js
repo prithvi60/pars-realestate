@@ -11,7 +11,7 @@ export default function projects() {
       <section
         className="px-4"
         style={{
-          backgroundImage: "url(/pattern.svg)",
+          // backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}

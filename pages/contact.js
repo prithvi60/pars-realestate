@@ -10,7 +10,7 @@ export default function contact() {
       <Header />
       <div class="container my-24 mx-auto px-4 md:px-6 text-black"
             style={{
-              backgroundImage: "url(/pattern.svg)",
+              // backgroundImage: "url(/pattern.svg)",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "bottom",
             }}

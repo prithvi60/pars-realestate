@@ -31,18 +31,31 @@ export default function Menu({ home }) {
       >
         <div className="flex flex-col">
           {home ? (
-            <div className="font-semibold text-2xl">Welcome To</div>
+            <div
+              className="font-semibold  text-md md:text-2xl pb-2"
+              style={{ textShadow: "3px 3px #000000" }}
+            >
+              Welcome To
+            </div>
           ) : null}
           {/* <img src={"/favicon.png"} alt="logo" width={"50px"} height={"50px"}></img> */}
           <a
             href="/"
-            className="font-nudista font-bold text-md md:text-4xl text-white-200  "
-            style={{ textShadow: "2px 2px #e7a646" }}
+            className="font-nudista font-bold text-lg md:text-4xl text-white-200 border-b "
+            style={{ textShadow: "3px 3px #000000" }}
           >
             PARS ENGINEERING INDIA PVT LTD
           </a>
           {home ? (
-            <a href={"/about"} className="font-sm pt-4 underline">
+            <a
+              href={"/about"}
+              className="font-sm pt-12 text-sm md:text-md"
+              style={{
+                textShadow: "3px 3px #000000",
+                BorderColor: "#e7a646",
+                color: "#e7a646",
+              }}
+            >
               Read More
             </a>
           ) : null}
