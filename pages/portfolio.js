@@ -8,7 +8,9 @@ export default function portfolio() {
     <div >
 
       <div>
+      <div className="py-6" style={{ background: "orange" }}>
         <Header />
+      </div>
         <section className="h-screen px-4"
               style={{
                 backgroundImage: "url(/pattern.svg)",

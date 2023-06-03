@@ -183,7 +183,7 @@ export default function Footer() {
             <a
               href="/"
               className="text-md  hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
-              style={{ color: "#dbc07c" }}
+              style={{ color: "white" }}
             >
               Copyright © 2023 Pars.All rights reserved
             </a>

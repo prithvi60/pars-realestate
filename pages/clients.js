@@ -6,9 +6,11 @@ import FloatingButton from "../components/FloatingButton";
 export default function clients() {
   return (
     <div>
-      <Header />
+          <div className="py-6" style={{ background: "orange" }}>
+        <Header />
+      </div>
       <section
-        className="h-screen px-4"
+        className="h-screen px-8"
         style={{
           backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",

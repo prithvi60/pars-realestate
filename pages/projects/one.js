@@ -7,11 +7,14 @@ import FloatingButton from "../../components/FloatingButton";
 import TabsComponent from "../../components/Tabs";
 
 export default function one() {
+
   return (
-    <div className="z-5">  
-      <Header />
+    <div className="z-5">
+      <div className="py-6" style={{ background: "orange" }}>
+        <Header />
+      </div>
       <div
-        class="container my-24 mx-auto px-4 md:px-6 text-black"
+        class="container my-4 mx-auto px-4 md:px-6 text-black"
         // style={{
         //   backgroundImage: "url(/pattern.svg)",
         //   backgroundRepeat: "no-repeat",
@@ -20,10 +23,10 @@ export default function one() {
       >
         <section class="mb-32">
           <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
               <TabsComponent />
             </div>
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-4">
               <h2
                 class="mb-6 text-3xl font-bold"
                 style={{
@@ -123,6 +126,7 @@ export default function one() {
           duration-150
           focus:shadow-outline
           hover:bg-indigo-800
+          font-semibold
         "
                   >
                     Contact Us

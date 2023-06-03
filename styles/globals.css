@@ -159,11 +159,25 @@ a {
   top: 80% !important;
   right: 48%;
 }
+.gallery .slick-prev {
+  z-index: 1000;
+  left: 8%;
+  margin-left: auto;
+  top: 50% !important;
+}
+.gallery .slick-next {
+  z-index: 1000;
+  top: 50% !important;
+  right: 8%;
+}
 @media only screen and (max-width: 600px) {
   .hero .slick-prev {
     left: 38%;
   }
   .hero .slick-next {
     right: 38%;
+  }
+  .showMenuNav {
+    width: 50%;
   }
 }

@@ -22,11 +22,12 @@ export default function Menu({ home }) {
         <span className="block h-0.5 w-5 bg-white-200"></span>
       </div>
       <div
-        className="absolute md:top-4 flex flex-row justify-center w-screen text-center"
+        className="absolute flex flex-row  items-center justify-center w-screen text-center"
         style={{
           alignItems: home ? "center" : "initial",
-          background: home ? "transparent" : "orange",
+          background: home ? "transparent" : "transparent",
           height: home ? "100vh" : "unset",
+          top: home ? 0 : "-0.5%",
         }}
       >
         <div className="flex flex-col">
@@ -38,13 +39,12 @@ export default function Menu({ home }) {
               Welcome To
             </div>
           ) : null}
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex md:flex-row gap-4 items-center text-center">
             <img
               src={"/favicon.png"}
               alt="logo"
-              width={"100px"}
-              height={"80px"}
-              className="mt-4"
+              style={{ objectFit: "cover", height: "60px", width: "60px",background:"#ffffff" }}
+              className="mt-4 rounded-full shadow-md"
             ></img>
             <a
               href="/"
@@ -92,39 +92,39 @@ export default function Menu({ home }) {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </div>
-        <ul className="flex flex-col items-center justify-between min-h-[250px] text-white-100">
+        <ul className="flex flex-col items-center justify-between text-center text-white-100 font-serif">
           <li
-            className="border-b  my-8 uppercase"
+            className="border-b  my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/about">About</a>
           </li>
           <li
-            className="border-b my-8 uppercase"
+            className="border-b my-4 uppercase mx-6"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/projects">Ongoing Projects</a>
           </li>
           <li
-            className="border-b my-8 uppercase"
+            className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/service">What we do</a>
           </li>
           <li
-            className="border-b my-8 uppercase"
+            className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/projects">Portfolio</a>
           </li>
           <li
-            className="border-b my-8 uppercase"
+            className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/clients">Testimonials</a>
           </li>
           <li
-            className="border-b my-8 uppercase"
+            className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/contact">Contact</a>

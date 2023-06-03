@@ -7,8 +7,10 @@ export default function contact() {
   return (
     <div  >
 
-      <Header />
-      <div class="container my-24 mx-auto px-4 md:px-6 text-black"
+<div className="py-6" style={{ background: "orange" }}>
+        <Header />
+      </div>
+      <div class="container my-24 mx-auto px-8 md:px-6 text-black"
             style={{
               // backgroundImage: "url(/pattern.svg)",
               backgroundRepeat: "no-repeat",
@@ -136,7 +138,9 @@ export default function contact() {
           </div>
         </section>
       </div>
+      <div className="absolute bottom-0 w-screen">
       <Footer />
+      </div>
       <FloatingButton />
 
     </div>
