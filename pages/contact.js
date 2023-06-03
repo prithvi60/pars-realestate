@@ -19,7 +19,7 @@ export default function contact() {
           <div class="flex flex-wrap">
             <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
               <h2 class="mb-6 text-3xl font-bold"
-          style={{ textDecoration:"underline",textDecorationColor: "#e7a646", }}
+          style={{ textDecoration:"underline",textDecorationColor: "#dbc07c", }}
               
               >Contact us</h2>
               <p class="mb-6 text-black dark:text-neutral-300">

@@ -23,14 +23,14 @@ export default function Main() {
         </section>
       </nav>
 
-      <div className="">
+      <div className="hero">
         <HeroCarousal images={hero} />
       </div>
       {/* <div
         className="absolute top-2 md:text-3xl flex h-screen w-screen justify-center items-center font-bold text-black shadow-md z-30"
         style={{
           textDecoration: "underline",
-          textDecorationColor: "#e7a646",
+          textDecorationColor: "#dbc07c",
         }}
       >
         OUR COMPANY MOTO

@@ -18,7 +18,7 @@ export default function TabsComponent() {
                 className={` ${
                   openTab === 1 ? " text-white-100" : "text-gray-600 "
                 } inline-block px-4 py-2 rounded shadow`}
-                style={{ background: openTab === 1 ? "#e7a646" : "white" }}
+                style={{ background: openTab === 1 ? "#dbc07c" : "white" }}
               >
                 Gallery
               </div>
@@ -29,7 +29,7 @@ export default function TabsComponent() {
                 className={` ${
                   openTab === 2 ? " text-white-100" : "text-gray-600 "
                 } inline-block px-4 py-2 rounded shadow`}
-                style={{ background: openTab === 2 ? "#e7a646" : "white" }}
+                style={{ background: openTab === 2 ? "#dbc07c" : "white" }}
               >
                 Floor Plan
               </div>
@@ -40,7 +40,7 @@ export default function TabsComponent() {
                 className={` ${
                   openTab === 3 ? " text-white-100" : "text-gray-600 "
                 } inline-block px-4 py-2 rounded shadow`}
-                style={{ background: openTab === 3 ? "#e7a646" : "white" }}
+                style={{ background: openTab === 3 ? "#dbc07c" : "white" }}
               >
                 Location
               </div>
@@ -51,7 +51,7 @@ export default function TabsComponent() {
                 className={` ${
                   openTab === 4 ? " text-white-100" : "text-gray-600 "
                 } inline-block px-4 py-2 rounded shadow`}
-                style={{ background: openTab === 4 ? "#e7a646" : "white" }}
+                style={{ background: openTab === 4 ? "#dbc07c" : "white" }}
               >
                 Virtual Tour
               </div>

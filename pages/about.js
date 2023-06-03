@@ -21,7 +21,7 @@ export default function about() {
           className="font-bold text-black text-3xl pt-20 pb-8"
           style={{
             textDecoration: "underline",
-            textDecorationColor: "#e7a646",
+            textDecorationColor: "#dbc07c",
           }}
         >
           About PARS

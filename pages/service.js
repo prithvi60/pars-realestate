@@ -15,7 +15,7 @@ export default function service() {
         }}
       >
         <div className="font-bold text-black text-3xl pt-20 pb-8"
-          style={{ textDecoration:"underline",textDecorationColor: "#e7a646", }}
+          style={{ textDecoration:"underline",textDecorationColor: "#dbc07c", }}
         
         >
           What we do

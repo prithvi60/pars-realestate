@@ -28,7 +28,7 @@ export default function one() {
                 class="mb-6 text-3xl font-bold"
                 style={{
                   textDecoration: "underline",
-                  textDecorationColor: "#e7a646",
+                  textDecorationColor: "#dbc07c",
                 }}
               >
                 Contact us

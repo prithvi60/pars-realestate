@@ -8,13 +8,12 @@ export const HeroCarousal = ({ images }) => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 3500,
+    speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
     slidesToShow: 1,
     slidesToScroll: 1,
-    // adaptiveHeight: true,
-    // fade: true,
+    fade: true,
     arrows:true
   };
   return (
