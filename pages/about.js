@@ -8,7 +8,7 @@ import FloatingButton from "../components/FloatingButton";
 export default function about() {
   return (
     <div>
-      <div className="py-6" style={{ background: "orange" }}>
+      <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
       <section

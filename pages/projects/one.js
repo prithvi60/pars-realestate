@@ -10,7 +10,7 @@ export default function one() {
 
   return (
     <div className="z-5">
-      <div className="py-6" style={{ background: "orange" }}>
+            <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
       <div

@@ -5,7 +5,7 @@ import Header from "../components/Header";
 export default function service() {
   return (
     <div>
-         <div className="py-6" style={{ background: "orange" }}>
+               <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
       <section

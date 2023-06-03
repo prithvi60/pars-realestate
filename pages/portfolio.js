@@ -8,7 +8,7 @@ export default function portfolio() {
     <div >
 
       <div>
-      <div className="py-6" style={{ background: "orange" }}>
+            <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
         <section className="h-screen px-4"

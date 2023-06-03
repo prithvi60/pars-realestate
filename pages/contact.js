@@ -7,7 +7,7 @@ export default function contact() {
   return (
     <div  >
 
-<div className="py-6" style={{ background: "orange" }}>
+      <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
       <div class="container my-24 mx-auto px-8 md:px-6 text-black"

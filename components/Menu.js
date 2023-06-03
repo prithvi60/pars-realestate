@@ -32,35 +32,83 @@ export default function Menu({ home }) {
       >
         <div className="flex flex-col">
           {home ? (
+            <div className="w-screen flex justify-center">
+              <img
+                src={"/favicon.png"}
+                alt="logo"
+                style={{
+                  objectFit: "cover",
+                  height: "60px",
+                  width: "60px",
+                  background: "#ffffff",
+                }}
+                className="mb-4 rounded-full shadow-md"
+              ></img>
+            </div>
+          ) : null}
+
+          {home ? (
             <div
               className="font-semibold  text-md md:text-2xl"
-              style={{ textShadow: "3px 3px #000000" }}
+              // style={{ textShadow: "3px 3px #000000" }}
             >
               Welcome To
             </div>
           ) : null}
-          <div className="flex md:flex-row gap-4 items-center text-center">
-            <img
-              src={"/favicon.png"}
-              alt="logo"
-              style={{ objectFit: "cover", height: "60px", width: "60px",background:"#ffffff" }}
-              className="mt-4 rounded-full shadow-md"
-            ></img>
-            <a
-              href="/"
-              className="font-nudista font-bold text-lg md:text-4xl text-white-200 border-b "
-              style={{ textShadow: "3px 3px #000000" }}
-            >
-              PARS ENGINEERING INDIA PVT LTD
-            </a>
-          </div>
+          {home ? (
+            <div className="flex md:flex-row gap-4 items-center justify-center text-center">
+              {/* <img
+                src={"/favicon.png"}
+                alt="logo"
+                style={{
+                  objectFit: "cover",
+                  height: "60px",
+                  width: "60px",
+                  background: "#ffffff",
+                }}
+                className="mt-4 rounded-full shadow-md"
+              ></img> */}
+              <a
+                href="/"
+                className={
+                  "font-nudista font-bold text-lg md:text-4xl text-white-200 border-b justify-center"
+                }
+                // style={{ textShadow: "3px 3px #000000" }}
+              >
+                PARS ENGINEERING INDIA PVT LTD
+              </a>
+            </div>
+          ) : (
+            <div className="flex md:flex-row gap-4 items-center text-center mt-3.5">
+              <img
+                src={"/favicon.png"}
+                alt="logo"
+                style={{
+                  objectFit: "cover",
+                  height: "40px",
+                  width: "40px",
+                  background: "#ffffff",
+                }}
+                className=" rounded-full shadow-md"
+              ></img>
+              <a
+                href="/"
+                className={
+                  "font-nudista font-bold text-lg md:text-2xl text-white-200 border-b"
+                }
+                // style={{ textShadow: "3px 3px #000000" }}
+              >
+                PARS ENGINEERING INDIA PVT LTD
+              </a>
+            </div>
+          )}
 
           {home ? (
             <a
               href={"/about"}
               className="font-sm pt-12 text-sm md:text-md"
               style={{
-                textShadow: "3px 3px #000000",
+                // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",
                 color: "#dbc07c",
               }}
@@ -92,7 +140,7 @@ export default function Menu({ home }) {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </div>
-        <ul className="flex flex-col items-center justify-between text-center text-white-100 font-serif">
+        <ul className="flex flex-col items-center justify-between text-center text-white-100 font-raleway">
           <li
             className="border-b  my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
