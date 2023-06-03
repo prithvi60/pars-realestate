@@ -79,7 +79,7 @@ export default function Menu({ home }) {
               </a>
             </div>
           ) : (
-            <div className="flex md:flex-row gap-4 items-center text-center mt-3.5">
+            <div className="flex md:flex-row gap-4 items-center text-center  ml-6 md:ml-0 mt-5 md:mt-3.5">
               <img
                 src={"/favicon.png"}
                 alt="logo"
@@ -89,12 +89,12 @@ export default function Menu({ home }) {
                   width: "40px",
                   background: "#ffffff",
                 }}
-                className=" rounded-full shadow-md"
+                className=" rounded-full shadow-md hidden md:block"
               ></img>
               <a
                 href="/"
                 className={
-                  "font-title font-bold text-lg md:text-2xl text-white-200 border-b"
+                  "font-title font-bold text-md md:text-2xl text-white-200 border-b"
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
