@@ -18,7 +18,7 @@ export default function clients() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
@@ -27,7 +27,7 @@ export default function clients() {
           Testimonials
         </div>
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="text-left text-sm font-semibold text-black">
+          <div className="text-left text-sm font-semibold text-black font-body">
             Intermont Living is the brand of Pars Engineering India Pvt Ltd for
             its housing sector ventures. Intermont Living is established with
             the goal of upgrading people’s way of living through property

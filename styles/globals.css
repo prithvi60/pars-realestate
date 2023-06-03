@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "Crimson";
-  src: url("/fonts/CrimsonText-Bold.ttf");
+  font-family: "Hero";
+  src: url("/fonts/GentiumBookPlus-BoldItalic.ttf");
 }
 @font-face {
-  font-family: "Nudista";
-  src: url("/fonts/NudistaBold.ttf");
+  font-family: "Headings";
+  src: url("/fonts/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Bodys";
+  src: url("/fonts/Lora-MediumItalic.ttf");
 }
 
 html,

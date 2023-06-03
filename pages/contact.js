@@ -5,25 +5,30 @@ import FloatingButton from "../components/FloatingButton";
 
 export default function contact() {
   return (
-    <div  >
-
+    <div className="relative">
       <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
-      <div class="container my-24 mx-auto px-8 md:px-6 text-black"
-            style={{
-              // backgroundImage: "url(/pattern.svg)",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "bottom",
-            }}
+      <div
+        class="container my-24 mx-auto px-8 md:px-6 text-black relative"
+        style={{
+          // backgroundImage: "url(/pattern.svg)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom",
+        }}
       >
-        <section class="mb-32">
+        <section class="mb-32 font-body relative">
           <div class="flex flex-wrap">
             <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-              <h2 class="mb-6 text-3xl font-bold"
-          style={{ textDecoration:"underline",textDecorationColor: "#dbc07c", }}
-              
-              >Contact us</h2>
+              <h2
+                class="mb-6 text-3xl font-bold font-heading"
+                style={{
+                  textDecoration: "underline",
+                  textDecorationColor: "#dbc07c",
+                }}
+              >
+                Contact us
+              </h2>
               <p class="mb-6 text-black dark:text-neutral-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laudantium, modi accusantium ipsum corporis quia asperiores
@@ -138,11 +143,10 @@ export default function contact() {
           </div>
         </section>
       </div>
-      <div className="absolute bottom-0 w-screen">
-      <Footer />
-      </div>
+      {/* <div className="absolute bottom-0 w-screen"> */}
+        <Footer />
+      {/* </div> */}
       <FloatingButton />
-
     </div>
   );
 }

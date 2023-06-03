@@ -5,20 +5,20 @@ import FloatingButton from "../components/FloatingButton";
 
 export default function portfolio() {
   return (
-    <div >
-
+    <div>
       <div>
-            <div className="py-3" style={{ background: "#000000e2" }}>
-        <Header />
-      </div>
-        <section className="h-screen px-4"
-              style={{
-                backgroundImage: "url(/pattern.svg)",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "bottom",
-              }}
+        <div className="py-3" style={{ background: "#000000e2" }}>
+          <Header />
+        </div>
+        <section
+          className="h-screen px-4 font-body"
+          style={{
+            backgroundImage: "url(/pattern.svg)",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom",
+          }}
         >
-          <div className="font-bold text-black text-3xl pt-20 pb-8">
+          <div className="font-bold text-black text-3xl pt-20 pb-8 font-heading">
             Portfolio
           </div>
           <div className="flex flex-col md:flex-row gap-8">
@@ -40,8 +40,7 @@ export default function portfolio() {
           </div>
         </section>
         <Footer />
-      <FloatingButton />
-
+        <FloatingButton />
       </div>
     </div>
   );

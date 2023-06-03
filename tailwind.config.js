@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        crimson: ["Crimson", "helvatica"],
-        eczar: ["Eczar", "sans-serif"],
-        nudista:["Nudista","sans"]
+        title: ["Hero", "sans-serif"],
+        heading: ["Headings", "sans-serif"],
+        body: ["Bodys", "sans"],
       },
       colors: {
         white: {

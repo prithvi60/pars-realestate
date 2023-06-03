@@ -13,7 +13,7 @@ export default function TabsComponent() {
     <div>
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center max-w-xl">
-          <ul className="flex space-x-2 text-center">
+          <ul className="flex space-x-2 text-center font-heading">
             <li>
               <div
                 onClick={() => setOpenTab(1)}

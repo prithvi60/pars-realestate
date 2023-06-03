@@ -9,14 +9,14 @@ export default function service() {
         <Header />
       </div>
       <section
-        className="h-screen px-4"
+        className="h-screen px-4 font-body"
         style={{
           backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
       >
-        <div className="font-bold text-black text-3xl pt-20 pb-8"
+        <div className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
           style={{ textDecoration:"underline",textDecorationColor: "#dbc07c", }}
         
         >

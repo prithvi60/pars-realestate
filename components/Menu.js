@@ -49,7 +49,7 @@ export default function Menu({ home }) {
 
           {home ? (
             <div
-              className="font-semibold  text-md md:text-2xl"
+              className="font-semibold  text-md md:text-xl font-heading"
               // style={{ textShadow: "3px 3px #000000" }}
             >
               Welcome To
@@ -71,7 +71,7 @@ export default function Menu({ home }) {
               <a
                 href="/"
                 className={
-                  "font-nudista font-bold text-lg md:text-4xl text-white-200 border-b justify-center"
+                  "font-title font-bold text-lg md:text-4xl text-white-200 border-b justify-center"
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
@@ -94,7 +94,7 @@ export default function Menu({ home }) {
               <a
                 href="/"
                 className={
-                  "font-nudista font-bold text-lg md:text-2xl text-white-200 border-b"
+                  "font-title font-bold text-lg md:text-2xl text-white-200 border-b"
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
@@ -106,7 +106,7 @@ export default function Menu({ home }) {
           {home ? (
             <a
               href={"/about"}
-              className="font-sm pt-12 text-sm md:text-md"
+              className="font-sm pt-12 text-sm md:text-md font-heading"
               style={{
                 // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",
@@ -140,7 +140,7 @@ export default function Menu({ home }) {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </div>
-        <ul className="flex flex-col items-center justify-between text-center text-white-100 font-raleway">
+        <ul className="flex flex-col items-center justify-between text-center text-white-100 font-heading">
           <li
             className="border-b  my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}

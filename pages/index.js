@@ -7,7 +7,7 @@ import FloatingButton from "../components/FloatingButton";
 
 export default function Home() {
   return (
-    <div className="text-black font-eczar">
+    <div className="text-black font-body">
       <NextSeo
         title="PARS"
         description="PARS ENGINEERING INDIA PVT LTD"
