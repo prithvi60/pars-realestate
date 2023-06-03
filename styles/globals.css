@@ -139,7 +139,7 @@ a {
 }
 .showMenuNav {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 30%;
   height: 100vh;
   top: 0;
