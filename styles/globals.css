@@ -30,8 +30,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: #e7a646;
+  outline: 1.5px solid #e7a646;
 }
 a {
   color: inherit;

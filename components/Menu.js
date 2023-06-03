@@ -14,12 +14,12 @@ export default function Menu({ home }) {
           transform: "translateY(-14%)",
         }}
       >
-        <span className="block h-0.5 w-5 bg-black"></span>
+        <span className="block h-0.5 w-5 bg-white-200"></span>
         <span
           className="block h-0.5 w-5 "
-          style={{ background: home ? "#dbc07c" : "black" }}
+          style={{ background: home ? "#dbc07c" : "white" }}
         ></span>
-        <span className="block h-0.5 w-5 bg-black"></span>
+        <span className="block h-0.5 w-5 bg-white-200"></span>
       </div>
       <div
         className="absolute md:top-4 flex flex-row justify-center w-screen text-center"
@@ -32,7 +32,7 @@ export default function Menu({ home }) {
         <div className="flex flex-col">
           {home ? (
             <div
-              className="font-semibold  text-md md:text-2xl pb-2"
+              className="font-semibold  text-md md:text-2xl"
               style={{ textShadow: "3px 3px #000000" }}
             >
               Welcome To
