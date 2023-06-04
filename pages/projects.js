@@ -98,7 +98,7 @@ Saidapet, Chennai
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading md:flex w-screen justify-center"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
@@ -106,7 +106,10 @@ Saidapet, Chennai
         >
           Projects
         </div>
-        <h3 className="text-red-600 font-heading font-bold py-2">
+        <h3
+          className=" font-heading font-bold py-2 md:flex w-screen justify-center"
+          style={{ color: "orange" }}
+        >
           Contract portfolio
         </h3>
         <div className="flex flex-col md:flex-row gap-8 flex-wrap pb-4 justify-center border-b">
@@ -121,7 +124,10 @@ Saidapet, Chennai
             );
           })}
         </div>
-        <h3 className="text-red-600 font-heading py-2 font-bold">
+        <h3
+          className="font-heading py-2 font-bold md:flex w-screen justify-center"
+          style={{ color: "orange" }}
+        >
           Residential Portfolio
         </h3>
         <div className="flex flex-col md:flex-row gap-8 flex-wrap pb-4 justify-center">

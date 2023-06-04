@@ -17,7 +17,7 @@ export default function service() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading flex w-screen justify-center"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
@@ -25,7 +25,7 @@ export default function service() {
         >
           What we do
         </div>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-8 ml-8 w-screen justify-center" >
           <div className="text-left text-sm font-semibold text-black">
             • Residential Buildings <br />• Institutional Buildings <br />•
             Factory Buildings
