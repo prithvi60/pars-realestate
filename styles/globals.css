@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
   font-family: "Hero";
-  src: url("/fonts/GentiumBookPlus-BoldItalic.ttf");
+  src: url("/fonts/SansSerifBookFLF.otf");
 }
 @font-face {
   font-family: "Headings";

@@ -140,7 +140,7 @@ export default function Menu({ home }) {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </div>
-        <ul className="flex flex-col items-center justify-between text-center text-white-100 font-heading">
+        <ul className="flex flex-col mt-20 md:mt-0 h-screen md:h-auto  items-center justify-even text-center text-white-100 font-heading">
           <li
             className="border-b  my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
