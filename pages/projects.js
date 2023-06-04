@@ -5,7 +5,7 @@ import FloatingButton from "../components/FloatingButton";
 import Card from "../components/Card";
 import C1 from "../public/images/projects/cauvery.png";
 import C2 from "../public/images/projects/fivestar.png";
-import C3 from "../public/images/projects/sliveranklet.jpg";
+import C3 from "../public/images/projects/sliveranklet.png";
 import C4 from "../public/images/projects/labourcomm.png";
 import C5 from "../public/images/projects/underground.png";
 

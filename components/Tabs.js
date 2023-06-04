@@ -3,7 +3,7 @@ import Hero1 from "../public/images/hero/1.jpg";
 import Hero2 from "../public/images/hero/2.jpg";
 import Hero3 from "../public/images/hero/3.jpg";
 import Hero4 from "../public/images/hero/4.jpg";
-import Plan from "../public/images/projects/floorplan.jpg";
+import Plan from "../public/images/projects/floorplan.png";
 import Location from "../public/images/projects/locationintermont.png";
 
 import Image from "next/image";
