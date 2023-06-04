@@ -120,7 +120,7 @@ export default function Menu({ home }) {
       </div>
       <div
         className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
-        style={{ transition: "2s" }}
+        style={{ transition: "2.5s" }}
       >
         <div
           className="absolute top-4 left-0 pl-4 flex flex-row "
