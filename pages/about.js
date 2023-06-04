@@ -30,18 +30,17 @@ export default function about() {
         </div>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="text-left text-sm font-semibold text-black font-body">
-            Intermont Living is the brand of Pars Engineering India Pvt Ltd for
-            its housing sector ventures. Intermont Living is established with
-            the goal of upgrading people’s way of living through property
-            development. The brand is jointly ventured by PARS ENGINEERING INDIA
-            PVT LTD and ASHCON DEVELOPERS PVT LTD whose promoters had completed
-            their business education from the United Kingdom. Their education
-            from the west has motivated them to cater customers with projects
-            carrying high quality and feel-good experience. The promoters had
-            already joint ventured and handed over two high profile residential
-            projects in the prime locations of Chennai. The promoters had earned
-            trust in the market as the result of their approach with the
-            stakeholders and supportive nature towards customers after sales.
+            PARS Engineering India Pvt Ltd was incorporated in the year 2013,
+            head quartered at Salem, Tamilnadu and having its corporate office
+            at Chennai, Tamilnadu. The company holds the primary goal of
+            upgrading nation's infrastructure joining hands with government,
+            public and private stakeholders. Over the years, the company has
+            gained tremendous experience in the field of construction.
+            Currently, it managed to diversify technical and managerial
+            knowledge in various divisions of construction like buildings,
+            irrigations and water management infrastructures. The company never
+            fails to incorporate the management of time, quality and cost for
+            the benefits of its stake holders.
           </div>
           <Image
             src={Hero1}

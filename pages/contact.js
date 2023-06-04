@@ -30,19 +30,17 @@ export default function contact() {
                 Contact us
               </h2>
               <p class="mb-6 text-black dark:text-neutral-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium, modi accusantium ipsum corporis quia asperiores
-                dolorem nisi corrupti eveniet dolores ad maiores repellendus
-                enim autem omnis fugiat perspiciatis? Ad, veritatis.
+                FOR BOOKING DETAILS CONTACT
               </p>
               <p class="mb-2 text-black dark:text-neutral-300">
-                New York, 94126, United States
+                No.13, Opal Apartments, North Mada Street, Srinagar Colony,
+                Saidapet, Intermontlife.com Chennai-600015
               </p>
               <p class="mb-2 text-black dark:text-neutral-300">
-                + 01 234 567 89
+                +91-9788058526
               </p>
               <p class="mb-2 text-black dark:text-neutral-300">
-                info@gmail.com
+                sales@intermontlife.com
               </p>
             </div>
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
@@ -144,7 +142,7 @@ export default function contact() {
         </section>
       </div>
       {/* <div className="absolute bottom-0 w-screen"> */}
-        <Footer />
+      <Footer />
       {/* </div> */}
       <FloatingButton />
     </div>

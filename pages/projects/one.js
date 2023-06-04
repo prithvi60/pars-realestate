@@ -36,19 +36,17 @@ export default function one() {
                 Contact us
               </h2>
               <p class="mb-6 text-black dark:text-neutral-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium, modi accusantium ipsum corporis quia asperiores
-                dolorem nisi corrupti eveniet dolores ad maiores repellendus
-                enim autem omnis fugiat perspiciatis? Ad, veritatis.
+                FOR BOOKING DETAILS CONTACT
               </p>
               <p class="mb-2 text-black dark:text-neutral-300">
-                New York, 94126, United States
+                No.13, Opal Apartments, North Mada Street, Srinagar Colony,
+                Saidapet, Intermontlife.com Chennai-600015
               </p>
               <p class="mb-2 text-black dark:text-neutral-300">
-                + 01 234 567 89
+                +91-9788058526
               </p>
-              <p class="mb-2 text-black dark:text-neutral-300">
-                info@gmail.com
+              <p class="mb-4 text-black dark:text-neutral-300 border-b">
+                sales@intermontlife.com
               </p>
               <form method="POST" action="https://herotofu.com/start">
                 <label class="block mb-6">

@@ -3,6 +3,9 @@ import Hero1 from "../public/images/hero/1.jpg";
 import Hero2 from "../public/images/hero/2.jpg";
 import Hero3 from "../public/images/hero/3.jpg";
 import Hero4 from "../public/images/hero/4.jpg";
+import Plan from "../public/images/projects/floorplan.jpg";
+import Location from "../public/images/projects/locationintermont.png";
+
 import Image from "next/image";
 import { Carousal } from "./Carousal";
 export default function TabsComponent() {
@@ -60,8 +63,11 @@ export default function TabsComponent() {
             </li>
           </ul>
           <div className="p-3 mt-6 bg-white border">
-            <div className={openTab === 1 ? "block gallery" : "hidden"} style={{width:"500px",height:"400px"}}>
-                <Carousal images={hero} />
+            <div
+              className={openTab === 1 ? "block gallery" : "hidden"}
+              style={{ width: "500px", height: "400px" }}
+            >
+              <Carousal images={hero} />
 
               {/* <Image
                 src={Hero1}
@@ -79,7 +85,7 @@ export default function TabsComponent() {
             </div>
             <div className={openTab === 2 ? "block" : "hidden"}>
               <Image
-                src={Hero2}
+                src={Plan}
                 alt="Picture of the artist"
                 placeholder="blur"
                 style={{
@@ -94,7 +100,7 @@ export default function TabsComponent() {
             </div>
             <div className={openTab === 3 ? "block" : "hidden"}>
               <Image
-                src={Hero3}
+                src={Location}
                 alt="Picture of the artist"
                 placeholder="blur"
                 style={{
