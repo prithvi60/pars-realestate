@@ -6,7 +6,7 @@ import FloatingButton from "../components/FloatingButton";
 export default function clients() {
   return (
     <div>
-                <div className="py-3" style={{ background: "#000000e2" }}>
+      <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
       <section
@@ -27,7 +27,7 @@ export default function clients() {
           Testimonials
         </div>
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="text-left text-sm font-semibold text-black font-body">
+          <div className="text-left text-sm  text-black font-body">
             Intermont Living is the brand of Pars Engineering India Pvt Ltd for
             its housing sector ventures. Intermont Living is established with
             the goal of upgrading people’s way of living through property
@@ -45,7 +45,6 @@ export default function clients() {
       </section>
       <Footer />
       <FloatingButton />
-
     </div>
   );
 }

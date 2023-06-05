@@ -17,7 +17,7 @@ export default function Menu({ home }) {
         <span className="block h-0.5 w-5 bg-white-200"></span>
         <span
           className="block h-0.5 w-5 "
-          style={{ background: home ? "#dbc07c" : "white" }}
+          style={{ background: "#dbc07c" }}
         ></span>
         <span className="block h-0.5 w-5 bg-white-200"></span>
       </div>
@@ -75,7 +75,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT
+                INTERMONT LIVING
               </a>
             </div>
           ) : (
@@ -98,7 +98,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT
+                INTERMONT LIVING
               </a>
             </div>
           )}
