@@ -12,7 +12,7 @@ import C5 from "../public/images/projects/underground.png";
 import R1 from "../public/images/hero/1.jpg";
 import R2 from "../public/images/hero/2.jpg";
 
-export default function projects() {
+export default function completedprojects() {
   const contract = [
     {
       image: C1,
@@ -66,7 +66,7 @@ with parking facility
     {
       image: R1,
 
-      title: "ONE",
+      title: "OPAL",
       des: `
        6 Flats 3 BHK Stilt + 3 Floors 12,156 Sq.ft
 Srinagar Colony,
@@ -76,7 +76,7 @@ Saidapet, Chennai
     },
     {
       image: R2,
-      title: `INTERMONT W-413`,
+      title: `IMPERIAL`,
 
       des: `5 Flats 3BHK Stilt + 5 Floors 6,600 Sq.ft
     W Extension,
@@ -104,7 +104,7 @@ Saidapet, Chennai
             textDecorationColor: "#dbc07c",
           }}
         >
-          Ongoing Projects
+          Completed Projects
         </div>
         {/* <h3
           className=" font-heading font-bold py-2 md:flex w-screen justify-center"

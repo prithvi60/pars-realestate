@@ -75,7 +75,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                PARS ENGINEERING INDIA PVT LTD
+                INTERMONT
               </a>
             </div>
           ) : (
@@ -98,7 +98,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                PARS ENGINEERING INDIA PVT LTD
+                INTERMONT
               </a>
             </div>
           )}
@@ -157,13 +157,19 @@ export default function Menu({ home }) {
             className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
-            <a href="/service">What we do</a>
+            <a href="/completed">Completed Projects</a>
           </li>
           <li
             className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
-            <a href="/projects">Portfolio</a>
+            <a href="/joint-venture">Joint Venture</a>
+          </li>
+          <li
+            className="border-b my-4 uppercase"
+            style={{ borderBottomColor: "#dbc07c" }}
+          >
+            <a href="/our-venture">Our Venture</a>
           </li>
           <li
             className="border-b my-4 uppercase"

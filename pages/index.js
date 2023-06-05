@@ -17,7 +17,7 @@ export default function Home() {
         }}
       />
       <Head>
-        <title>PARS</title>
+        <title>Intermont</title>
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <Main />

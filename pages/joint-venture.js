@@ -1,26 +1,40 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Hero1 from "../public/images/hero/1.jpg";
+import Image from "next/image";
 import FloatingButton from "../components/FloatingButton";
 
-export default function contact() {
+export default function jointventure() {
   return (
-    <div className="relative">
+    <div>
       <div className="py-3" style={{ background: "#000000e2" }}>
         <Header />
       </div>
-      <div
-        class="container my-24 mx-auto px-8 md:px-6 text-black relative"
+      <section
+        className="md:h-screen px-8 relative"
         style={{
-          // backgroundImage: "url(/pattern.svg)",
+          backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
       >
-        <section class="mb-32 font-body relative">
+        <div
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
+          style={{
+            textDecoration: "underline",
+            textDecorationColor: "#dbc07c",
+          }}
+        >
+          Joint Venture
+        </div>
+        {/* <div className="flex flex-col md:flex-row gap-8"> */}
           <div class="flex flex-wrap">
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-              <h2
+            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 font-semibold text-black">
+              Content for Joint venture
+            </div>
+            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
+              {/* <h2
                 class="mb-6 text-3xl font-bold font-heading"
                 style={{
                   textDecoration: "underline",
@@ -28,9 +42,9 @@ export default function contact() {
                 }}
               >
                 Contact us
-              </h2>
+              </h2> */}
               <p class="mb-6 text-black dark:text-neutral-300">
-                FOR BOOKING DETAILS CONTACT
+                Reach out to Us
               </p>
               <p class="mb-2 text-black dark:text-neutral-300">
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
@@ -43,7 +57,7 @@ export default function contact() {
                 sales@intermontlife.com
               </p>
             </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
               <form method="POST" action="https://herotofu.com/start">
                 <label class="block mb-6">
                   <span class="text-gray-700">Your name</span>
@@ -139,11 +153,9 @@ export default function contact() {
               </form>
             </div>
           </div>
-        </section>
-      </div>
-      {/* <div className="absolute bottom-0 w-screen"> */}
+        {/* </div> */}
+      </section>
       <Footer />
-      {/* </div> */}
       <FloatingButton />
     </div>
   );
