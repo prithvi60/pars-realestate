@@ -49,7 +49,7 @@ export default function Menu({ home }) {
 
           {home ? (
             <div
-              className="font-semibold  text-md md:text-xl font-heading"
+              className="font-semibold  text-lg md:text-3xl font-heading2"
               // style={{ textShadow: "3px 3px #000000" }}
             >
               Welcome To
@@ -71,11 +71,11 @@ export default function Menu({ home }) {
               <a
                 href="/"
                 className={
-                  "font-title font-bold text-lg md:text-4xl text-white-200 border-b justify-center"
+                  "font-title font-bold text-3xl md:text-6xl text-white-200 justify-center"
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT LIFE
+                INTERMONT <span style={{ color: "#dbc07c" }}>LIFE</span>
               </a>
             </div>
           ) : (
@@ -101,11 +101,18 @@ export default function Menu({ home }) {
               </a>
             </div>
           )}
-
+          {home ? (
+            <div
+              className="border-b  mt-8 flex justify-center px-10 ml-36 mr-36 border-1"
+              style={{ borderColor: "#dbc07c" }}
+            >
+              {" "}
+            </div>
+          ) : null}
           {home ? (
             <a
               href={"/about"}
-              className="font-sm pt-12 text-sm md:text-md font-heading"
+              className="font-sm pt-12 text-xs md:text-sm font-heading underline"
               style={{
                 // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",
@@ -140,7 +147,7 @@ export default function Menu({ home }) {
           </svg>
         </div>
         <ul className="flex flex-col mt-20 md:mt-0 h-screen md:h-auto  items-center justify-even text-center text-white-100 font-heading">
-        <li
+          <li
             className="border-b  my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >

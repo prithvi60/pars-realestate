@@ -3,16 +3,21 @@
 @tailwind utilities;
 @font-face {
   font-family: "Hero";
-  src: url("/fonts/SansSerifBookFLF.otf");
+  src: url("/fonts/PlayfairDisplay-Bold.ttf");
 }
 @font-face {
   font-family: "Headings";
   src: url("/fonts/Raleway-Bold.ttf");
 }
 @font-face {
+  font-family: "Headings2";
+  src: url("/fonts/ARIALBD.ttf");
+}
+@font-face {
   font-family: "Bodys";
   src: url("/fonts/Lora-MediumItalic.ttf");
 }
+
 
 html,
 body {
@@ -174,6 +179,7 @@ a {
   top: 50% !important;
   right: 8%;
 }
+
 @media only screen and (max-width: 600px) {
   .hero .slick-prev {
     left: 38%;

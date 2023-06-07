@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         title: ["Hero", "sans-serif"],
         heading: ["Headings", "sans-serif"],
+        heading2: ["Headings2", "sans-serif"],
         body: ["Bodys", "sans"],
       },
       colors: {
