@@ -149,7 +149,8 @@ a {
   height: 100vh;
   top: 0;
   left: 0;
-  background: #838383f9;
+  background: #908f8fd9;
+  border-right: 2px solid #dbc07c;
   transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 9999;
   display: flex;

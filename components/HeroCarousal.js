@@ -18,23 +18,22 @@ export const HeroCarousal = ({ images }) => {
   };
   const [zoom, setZoom] = useState(false);
   useEffect(() => {
-    setTimeout(() => {
-      setZoom(true);
-    }, 100);
+    setZoom(true);
   }, []);
-  useEffect(() => {
-    if (zoom) {
-      setTimeout(() => {
-        setZoom(false);
-      }, 10000);
-    }
-  }, [zoom]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setZoom((o) => !o);
+    }, 15000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [zoom]);
   return (
     <Slider {...settings}>
       {images.map((image, idx) => {
         return (
-          <div key={idx} class="img-hover-zoom img-hover-zoom--xyz">
+          <div key={idx} class="">
             <Image
               src={image}
               alt="Picture of the artist"
@@ -47,9 +46,9 @@ export const HeroCarousal = ({ images }) => {
                 backgroundSize: "cover",
                 objectFit: "cover",
                 filter: "brightness(0.35) sepia(28%)",
-                transform: zoom ? "scale(1.6)" : "scale(1)",
+                transform: zoom ? "scale(1.5)" : "scale(1)",
                 transformOrigin: "50% 65%",
-                transition: "transform 10s  ease-in-out",
+                transition: "transform 15s  ease-in-out",
               }}
             />
             {/* <p className="legend">Artist {idx + 1}</p> */}
