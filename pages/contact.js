@@ -6,7 +6,7 @@ import FloatingButton from "../components/FloatingButton";
 export default function contact() {
   return (
     <div className="relative">
-      <div className="py-3" style={{ background: "#000000e2" }}>
+      <div className="py-3" style={{ background: "#838383e2" }}>
         <Header />
       </div>
       <div

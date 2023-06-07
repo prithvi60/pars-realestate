@@ -18,7 +18,7 @@ export default function Home() {
       />
       <Head>
         <title>Intermont</title>
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
       <Main />
       <FloatingButton />

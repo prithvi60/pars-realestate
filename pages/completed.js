@@ -35,7 +35,7 @@ Saidapet, Chennai
 
   return (
     <div>
-      <div className="py-3" style={{ background: "#000000e2" }}>
+      <div className="py-3" style={{ background: "#838383e2" }}>
         <Header />
       </div>
       <section

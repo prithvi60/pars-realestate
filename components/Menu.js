@@ -34,15 +34,15 @@ export default function Menu({ home }) {
           {home ? (
             <div className="w-screen flex justify-center">
               <img
-                src={"/favicon.png"}
+                src={"/favicon.webp"}
                 alt="logo"
                 style={{
                   objectFit: "cover",
                   height: "60px",
                   width: "60px",
-                  background: "#ffffff",
+                  // background: "#ffffff",
                 }}
-                className="mb-4 rounded-full shadow-md"
+                className="mb-4"
               ></img>
             </div>
           ) : null}
@@ -75,21 +75,20 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT LIVING
+                INTERMONT LIFE
               </a>
             </div>
           ) : (
             <div className="flex md:flex-row gap-4 items-center text-center  ml-6 md:ml-0 mt-5 md:mt-3.5">
               <img
-                src={"/favicon.png"}
+                src={"/favicon.webp"}
                 alt="logo"
                 style={{
                   objectFit: "cover",
                   height: "40px",
                   width: "40px",
-                  background: "#ffffff",
                 }}
-                className=" rounded-full shadow-md hidden md:block"
+                className=" hidden md:block"
               ></img>
               <a
                 href="/"
@@ -98,7 +97,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT LIVING
+                INTERMONT LIFE
               </a>
             </div>
           )}
@@ -154,7 +153,7 @@ export default function Menu({ home }) {
             <a href="/projects">Ongoing Projects</a>
           </li>
           <li
-            className="border-b my-4 uppercase"
+            className="border-b my-4 uppercase  mx-6"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/completed">Completed Projects</a>
@@ -169,7 +168,7 @@ export default function Menu({ home }) {
             className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
-            <a href="/our-venture">Our Venture</a>
+            <a href="/sectors">Other Sector</a>
           </li>
           <li
             className="border-b my-4 uppercase"
