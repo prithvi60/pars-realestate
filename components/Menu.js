@@ -112,7 +112,7 @@ export default function Menu({ home }) {
           {home ? (
             <a
               href={"/about"}
-              className="font-sm pt-12 text-xs md:text-sm font-heading underline"
+              className="font-sm pt-12 text-xs md:text-sm font-heading underline shadow-xl"
               style={{
                 // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",

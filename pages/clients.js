@@ -20,13 +20,13 @@ export default function clients() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading text-center"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
           }}
         >
-          Testimonials
+          Our Clients Say
         </div>
         <div className="w-full mr-2" style={{ height: "400px" }}>
           <TestimonialCarousal />

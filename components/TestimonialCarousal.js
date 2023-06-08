@@ -13,7 +13,7 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "grey",
+        background: "orange",
         borderRadius: "50%",
       }}
       onClick={onClick}
@@ -29,7 +29,7 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "grey",
+        background: "orange",
         borderRadius: "50%",
       }}
       onClick={onClick}
@@ -41,7 +41,7 @@ export const TestimonialCarousal = () => {
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
@@ -72,27 +72,27 @@ export const TestimonialCarousal = () => {
     <Slider {...settings}>
       {images.map((image, idx) => {
         return (
-          <div key={idx} className="flex flex-col items-center justify-center">
-            <Image
-              src={image}
-              alt="Picture of the artist"
-              placeholder="blur"
-              className="rounded-sm"
-              style={{
-                // height: "40vh",
-                // width: "40vw",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                objectFit: "cover",
-              }}
-            />
-            <p className="legend text-black text-xs md:text-sm mt-4">
-              INTERMONT is one of the most trusted and distinguished developer
-              in the city of Chennai for over three decades. The other important
-              characteristics of Intermont are excellence in quality of
-              workmanship and commitment to time in delivery.”
-            </p>
+          <div key={idx}>
+            <div className="flex flex-col items-center gap-2 ">
+              <Image
+                src={image}
+                alt="Picture of the artist"
+                placeholder="blur"
+                className="rounded-full border-2 "
+                style={{
+                  height: "140px",
+                  width: "140px",
+                  borderColor: "orange",
+                  objectFit: "cover",
+                }}
+              />
+              <p className=" text-black text-xs md:text-sm mt-4 mx-2 text-center">
+                INTERMONT is one of the most trusted and distinguished developer
+                in the city of Chennai for over three decades. The other
+                important characteristics of Intermont are excellence in quality
+                of workmanship and commitment to time in delivery.”
+              </p>
+            </div>
           </div>
         );
       })}

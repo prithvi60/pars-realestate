@@ -34,7 +34,7 @@ export default function sectors() {
             Content for Our venture
           </div> */}
           <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 md:border-r">
-            <p class="mb-6 text-black dark:text-neutral-300">
+            <p class="flex flex-col items-center mb-6 text-black dark:text-neutral-300 text-center">
               <img
                 src={"/parslogo.webp"}
                 alt="logo"
@@ -42,9 +42,8 @@ export default function sectors() {
                   objectFit: "cover",
                   height: "150px",
                   width: "150px",
-                  background: "#ffffff",
+                  // background: "#ffffff",
                 }}
-                className="shadow-md  md:block"
               ></img>
               <span className="font-bold">PARS Engineering Pvt Ltd</span>
             </p>
@@ -63,17 +62,17 @@ export default function sectors() {
             </p>
           </div>
           <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
-            <p class="mb-6 text-black dark:text-neutral-300">
+            <p class="flex flex-col items-center mb-6 text-black dark:text-neutral-300">
               <img
                 src={"/kanchilogo.jpg"}
                 alt="logo"
+                className={"text-center"}
                 style={{
                   objectFit: "cover",
                   height: "150px",
                   width: "150px",
-                  background: "#ffffff",
+                  // background: "#ffffff",
                 }}
-                className="shadow-md  md:block"
               ></img>
               <span className="font-bold">Kanchi Mining Projects</span>
             </p>
