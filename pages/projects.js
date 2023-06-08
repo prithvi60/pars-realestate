@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import FloatingButton from "../components/FloatingButton";
 import Card from "../components/Card";
 
-import R1 from "../public/images/hero/2.jpg";
+import R1 from "../public/images/hero/hero2.jpg";
 import R2 from "../public/images/projects/whouse.png";
 
 export default function projects() {

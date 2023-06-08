@@ -1,13 +1,15 @@
 import { HeroCarousal } from "./HeroCarousal";
-import Hero1 from "../public/images/hero/1.jpg";
-import Hero2 from "../public/images/hero/2.jpg";
-import Hero3 from "../public/images/hero/3.jpg";
-import Hero4 from "../public/images/hero/4.jpg";
+import Hero1 from "../public/images/projects/hero1.jpg";
+import Hero2 from "../public/images/hero/hero2.jpg";
+import Hero3 from "../public/images/projects/hero3.jpg";
+import Hero4 from "../public/images/projects/hero4.jpg";
+import Hero5 from "../public/images/projects/hero5.jpg";
+
 import Menu from "./Menu";
-import FloatingButton from "./FloatingButton";
+// import FloatingButton from "./FloatingButton";
 // import ReactWhatsapp from "react-whatsapp";
 export default function Main() {
-  const hero = [Hero1, Hero2, Hero3, Hero4];
+  const hero = [Hero1, Hero2, Hero3, Hero4,Hero5];
   return (
     <section
       class="text-white-100 body-font relative"

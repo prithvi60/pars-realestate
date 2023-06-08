@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Hero1 from "../public/images/hero/1.jpg";
+import Hero1 from "../public/images/projects/about.jpg";
 import Image from "next/image";
 import FloatingButton from "../components/FloatingButton";
 
@@ -12,7 +12,7 @@ export default function about() {
         <Header />
       </div>
       <section
-        className="md:h-screen px-8 relative"
+        className="px-8 relative"
         style={{
           backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
@@ -44,20 +44,22 @@ export default function about() {
             of their approach with the stakeholders and supportive nature
             towards customers after sales.
           </div>
-          <Image
-            src={Hero1}
-            alt="Picture of the artist"
-            placeholder="blur"
-            className="mb-8 md:mb-0 rounded-md"
-            style={{
-              // height: "100vh",
-              // width:"100vw",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              objectFit: "cover",
-            }}
-          />
+          <div className="">
+            <Image
+              src={Hero1}
+              alt="Picture of the artist"
+              placeholder="blur"
+              className="mb-8 md:mb-24 rounded-md"
+              style={{
+                height: "100%",
+                width: "100%",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                objectFit: "cover",
+              }}
+            />
+          </div>
         </div>
       </section>
       <Footer />

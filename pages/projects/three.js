@@ -7,20 +7,20 @@ import FloatingButton from "../../components/FloatingButton";
 import TabsComponent from "../../components/Tabs";
 
 export default function three() {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch("/Pars.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "demoPDF.pdf";
-        alink.click();
-      });
-    });
-  };
+  // const onButtonClick = () => {
+  //   // using Java Script method to get PDF file
+  //   fetch("/Pars.pdf").then((response) => {
+  //     response.blob().then((blob) => {
+  //       // Creating new object of PDF file
+  //       const fileURL = window.URL.createObjectURL(blob);
+  //       // Setting various property values
+  //       let alink = document.createElement("a");
+  //       alink.href = fileURL;
+  //       alink.download = "demoPDF.pdf";
+  //       alink.click();
+  //     });
+  //   });
+  // };
   return (
     <div className="z-5">
       <div className="py-3" style={{ background: "#838383e2" }}>
@@ -37,8 +37,8 @@ export default function three() {
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
-              <TabsComponent type={"completed"}/>
-              <div className="w-full justify-center flex mt-4">
+              <TabsComponent type={"completed"} model={Hero1}/>
+              {/* <div className="w-full justify-center flex mt-4">
                 <button
                   onClick={onButtonClick}
                   class="
@@ -57,7 +57,7 @@ export default function three() {
                 >
                   Download Brochure
                 </button>
-              </div>
+              </div> */}
             </div>
             <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-4">
               <h2

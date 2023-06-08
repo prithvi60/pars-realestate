@@ -1,16 +1,15 @@
 import React,{ useState,useEffect } from "react";
 import Hero1 from "../public/images/hero/1.jpg";
-import Hero2 from "../public/images/hero/2.jpg";
+import Hero2 from "../public/images/hero/hero2.jpg";
 import Hero3 from "../public/images/hero/3.jpg";
 import Hero4 from "../public/images/hero/4.jpg";
 import Plan from "../public/images/projects/floorplan.png";
-import Location from "../public/images/projects/locationintermont.png";
 
 import Image from "next/image";
 import { Carousal } from "./Carousal";
-export default function TabsComponent({ type }) {
+export default function TabsComponent({ type,model }) {
   const [openTab, setOpenTab] = useState(1);
-  const hero = [Hero1, Hero2, Hero3, Hero4];
+  const hero = [model, Hero2, Hero3, Hero4];
   const [width, setWidth] = useState(null);
   useEffect(() => {
     // window is accessible here.

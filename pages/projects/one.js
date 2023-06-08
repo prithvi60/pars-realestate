@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Hero1 from "../../public/images/hero/1.jpg";
+import Hero1 from "../../public/images/hero/hero2.jpg";
 import Image from "next/image";
 import FloatingButton from "../../components/FloatingButton";
 import TabsComponent from "../../components/Tabs";
@@ -38,7 +38,7 @@ export default function one() {
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
-              <TabsComponent />
+              <TabsComponent model={Hero1}/>
               <div className="w-full justify-center flex mt-4">
                 <button
                   onClick={onButtonClick}
