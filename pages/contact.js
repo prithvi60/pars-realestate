@@ -1,26 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FloatingButton from "../components/FloatingButton";
 import Hero1 from "../public/images/projects/about.jpg";
 import Image from "next/image";
 export default function contact() {
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
   return (
     <div className="relative">
       <div className="py-3" style={{ background: "#838383e2" }}>
         <Header />
       </div>
       <div
-        class="container my-24 mx-auto px-8 md:px-6 text-black relative"
+        class="container mx-auto  md:px-6 text-black relative"
         style={{
           // backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
       >
-        <section class="mb-32 font-body relative">
+        <section class="md:h-screen font-body relative">
           <div class="flex flex-wrap">
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
+            <div class="mt-16 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
               <h2
                 class="mb-6 text-3xl font-bold font-heading"
                 style={{
@@ -44,7 +50,7 @@ export default function contact() {
                 sales@intermontlife.com
               </p>
             </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
+            <div class="mt-16 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
               <form method="POST" action="https://herotofu.com/start">
                 <label class="block mb-6">
                   <span class="text-gray-700">Your name</span>
@@ -139,18 +145,17 @@ export default function contact() {
                 </div>
               </form>
             </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
+            <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
               <Image
                 src={Hero1}
                 alt="Picture of the artist"
                 placeholder="blur"
-                className="mb-8 md:mb-24 rounded-md"
+                className=" md:mb-24  md:absolute top-0 w-auto md:w-96"
                 style={{
-                  height: "100%",
-                  width: "100%",
+                  height: width > 600 ? "100%" : "400px",
+                  width: width > 600 ? "unset" : "100%",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
                   objectFit: "cover",
                 }}
               />

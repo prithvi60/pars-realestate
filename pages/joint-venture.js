@@ -12,7 +12,7 @@ export default function jointventure() {
         <Header />
       </div>
       <section
-        className="md:h-screen px-8 relative"
+        className="md:h-screen md:px-8 relative"
         style={{
           backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
@@ -20,7 +20,7 @@ export default function jointventure() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading px-8"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
@@ -30,7 +30,7 @@ export default function jointventure() {
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3font-normal text-black">
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3font-normal text-black px-8">
             We welcome all landowners looking for a fair and profitable Joint
             Venture. We would love to work with you! Our aim is to provide
             property owners a strong foundation on which to build and achieve
@@ -38,7 +38,7 @@ export default function jointventure() {
             and completely transparent experience. We can’t wait to hear from
             you!
           </div>
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3">
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-2/12 md:px-1 lg:px-3 px-8">
             {/* <h2
                 class="mb-6 text-3xl font-bold font-heading"
                 style={{
@@ -58,7 +58,7 @@ export default function jointventure() {
               sales@intermontlife.com
             </p>
           </div>
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3">
+          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3 px-8">
             <form method="POST" action="https://herotofu.com/start">
               <label class="block mb-6">
                 <span class="text-gray-700">Your name</span>
@@ -153,18 +153,17 @@ export default function jointventure() {
               </div>
             </form>
           </div>
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12">
+          <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
             <Image
               src={Hero1}
               alt="Picture of the artist"
               placeholder="blur"
-              className="mb-8 md:mb-24 rounded-md"
+              className="mb-8 md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
-                // height: "100%",
-                width: "100%",
+                height: "100%",
+                // width: "40vw",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
                 objectFit: "cover",
               }}
             />

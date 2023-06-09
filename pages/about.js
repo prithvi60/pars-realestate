@@ -12,7 +12,7 @@ export default function about() {
         <Header />
       </div>
       <section
-        className="px-8 relative"
+        className="md:h-screen md:mx-8 relative"
         style={{
           backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
@@ -20,7 +20,7 @@ export default function about() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading mx-8"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
@@ -30,7 +30,7 @@ export default function about() {
         </div>
         <div class="flex flex-wrap">
           <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
-            <div className="text-left text-sm  text-black font-body">
+            <div className="text-left text-sm  text-black font-body mx-8">
               Intermont Living is the brand of Pars Engineering India Pvt Ltd
               for its housing sector ventures. Intermont Living is established
               with the goal of upgrading people’s way of living through property
@@ -47,18 +47,17 @@ export default function about() {
             </div>
           </div>
 
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
+          <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
             <Image
               src={Hero1}
               alt="Picture of the artist"
               placeholder="blur"
-              className="mb-8 md:mb-24 rounded-md"
+              className="mb-8 md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
-                // height: "100%",
-                width: "100%",
+                height: "100%",
+                // width: "100%",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
                 objectFit: "cover",
               }}
             />
