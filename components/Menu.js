@@ -48,14 +48,6 @@ export default function Menu({ home }) {
           ) : null}
 
           {home ? (
-            <div
-              className="font-semibold  text-lg md:text-3xl font-heading2"
-              // style={{ textShadow: "3px 3px #000000" }}
-            >
-              Welcome To
-            </div>
-          ) : null}
-          {home ? (
             <div className="flex md:flex-row gap-4 items-center justify-center text-center">
               {/* <img
                 src={"/favicon.png"}
@@ -88,7 +80,7 @@ export default function Menu({ home }) {
                   height: "40px",
                   width: "40px",
                 }}
-                className=" hidden md:block"
+                className=""
               ></img>
               <a
                 href="/"
@@ -110,9 +102,18 @@ export default function Menu({ home }) {
             </div>
           ) : null}
           {home ? (
+            <div
+              className="font-semibold  text-lg md:text-2xl font-heading mt-4"
+              // style={{ textShadow: "3px 3px #000000" }}
+            >
+              Your home defines you
+            </div>
+          ) : null}
+
+          {home ? (
             <a
               href={"/about"}
-              className="font-sm pt-12 text-xs md:text-sm font-heading underline shadow-xl"
+              className="font-sm pt-12 text-xs md:text-sm font-heading underline"
               style={{
                 // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",
@@ -159,17 +160,28 @@ export default function Menu({ home }) {
           >
             <a href="/about">About</a>
           </li>
-          <li
-            className="border-b my-4 uppercase mx-6"
-            style={{ borderBottomColor: "#dbc07c" }}
-          >
-            <a href="/projects">Ongoing Projects</a>
+          <li className="my-4 uppercase mx-6">
+            <a href="/projects">
+              <span
+                className="border-b pb-1"
+                style={{ borderBottomColor: "#dbc07c" }}
+              >
+                Ongoing Projects
+              </span>
+            </a>
           </li>
           <li
-            className="border-b my-4 uppercase  mx-6"
-            style={{ borderBottomColor: "#dbc07c" }}
+            className="my-4  uppercase  mx-6"
+            // style={{ borderBottomColor: "#dbc07c" }}
           >
-            <a href="/completed">Completed Projects</a>
+            <a href="/completed">
+              <span
+                className="border-b pb-1"
+                style={{ borderBottomColor: "#dbc07c" }}
+              >
+                Completed Projects
+              </span>
+            </a>
           </li>
           <li
             className="border-b my-4 uppercase"

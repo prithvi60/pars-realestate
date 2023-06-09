@@ -59,11 +59,10 @@ export const Carousal = ({ images }) => {
               alt="Picture of the artist"
               placeholder="blur"
               style={{
-                // height: "10vh",
-                // width: "10vw",
+                height: "400px",
+                width: "500px",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
                 objectFit: "cover",
                 //     filter: "brightness(0.4)",
               }}

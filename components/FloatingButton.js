@@ -12,7 +12,7 @@ export default function FloatingButton() {
           src="/whatsapp.gif"
           alt="msg"
           className="rounded-full p-2 shadow-xl"
-          style={{ boxShadow: "0 0 0 3px #dbc07c8e" }}
+          style={{ boxShadow: "0 0 0 2px #dbc07c" }}
         />
       </a>
     </div>

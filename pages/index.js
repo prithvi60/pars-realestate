@@ -17,7 +17,7 @@ export default function Home() {
         }}
       />
       <Head>
-        <title>Intermont</title>
+        <title>Intermont | Your home defines you</title>
         <link rel="icon" href="/favicon.webp" />
       </Head>
       <Main />

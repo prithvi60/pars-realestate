@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Hero1 from "../public/images/hero/1.jpg";
+import Hero1 from "../public/images/projects/venture.jpg";
 import Image from "next/image";
 import FloatingButton from "../components/FloatingButton";
 
@@ -29,12 +29,17 @@ export default function jointventure() {
           Joint Venture
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
-          <div class="flex flex-wrap">
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 font-semibold text-black">
-              Content for Joint venture
-            </div>
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
-              {/* <h2
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3font-normal text-black">
+            We welcome all landowners looking for a fair and profitable Joint
+            Venture. We would love to work with you! Our aim is to provide
+            property owners a strong foundation on which to build and achieve
+            their dreams. We are dedicated to giving you an easy, hassle-free
+            and completely transparent experience. We can’t wait to hear from
+            you!
+          </div>
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3">
+            {/* <h2
                 class="mb-6 text-3xl font-bold font-heading"
                 style={{
                   textDecoration: "underline",
@@ -43,28 +48,24 @@ export default function jointventure() {
               >
                 Contact us
               </h2> */}
-              <p class="mb-6 text-black dark:text-neutral-300">
-                Reach out to Us
-              </p>
-              <p class="mb-2 text-black dark:text-neutral-300">
-                No.13, Opal Apartments, North Mada Street, Srinagar Colony,
-                Saidapet, Intermontlife.com Chennai-600015
-              </p>
-              <p class="mb-2 text-black dark:text-neutral-300">
-                +91-9788058526
-              </p>
-              <p class="mb-2 text-black dark:text-neutral-300">
-                sales@intermontlife.com
-              </p>
-            </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
-              <form method="POST" action="https://herotofu.com/start">
-                <label class="block mb-6">
-                  <span class="text-gray-700">Your name</span>
-                  <input
-                    type="text"
-                    name="name"
-                    class="
+            <p class="mb-6 text-black dark:text-neutral-300">Reach out to Us</p>
+            <p class="mb-2 text-black dark:text-neutral-300">
+              No.13, Opal Apartments, North Mada Street, Srinagar Colony,
+              Saidapet, Intermontlife.com Chennai-600015
+            </p>
+            <p class="mb-2 text-black dark:text-neutral-300">+91-9788058526</p>
+            <p class="mb-2 text-black dark:text-neutral-300">
+              sales@intermontlife.com
+            </p>
+          </div>
+          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3">
+            <form method="POST" action="https://herotofu.com/start">
+              <label class="block mb-6">
+                <span class="text-gray-700">Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  class="
             block
             w-full
             mt-1
@@ -76,15 +77,15 @@ export default function jointventure() {
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-                    placeholder="Joe Bloggs"
-                  />
-                </label>
-                <label class="block mb-6">
-                  <span class="text-gray-700">Email address</span>
-                  <input
-                    name="email"
-                    type="email"
-                    class="
+                  placeholder="Joe Bloggs"
+                />
+              </label>
+              <label class="block mb-6">
+                <span class="text-gray-700">Email address</span>
+                <input
+                  name="email"
+                  type="email"
+                  class="
             block
             w-full
             mt-1
@@ -96,15 +97,15 @@ export default function jointventure() {
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-                    placeholder="joe.bloggs@example.com"
-                    required
-                  />
-                </label>
-                <label class="block mb-6">
-                  <span class="text-gray-700">Message</span>
-                  <textarea
-                    name="message"
-                    class="
+                  placeholder="joe.bloggs@example.com"
+                  required
+                />
+              </label>
+              <label class="block mb-6">
+                <span class="text-gray-700">Message</span>
+                <textarea
+                  name="message"
+                  class="
             block
             w-full
             mt-1
@@ -116,14 +117,14 @@ export default function jointventure() {
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-                    rows="3"
-                    placeholder="Tell us what you're thinking about..."
-                  ></textarea>
-                </label>
-                <div class="mb-6">
-                  <button
-                    type="submit"
-                    class="
+                  rows="3"
+                  placeholder="Tell us what you're thinking about..."
+                ></textarea>
+              </label>
+              <div class="mb-6">
+                <button
+                  type="submit"
+                  class="
             h-10
             px-5
             text-indigo-100
@@ -134,12 +135,12 @@ export default function jointventure() {
             focus:shadow-outline
             hover:bg-indigo-800
           "
-                  >
-                    Contact Us
-                  </button>
-                </div>
-                <div>
-                  {/* <div class="mt-2 text-gray-700 text-right text-xs">
+                >
+                  Contact Us
+                </button>
+              </div>
+              <div>
+                {/* <div class="mt-2 text-gray-700 text-right text-xs">
                     by &nbsp;
                     <a
                       href="https://herotofu.com"
@@ -149,10 +150,26 @@ export default function jointventure() {
                       the internet generation
                     </a>
                   </div> */}
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
+          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12">
+            <Image
+              src={Hero1}
+              alt="Picture of the artist"
+              placeholder="blur"
+              className="mb-8 md:mb-24 rounded-md"
+              style={{
+                // height: "100%",
+                width: "100%",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        </div>
         {/* </div> */}
       </section>
       <Footer />

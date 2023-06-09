@@ -8,28 +8,27 @@ import R1 from "../public/images/hero/1.jpg";
 import R2 from "../public/images/projects/imperial.png";
 
 export default function completedprojects() {
-// 
+  //
   const residential = [
     {
       image: R1,
 
       title: "OPAL",
       des: `
-       6 Flats 3 BHK Stilt + 3 Floors 12,156 Sq.ft
-Srinagar Colony,
-Saidapet, Chennai
+      6 Flats  3BHK  2026 Sq.ft. 
+      Srinagar Colony, Saidapet, Chennai.
 
        `,
-      link: `/projects/three`,
+      link: `/projects/opal`,
     },
     {
       image: R2,
       title: `IMPERIAL`,
 
-      des: `12 Flats 2,3BHK Stilt + 5 Floors 16,746 Sq.ft
-    Norton Street,
-    Mandaveli, Chennai`,
-      link: `/projects/four`,
+      des: `12 Flats  3 BHK 1414-1551 Sq.ft. 
+      Norton Street, Mandaveli,
+      Chennai.`,
+      link: `/projects/imperial`,
     },
   ];
 

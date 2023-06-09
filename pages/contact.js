@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FloatingButton from "../components/FloatingButton";
-
+import Hero1 from "../public/images/projects/about.jpg";
+import Image from "next/image";
 export default function contact() {
   return (
     <div className="relative">
@@ -19,7 +20,7 @@ export default function contact() {
       >
         <section class="mb-32 font-body relative">
           <div class="flex flex-wrap">
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
               <h2
                 class="mb-6 text-3xl font-bold font-heading"
                 style={{
@@ -43,7 +44,7 @@ export default function contact() {
                 sales@intermontlife.com
               </p>
             </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
               <form method="POST" action="https://herotofu.com/start">
                 <label class="block mb-6">
                   <span class="text-gray-700">Your name</span>
@@ -137,6 +138,22 @@ export default function contact() {
                   </div> */}
                 </div>
               </form>
+            </div>
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
+              <Image
+                src={Hero1}
+                alt="Picture of the artist"
+                placeholder="blur"
+                className="mb-8 md:mb-24 rounded-md"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  objectFit: "cover",
+                }}
+              />
             </div>
           </div>
         </section>

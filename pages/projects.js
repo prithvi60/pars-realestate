@@ -14,8 +14,7 @@ export default function projects() {
 
       title: "ONE",
       des: `
-       8 Flats 3 BHK 1,404 Sq.ft
-Mandaveli, Chennai
+      8 Flats  3 BHK  1,404 Sq.ft. Devanathan Street, Mandaveli, Chennai
 
        `,
       link: `/projects/one`,
@@ -24,10 +23,9 @@ Mandaveli, Chennai
       image: R2,
       title: `INTERMONT W-413`,
 
-      des: `5 Flats 3BHK Stilt + 5 Floors 6,600 Sq.ft
-    W Extension,
-    Anna Nagar, Chennai`,
-      link: `/projects/two`,
+      des: `5 Flats 3BHK 1,320 Sq.ft.
+      West Extension, Anna Nagar, Chennai. `,
+      link: `/projects/w-413`,
     },
   ];
 
