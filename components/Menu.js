@@ -163,7 +163,7 @@ export default function Menu({ home }) {
           <li className="my-4 uppercase mx-6">
             <a href="/projects">
               <span
-                className="border-b py-1"
+                className="border-b py-1 leading-8 md:leading-none"
                 style={{ borderBottomColor: "#dbc07c" }}
               >
                 Ongoing Projects
@@ -176,7 +176,7 @@ export default function Menu({ home }) {
           >
             <a href="/completed">
               <span
-                className="border-b py-1"
+                className="border-b py-1 leading-8 md:leading-none"
                 style={{ borderBottomColor: "#dbc07c" }}
               >
                 Completed Projects
