@@ -64,7 +64,7 @@ export default function sectors() {
           <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
             <p class="flex flex-col items-center mb-6 text-black dark:text-neutral-300">
               <img
-                src={"/kanchilogo.jpg"}
+                src={"/kanchilogo.png"}
                 alt="logo"
                 className={"text-center"}
                 style={{
