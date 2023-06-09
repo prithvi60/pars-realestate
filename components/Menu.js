@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 export default function Menu({ home }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [width, setWidth] = useState(null);
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
 
   return (
     <>
@@ -77,8 +82,8 @@ export default function Menu({ home }) {
                 alt="logo"
                 style={{
                   objectFit: "cover",
-                  height: "40px",
-                  width: "40px",
+                  height: width < 600 ? "25px" : "40px",
+                  width: width < 600 ? "25px" : "40px",
                 }}
                 className=""
               ></img>
