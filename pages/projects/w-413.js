@@ -2,10 +2,12 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero1 from "../../public/images/projects/hero1.jpg";
-import Image from "next/image";
 import FloatingButton from "../../components/FloatingButton";
 import TabsComponent from "../../components/Tabs";
+import Plan1 from "../../public/images/projects/w-413/plan1.png";
+import Plan2 from "../../public/images/projects/w-413/plan2.png";
 
+const plan = [Plan1, Plan2];
 export default function two() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -37,7 +39,11 @@ export default function two() {
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
-              <TabsComponent model={Hero1}/>
+              <TabsComponent
+                model={Hero1}
+                plan={plan}
+                location={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.0826862283193!2d80.19704899999999!3d13.093945999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52640e4bd817a9%3A0x2833774cd43dc9f4!2s6-413%2C%20W%20Block%204th%20St%2C%20W%20Block%2C%20Anna%20Nagar%20West%20Extension%2C%20Chennai%2C%20Tamil%20Nadu%20600049!5e0!3m2!1sen!2sin!4v1686397513198!5m2!1sen!2sin`}
+              />
               <div className="w-full justify-center flex mt-4">
                 <button
                   onClick={onButtonClick}

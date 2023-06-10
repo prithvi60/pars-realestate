@@ -7,9 +7,15 @@ import Plan from "../public/images/projects/floorplan.png";
 
 import Image from "next/image";
 import { Carousal } from "./Carousal";
-export default function TabsComponent({ type, model, flat }) {
+export default function TabsComponent({
+  type,
+  model,
+  flat,
+  location,
+  plan,
+  gallery,
+}) {
   const [openTab, setOpenTab] = useState(1);
-  const hero = [model, Hero2, Hero3, Hero4];
   const [width, setWidth] = useState(null);
   useEffect(() => {
     // window is accessible here.
@@ -104,25 +110,16 @@ export default function TabsComponent({ type, model, flat }) {
               /> */}
             </div>
             {flat !== "imperial" && (
-              <div className={openTab === 2 ? "block" : "hidden"}>
-                <Image
-                  src={Plan}
-                  alt="Picture of the artist"
-                  placeholder="blur"
-                  style={{
-                    height: "400px",
-                    width: "500px",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    objectFit: "cover",
-                  }}
-                />
+              <div
+                className={openTab === 2 ? "block" : "hidden"}
+                style={{ width: "500px", height: "400px" }}
+              >
+                <Carousal images={plan} />
               </div>
             )}
             <div className={openTab === 3 ? "block" : "hidden"}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6403.136425996578!2d80.226342347087!3d13.014783429733265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52670b2d238033%3A0xf3f11ddf0750ac23!2sSrinagar%20Colony%2C%20Saidapet%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1686147356252!5m2!1sen!2sin"
+                src={location}
                 width={width > 600 ? "500" : "300"}
                 height="400"
                 style={{ border: "0" }}
@@ -135,7 +132,7 @@ export default function TabsComponent({ type, model, flat }) {
                 className={openTab === 4 ? "block" : "hidden"}
                 style={{ width: "500px", height: "400px" }}
               >
-                <Carousal images={hero} />
+                <Carousal images={gallery} />
               </div>
             )}
           </div>

@@ -5,7 +5,7 @@ import FloatingButton from "../components/FloatingButton";
 import Card from "../components/Card";
 
 import R1 from "../public/images/hero/hero2.jpg";
-import R2 from "../public/images/projects/whouse.png";
+import R2 from "../public/images/projects/hero1.jpg";
 
 export default function projects() {
   const residential = [

@@ -2,12 +2,14 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero1 from "../../public/images/hero/hero2.jpg";
-import Image from "next/image";
 import FloatingButton from "../../components/FloatingButton";
 import TabsComponent from "../../components/Tabs";
+import Plan1 from "../../public/images/projects/one/plan1.jpg";
+import Plan2 from "../../public/images/projects/one/plan2.jpg";
+import Plan3 from "../../public/images/projects/one/plan3.jpg";
 
+const plan = [Plan1, Plan2, Plan3];
 export default function one() {
- 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
     fetch("/Pars.pdf").then((response) => {
@@ -38,7 +40,11 @@ export default function one() {
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
-              <TabsComponent model={Hero1}/>
+              <TabsComponent
+                model={Hero1}
+                plan={plan}
+                location={`https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.131283381069!2d80.26161391482259!3d13.02731069081934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzM4LjMiTiA4MMKwMTUnNDkuNyJF!5e0!3m2!1sen!2sin!4v1686397369745!5m2!1sen!2sin`}
+              />
               <div className="w-full justify-center flex mt-4">
                 <button
                   onClick={onButtonClick}
