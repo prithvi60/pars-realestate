@@ -1,5 +1,5 @@
-import React, { useState,useEffect } from "react";
-
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 export default function Menu({ home }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [width, setWidth] = useState(null);
@@ -53,7 +53,13 @@ export default function Menu({ home }) {
           ) : null}
 
           {home ? (
-            <div className="flex md:flex-row gap-4 items-center justify-center text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="flex md:flex-row gap-4 items-center justify-center
+              text-center"
+            >
               {/* <img
                 src={"/favicon.png"}
                 alt="logo"
@@ -72,9 +78,9 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT <span style={{ color: "#dbc07c"}}>LIFE</span>
+                INTERMONT <span style={{ color: "#dbc07c" }}>LIFE</span>
               </a>
-            </div>
+            </motion.div>
           ) : (
             <div className="flex md:flex-row gap-4 items-center text-center  ml-6 md:ml-0 mt-5 md:mt-3.5">
               <img
@@ -107,18 +113,22 @@ export default function Menu({ home }) {
             </div>
           ) : null}
           {home ? (
-            <div
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 1 }}
               className="font-light  text-lg md:text-2xl font-heading2 mt-4"
               // style={{ textShadow: "3px 3px #000000" }}
             >
               Your home defines you
-            </div>
+            </motion.div>
           ) : null}
 
           {home ? (
-            <a
+            <motion.a
               href={"/about"}
-              className="font-sm pt-12 text-xs md:text-sm font-heading underline"
+              className="font-sm pt-12 text-xs md:text-sm font-heading"
+              whileHover={{ textDecoration:"underline" }}
               style={{
                 // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",
@@ -126,7 +136,7 @@ export default function Menu({ home }) {
               }}
             >
               Read More
-            </a>
+            </motion.a>
           ) : null}
         </div>
       </div>
@@ -153,19 +163,26 @@ export default function Menu({ home }) {
           </svg>
         </div>
         <ul className="flex flex-col mt-20 md:mt-0 h-screen md:h-auto  items-center justify-even text-center text-white-100 font-heading">
-          <li
+          <motion.li
             className="border-b  my-4 uppercase"
-            style={{ borderBottomColor: "#dbc07c" }}
+            whileHover={{ scale: 1.1 }}
+            style={{
+              borderBottomColor: "#dbc07c",
+            }}
           >
             <a href="/">Home</a>
-          </li>
-          <li
+          </motion.li>
+          <motion.li
             className="border-b  my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
+            whileHover={{ scale: 1.1 }}
           >
             <a href="/about">About</a>
-          </li>
-          <li className="my-4 uppercase mx-6">
+          </motion.li>
+          <motion.li
+            className="my-4 uppercase mx-6"
+            whileHover={{ scale: 1.1 }}
+          >
             <a href="/projects">
               <span
                 className="border-b py-1 leading-8 md:leading-none"
@@ -174,9 +191,11 @@ export default function Menu({ home }) {
                 Ongoing Projects
               </span>
             </a>
-          </li>
-          <li
+          </motion.li>
+          <motion.li
             className="my-4  uppercase  mx-6"
+            whileHover={{ scale: 1.1 }}
+
             // style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/completed">
@@ -187,31 +206,35 @@ export default function Menu({ home }) {
                 Completed Projects
               </span>
             </a>
-          </li>
-          <li
+          </motion.li>
+          <motion.li
             className="border-b my-4 uppercase"
+            whileHover={{ scale: 1.1 }}
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/joint-venture">Joint Venture</a>
-          </li>
-          <li
+          </motion.li>
+          <motion.li
             className="border-b my-4 uppercase"
+            whileHover={{ scale: 1.1 }}
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/sectors">Other Sector</a>
-          </li>
-          <li
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
             className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/clients">Testimonials</a>
-          </li>
-          <li
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
             className="border-b my-4 uppercase"
             style={{ borderBottomColor: "#dbc07c" }}
           >
             <a href="/contact">Contact</a>
-          </li>
+          </motion.li>
         </ul>
       </div>
     </>
