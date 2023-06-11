@@ -1,9 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Card({ image, title, des, link }) {
   return (
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <motion.div
+      class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 1.05 }}
+    >
       <a href={link}>
         <Image
           class="rounded-t-lg"
@@ -43,6 +48,6 @@ export default function Card({ image, title, des, link }) {
           </svg>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -11,7 +11,7 @@ export default function Menu({ home }) {
   return (
     <>
       <div
-        className="absolute HAMBURGER-ICON space-y-2 left-4 p-4 top-3.5 rounded-sm z-20 cursor-pointer"
+        className="absolute HAMBURGER-ICON space-y-2 left-4 p-4 top-3.5 rounded-sm z-20 cursor-pointer hover:animate-spin"
         onClick={() => setIsNavOpen((prev) => !prev)}
         style={{
           display: isNavOpen ? "none" : "block",
@@ -128,7 +128,7 @@ export default function Menu({ home }) {
             <motion.a
               href={"/about"}
               className="font-sm pt-12 text-xs md:text-sm font-heading"
-              whileHover={{ textDecoration:"underline" }}
+              whileHover={{ textDecoration: "underline" }}
               style={{
                 // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",
@@ -142,7 +142,7 @@ export default function Menu({ home }) {
       </div>
       <div
         className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
-        style={{ transition: "2.5s" }}
+        style={{ transition: "2.5s ease-out" }}
       >
         <div
           className="absolute top-4 left-0 pl-4 flex flex-row "
