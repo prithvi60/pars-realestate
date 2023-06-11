@@ -14,9 +14,9 @@ export default function contact() {
   return (
     <div className="relative">
       <div
-        className="py-3 bg-gray-700"
+        className="py-3"
 
-        // style={{ background: "#908f8f" }}
+        style={{ background: "#908f8f" }}
       >
         <Header />
       </div>
