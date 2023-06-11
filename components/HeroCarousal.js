@@ -1,7 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
 import Image from "next/image";
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from "react-responsive-carousel";
 import Slider from "react-slick";
 export const HeroCarousal = ({ images }) => {
   const settings = {

@@ -11,14 +11,14 @@ const plan = [Plan1, Plan2];
 export default function two() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch("/Pars.pdf").then((response) => {
+    fetch("/Brochurew413.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "demoPDF.pdf";
+        alink.download = "W-413_Brochure.pdf";
         alink.click();
       });
     });

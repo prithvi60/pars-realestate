@@ -30,7 +30,7 @@ export default function jointventure() {
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3font-normal text-black px-8">
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-1 font-normal text-black px-8">
             We welcome all landowners looking for a fair and profitable Joint
             Venture. We would love to work with you! Our aim is to provide
             property owners a strong foundation on which to build and achieve
@@ -38,16 +38,7 @@ export default function jointventure() {
             and completely transparent experience. We can’t wait to hear from
             you!
           </div>
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-2/12 md:px-1 lg:px-3 px-8">
-            {/* <h2
-                class="mb-6 text-3xl font-bold font-heading"
-                style={{
-                  textDecoration: "underline",
-                  textDecorationColor: "#dbc07c",
-                }}
-              >
-                Contact us
-              </h2> */}
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-2/12 md:px-1 lg:px-1 px-8 text-sm">
             <p class="mb-6 text-black dark:text-neutral-300">Reach out to Us</p>
             <p class="mb-2 text-black dark:text-neutral-300">
               No.13, Opal Apartments, North Mada Street, Srinagar Colony,
@@ -58,7 +49,7 @@ export default function jointventure() {
               sales@intermontlife.com
             </p>
           </div>
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-3 px-8">
+          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-2 px-8">
             <form method="POST" action="https://herotofu.com/start">
               <label class="block mb-6">
                 <span class="text-gray-700">Your name</span>

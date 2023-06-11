@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import Image from "next/image";
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from "react-responsive-carousel";
 import Slider from "react-slick";
 import C1 from "../public/images/clients/dummy.jpg";
 
@@ -86,11 +84,11 @@ export const TestimonialCarousal = () => {
                   objectFit: "cover",
                 }}
               />
-              <p className=" text-black text-xs md:text-sm mt-4 mx-2 text-center">
+              <p className=" text-black text-xs md:text-sm mt-4 mx-2 text-justify">
                 INTERMONT is one of the most trusted and distinguished developer
                 in the city of Chennai for over three decades. The other
                 important characteristics of Intermont are excellence in quality
-                of workmanship and commitment to time in delivery.”
+                of workmanship and commitment to time in delivery.
               </p>
             </div>
           </div>

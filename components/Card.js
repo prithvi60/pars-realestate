@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-export default function Card({ image, title, des,link }) {
+export default function Card({ image, title, des, link }) {
   return (
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a href={link}>
         <Image
           class="rounded-t-lg"
           src={image}
@@ -20,7 +20,9 @@ export default function Card({ image, title, des,link }) {
             {title}
           </h5>
         </a>
-        <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">{des}</p>
+        <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">
+          {des}
+        </p>
         <a
           href={link}
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"

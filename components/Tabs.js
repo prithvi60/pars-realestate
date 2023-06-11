@@ -1,10 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Hero1 from "../public/images/hero/1.jpg";
-import Hero2 from "../public/images/hero/hero2.jpg";
-import Hero3 from "../public/images/hero/3.jpg";
-import Hero4 from "../public/images/hero/4.jpg";
-import Plan from "../public/images/projects/floorplan.png";
-
 import Image from "next/image";
 import { Carousal } from "./Carousal";
 export default function TabsComponent({
@@ -62,7 +56,7 @@ export default function TabsComponent({
                 Location
               </div>
             </li>
-            {type === "completed" && (
+            {type === "completed" && flat !== "imperial" && (
               <li>
                 <div
                   onClick={() => setOpenTab(4)}

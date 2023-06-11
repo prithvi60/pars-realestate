@@ -5,17 +5,17 @@ import { NextSeo } from "next-seo";
 
 export default function Contact() {
   return (
-    <div className="text-black bg-black">
+    <div className="text-black bg-white">
       <NextSeo
-        title="404: nine4"
+        title="404: Intermont"
         description="404 page for all our missing pages"
-        canonical="https://nine4-3.vercel.app/404"
+        canonical="https://localhost:3000/404"
         openGraph={{
-          url: "https://nine4-3.vercel.app/404",
+          url: "https://localhost:3000/404",
         }}
       />
       <Head>
-        <title>nine4</title>
+        <title>Intermont</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
