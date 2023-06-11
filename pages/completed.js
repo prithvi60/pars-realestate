@@ -46,7 +46,7 @@ export default function completedprojects() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading md:flex w-screen justify-center"
+          className="font-bold text-black text-2xl md:text-3xl pt-20 pb-8 font-heading flex w-full justify-center text-center"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",

@@ -63,7 +63,7 @@ export const Carousal = ({ images }) => {
               placeholder="blur"
               style={{
                 height: width > 600 ? "450px" : "400px",
-                width: width > 600 ? "800px" : "500px",
+                width: width > 600 ? "800px" : "450px",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 objectFit: "cover",

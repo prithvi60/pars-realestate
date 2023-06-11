@@ -76,7 +76,7 @@ export default function three() {
             </div>
             <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-4">
               <h2
-                class="mb-6 text-3xl font-bold font-heading"
+                class="mb-6 text-3xl font-bold font-heading text-center"
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "#dbc07c",

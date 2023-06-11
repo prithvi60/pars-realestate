@@ -41,7 +41,7 @@ export default function TabsComponent({
                   } inline-block  px-2 md:px-4 py-2 rounded shadow cursor-pointer`}
                   style={{ background: openTab === 2 ? "#dbc07c" : "white" }}
                 >
-                  Floor Plan
+                 {type === "completed" ?"Plan":"Floor Plan"}
                 </div>
               </li>
             )}
@@ -81,7 +81,7 @@ export default function TabsComponent({
                 placeholder="blur"
                 style={{
                   height: width > 600 ? "450px" : "400px",
-                  width: width > 600 ? "800px" : "500px",
+                  width: width > 600 ? "800px" : "100%",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -108,7 +108,7 @@ export default function TabsComponent({
                 className={openTab === 2 ? "block" : "hidden"}
                 style={{
                   height: width > 600 ? "450px" : "400px",
-                  width: width > 600 ? "800px" : "500px",
+                  width: width > 600 ? "700px" : "450px",
                 }}
               >
                 <Carousal images={plan} />
@@ -119,7 +119,7 @@ export default function TabsComponent({
                 src={location}
                 // width={width > 600 ? "500" : "300"}
                 height={width > 600 ? "450px" : "400px"}
-                width={width > 600 ? "800px" : "500px"}
+                width={width > 600 ? "700px" : "100%"}
                 style={{ border: "0" }}
                 allowfullscreen=""
                 loading="lazy"
@@ -130,7 +130,7 @@ export default function TabsComponent({
                 className={openTab === 4 ? "block" : "hidden"}
                 style={{
                   height: width > 600 ? "450px" : "400px",
-                  width: width > 600 ? "800px" : "500px",
+                  width: width > 600 ? "800px" : "450px",
                 }}
               >
                 <Carousal images={gallery} />
