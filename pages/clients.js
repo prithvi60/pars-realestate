@@ -8,7 +8,7 @@ export default function clients() {
   return (
     <>
     <div className="relative">
-      <div className="py-3" style={{ background: "#838383e2" }}>
+      <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
       <section
@@ -26,7 +26,7 @@ export default function clients() {
             textDecorationColor: "#dbc07c",
           }}
         >
-          Our Clients Say
+          OUR CLIENTS SAY
         </div>
         <div className="w-full mr-2" style={{ height: "400px" }}>
           <TestimonialCarousal />

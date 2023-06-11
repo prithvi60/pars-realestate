@@ -8,7 +8,7 @@ import FloatingButton from "../components/FloatingButton";
 export default function jointventure() {
   return (
     <div>
-      <div className="py-3" style={{ background: "#838383e2" }}>
+      <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
       <section
@@ -20,17 +20,23 @@ export default function jointventure() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading px-8"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading px-8
+          text-center shrink-0 grow-0 basis-auto  md:w-7/12 
+          
+          "
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
           }}
         >
-          Joint Venture
+          JOINT VENTURE
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
-        <div class="flex flex-wrap">
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-1 font-normal text-black px-8">
+        <div class="flex flex-wrap font-body">
+          <div
+            class="mb-3 pt-4 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-4 font-normal text-black px-8 text-left text-sm"
+            style={{ background: "#dbc07c" }}
+          >
             We welcome all landowners looking for a fair and profitable Joint
             Venture. We would love to work with you! Our aim is to provide
             property owners a strong foundation on which to build and achieve
@@ -38,20 +44,24 @@ export default function jointventure() {
             and completely transparent experience. We can’t wait to hear from
             you!
           </div>
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-2/12 md:px-1 lg:px-1 px-8 text-sm">
-            <p class="mb-6 text-black dark:text-neutral-300">Reach out to Us</p>
-            <p class="mb-2 text-black dark:text-neutral-300">
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-2/12 md:px-4 lg:px-4 px-8 text-sm">
+            <p class="mb-2 py-4 text-gray-700 dark:text-neutral-300 border-b">
+              Reach out to Us
+            </p>
+            <p class="mb-2 text-gray-700 dark:text-neutral-300">
               No.13, Opal Apartments, North Mada Street, Srinagar Colony,
               Saidapet, Intermontlife.com Chennai-600015
             </p>
-            <p class="mb-2 text-black dark:text-neutral-300">+91-9788058526</p>
-            <p class="mb-2 text-black dark:text-neutral-300">
+            <p class="mb-2 text-gray-700 dark:text-neutral-300">
+              +91-9788058526
+            </p>
+            <p class="mb-2 text-gray-700 dark:text-neutral-300">
               sales@intermontlife.com
             </p>
           </div>
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-2 px-8">
+          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-4 lg:px-4 px-8 py-4">
             <form method="POST" action="https://herotofu.com/start">
-              <label class="block mb-6">
+              <label class="block mb-2">
                 <span class="text-gray-700">Your name</span>
                 <input
                   type="text"
@@ -59,7 +69,6 @@ export default function jointventure() {
                   class="
             block
             w-full
-            mt-1
             border-gray-300
             rounded-md
             shadow-sm
@@ -71,7 +80,7 @@ export default function jointventure() {
                   placeholder="Joe Bloggs"
                 />
               </label>
-              <label class="block mb-6">
+              <label class="block mb-2">
                 <span class="text-gray-700">Email address</span>
                 <input
                   name="email"
@@ -79,7 +88,6 @@ export default function jointventure() {
                   class="
             block
             w-full
-            mt-1
             border-gray-300
             rounded-md
             shadow-sm
@@ -92,14 +100,13 @@ export default function jointventure() {
                   required
                 />
               </label>
-              <label class="block mb-6">
+              <label class="block mb-2">
                 <span class="text-gray-700">Message</span>
                 <textarea
                   name="message"
-                  class="
+                  className="input
             block
             w-full
-            mt-1
             border-gray-300
             rounded-md
             shadow-sm
@@ -112,22 +119,12 @@ export default function jointventure() {
                   placeholder="Tell us what you're thinking about..."
                 ></textarea>
               </label>
-              <div class="mb-6">
+              <div class="mb-6 ">
                 <button
                   type="submit"
-                  class="
-            h-10
-            px-5
-            text-indigo-100
-            bg-indigo-700
-            rounded-lg
-            transition-colors
-            duration-150
-            focus:shadow-outline
-            hover:bg-indigo-800
-          "
+                  class="inline-flex items-center  px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                 >
-                  Contact Us
+                  CONTACT US
                 </button>
               </div>
               <div>

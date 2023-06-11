@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 
@@ -34,6 +34,11 @@ function SamplePrevArrow(props) {
   );
 }
 export const Carousal = ({ images }) => {
+  const [width, setWidth] = useState(null);
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -57,8 +62,8 @@ export const Carousal = ({ images }) => {
               alt="Picture of the artist"
               placeholder="blur"
               style={{
-                height: "400px",
-                width: "500px",
+                height: width > 600 ? "450px" : "400px",
+                width: width > 600 ? "800px" : "500px",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 objectFit: "cover",

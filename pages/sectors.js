@@ -8,7 +8,7 @@ import FloatingButton from "../components/FloatingButton";
 export default function sectors() {
   return (
     <div>
-      <div className="py-3" style={{ background: "#838383e2" }}>
+      <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
       <section
@@ -20,13 +20,13 @@ export default function sectors() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading text-center"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
           }}
         >
-          Other Sectors
+          OTHER SECTORS
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
         <div class="flex flex-wrap justify-center mb-8">
@@ -45,9 +45,9 @@ export default function sectors() {
                   // background: "#ffffff",
                 }}
               ></img>
-              <span className="font-bold">PARS Engineering Pvt Ltd</span>
+              <span className="font-bold font-heading">PARS Engineering Pvt Ltd</span>
             </p>
-            <p class="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm">
+            <p class="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm font-body">
               PARS Engineering India Pvt Ltd was incorporated in the year 2013,
               head quartered at Salem, Tamilnadu and having its corporate office
               at Chennai, Tamilnadu. The company holds the primary goal of
@@ -74,9 +74,9 @@ export default function sectors() {
                   // background: "#ffffff",
                 }}
               ></img>
-              <span className="font-bold">Kanchi Mining Projects</span>
+              <span className="font-bold font-heading">Kanchi Mining Projects</span>
             </p>
-            <p class="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm">
+            <p class="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm font-body">
               Kanchi Mining Projects Private Limited was incorporated in the
               year 2018 with its mining and processing facility located at
               Uthiramerur Taluk of Kanchipuram District. Currently, Kanchi

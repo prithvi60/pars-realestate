@@ -13,7 +13,11 @@ export default function contact() {
   }, []);
   return (
     <div className="relative">
-      <div className="py-3" style={{ background: "#838383e2" }}>
+      <div
+        className="py-3 bg-gray-700"
+
+        // style={{ background: "#908f8f" }}
+      >
         <Header />
       </div>
       <div
@@ -25,34 +29,60 @@ export default function contact() {
         }}
       >
         <section class="md:h-screen font-body relative">
+          <div
+            className="font-bold text-black text-3xl pt-20 font-heading px-8
+          text-center shrink-0 grow-0 basis-auto  md:w-7/12 
+          
+          "
+            style={{
+              textDecoration: "underline",
+              textDecorationColor: "#dbc07c",
+            }}
+          >
+            CONTACT US
+          </div>
           <div class="flex flex-wrap">
-            <div class="mt-16 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
-              <h2
-                class="mb-6 text-3xl font-bold font-heading"
+            <div class="mt-8 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
+              {/* <h2
+                class="mb-6 text-3xl font-bold font-heading
+                text-center
+                "
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "#dbc07c",
                 }}
               >
-                Contact us
-              </h2>
-              <p class="mb-6 text-black dark:text-neutral-300">
+                CONTACT US
+              </h2> */}
+              <p
+                class="mb-4
+               text-black dark:text-neutral-300 font-heading"
+              >
                 FOR BOOKING DETAILS CONTACT
               </p>
-              <p class="mb-2 text-black dark:text-neutral-300">
+              <p
+                class="mb-2 text-black dark:text-neutral-300"
+                style={{ background: "#dbc07c" }}
+              >
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
                 Saidapet, Intermontlife.com Chennai-600015
               </p>
-              <p class="mb-2 text-black dark:text-neutral-300">
+              <p class="mb-2 text-black dark:text-neutral-300 bg-gray-200">
                 +91-9788058526
               </p>
-              <p class="mb-2 text-black dark:text-neutral-300">
+              <p
+                class="mb-2 text-black dark:text-neutral-300 "
+                style={{ background: "#dbc07c" }}
+              >
                 sales@intermontlife.com
               </p>
             </div>
-            <div class="mt-16 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
+            <div class="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
               <form method="POST" action="https://herotofu.com/start">
-                <label class="block mb-6">
+                <label
+                  class="block mb-2
+                "
+                >
                   <span class="text-gray-700">Your name</span>
                   <input
                     type="text"
@@ -60,19 +90,18 @@ export default function contact() {
                     class="
             block
             w-full
-            mt-1
-            border-gray-300
+         
             rounded-md
             shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
+           
           "
                     placeholder="Joe Bloggs"
                   />
                 </label>
-                <label class="block mb-6">
+                <label
+                  class="block mb-2
+                "
+                >
                   <span class="text-gray-700">Email address</span>
                   <input
                     name="email"
@@ -80,55 +109,37 @@ export default function contact() {
                     class="
             block
             w-full
-            mt-1
-            border-gray-300
+         
             rounded-md
             shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
+          
           "
                     placeholder="joe.bloggs@example.com"
                     required
                   />
                 </label>
-                <label class="block mb-6">
-                  <span class="text-gray-700">Message</span>
+                <label class="block mb-2">
+                  <span className="text-gray-700">Message</span>
                   <textarea
                     name="message"
-                    class="
+                    className="
+                    input
             block
             w-full
-            mt-1
-            border-gray-300
+         
             rounded-md
             shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
           "
                     rows="3"
                     placeholder="Tell us what you're thinking about..."
                   ></textarea>
                 </label>
-                <div class="mb-6">
+                <div class="mb-6 mt-4">
                   <button
                     type="submit"
-                    class="
-            h-10
-            px-5
-            text-indigo-100
-            bg-indigo-700
-            rounded-lg
-            transition-colors
-            duration-150
-            focus:shadow-outline
-            hover:bg-indigo-800
-          "
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
-                    Contact Us
+                    CONTACT US
                   </button>
                 </div>
                 <div>

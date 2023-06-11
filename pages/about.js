@@ -8,7 +8,7 @@ import FloatingButton from "../components/FloatingButton";
 export default function about() {
   return (
     <div>
-      <div className="py-3" style={{ background: "#838383e2" }}>
+      <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
       <section
@@ -20,13 +20,15 @@ export default function about() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading mx-8"
+          className="font-bold text-black text-3xl pt-20 pb-8 font-heading mx-8 
+          text-center shrink-0 grow-0 basis-auto  md:w-7/12 
+          "
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
           }}
         >
-          About INTERMONT LIVING
+          ABOUT INTERMONT LIVING
         </div>
         <div class="flex flex-wrap">
           <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">

@@ -72,7 +72,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT <span style={{ color: "#dbc07c" }}>LIFE</span>
+                INTERMONT <span style={{ color: "#dbc07c"}}>LIFE</span>
               </a>
             </div>
           ) : (
@@ -108,7 +108,7 @@ export default function Menu({ home }) {
           ) : null}
           {home ? (
             <div
-              className="font-semibold  text-lg md:text-2xl font-heading mt-4"
+              className="font-light  text-lg md:text-2xl font-heading2 mt-4"
               // style={{ textShadow: "3px 3px #000000" }}
             >
               Your home defines you

@@ -84,7 +84,7 @@ export const TestimonialCarousal = () => {
                   objectFit: "cover",
                 }}
               />
-              <p className=" text-black text-xs md:text-sm mt-4 mx-2 text-justify">
+              <p className=" text-black text-xs md:text-sm mt-4 mx-2 text-justify font-body">
                 INTERMONT is one of the most trusted and distinguished developer
                 in the city of Chennai for over three decades. The other
                 important characteristics of Intermont are excellence in quality

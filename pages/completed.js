@@ -34,7 +34,7 @@ export default function completedprojects() {
 
   return (
     <div>
-      <div className="py-3" style={{ background: "#838383e2" }}>
+      <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
       <section
@@ -52,7 +52,7 @@ export default function completedprojects() {
             textDecorationColor: "#dbc07c",
           }}
         >
-          Completed Projects
+          COMPLETED PROJECTS
         </div>
         {/* <h3
           className=" font-heading font-bold py-2 md:flex w-screen justify-center"

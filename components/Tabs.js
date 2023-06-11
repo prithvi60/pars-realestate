@@ -25,9 +25,9 @@ export default function TabsComponent({
               <div
                 onClick={() => setOpenTab(1)}
                 className={` ${
-                  openTab === 1 ? " text-white-100" : "text-gray-600 "
+                  openTab === 1 ? " text-gray-800" : "text-gray-600 "
                 } inline-block  px-2 md:px-4 py-2  rounded shadow cursor-pointer ml-2`}
-                style={{ background: openTab === 1 ? "#e7a646" : "white" }}
+                style={{ background: openTab === 1 ? "#dbc07c" : "white" }}
               >
                 Model
               </div>
@@ -37,9 +37,9 @@ export default function TabsComponent({
                 <div
                   onClick={() => setOpenTab(2)}
                   className={` ${
-                    openTab === 2 ? " text-white-100" : "text-gray-600 "
+                    openTab === 2 ? " text-white-800" : "text-gray-600 "
                   } inline-block  px-2 md:px-4 py-2 rounded shadow cursor-pointer`}
-                  style={{ background: openTab === 2 ? "#e7a646" : "white" }}
+                  style={{ background: openTab === 2 ? "#dbc07c" : "white" }}
                 >
                   Floor Plan
                 </div>
@@ -49,9 +49,9 @@ export default function TabsComponent({
               <div
                 onClick={() => setOpenTab(3)}
                 className={` ${
-                  openTab === 3 ? " text-white-100" : "text-gray-600 "
+                  openTab === 3 ? " text-white-800" : "text-gray-600 "
                 } inline-block  px-2 md:px-4 py-2 rounded shadow cursor-pointer`}
-                style={{ background: openTab === 3 ? "#e7a646" : "white" }}
+                style={{ background: openTab === 3 ? "#dbc07c" : "white" }}
               >
                 Location
               </div>
@@ -61,9 +61,9 @@ export default function TabsComponent({
                 <div
                   onClick={() => setOpenTab(4)}
                   className={` ${
-                    openTab === 4 ? " text-white-100" : "text-gray-600 "
+                    openTab === 4 ? " text-white-800" : "text-gray-600 "
                   } inline-block  px-2  md:px-4 py-2 rounded shadow cursor-pointer mr-2`}
-                  style={{ background: openTab === 4 ? "#e7a646" : "white" }}
+                  style={{ background: openTab === 4 ? "#dbc07c" : "white" }}
                 >
                   Gallery
                 </div>
@@ -73,15 +73,15 @@ export default function TabsComponent({
           <div className="p-3 mt-6 bg-white border">
             <div
               className={openTab === 1 ? "block gallery" : "hidden"}
-              style={{ width: "500px", height: "400px" }}
+              // style={{ width: "500px", height: "400px" }}
             >
               <Image
                 src={model}
                 alt="Picture of the artist"
                 placeholder="blur"
                 style={{
-                  height: "400px",
-                  width: "500px",
+                  height: width > 600 ? "450px" : "400px",
+                  width: width > 600 ? "800px" : "500px",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -106,7 +106,10 @@ export default function TabsComponent({
             {flat !== "imperial" && (
               <div
                 className={openTab === 2 ? "block" : "hidden"}
-                style={{ width: "500px", height: "400px" }}
+                style={{
+                  height: width > 600 ? "450px" : "400px",
+                  width: width > 600 ? "800px" : "500px",
+                }}
               >
                 <Carousal images={plan} />
               </div>
@@ -114,8 +117,9 @@ export default function TabsComponent({
             <div className={openTab === 3 ? "block" : "hidden"}>
               <iframe
                 src={location}
-                width={width > 600 ? "500" : "300"}
-                height="400"
+                // width={width > 600 ? "500" : "300"}
+                height={width > 600 ? "450px" : "400px"}
+                width={width > 600 ? "800px" : "500px"}
                 style={{ border: "0" }}
                 allowfullscreen=""
                 loading="lazy"
@@ -124,7 +128,10 @@ export default function TabsComponent({
             {type === "completed" && (
               <div
                 className={openTab === 4 ? "block" : "hidden"}
-                style={{ width: "500px", height: "400px" }}
+                style={{
+                  height: width > 600 ? "450px" : "400px",
+                  width: width > 600 ? "800px" : "500px",
+                }}
               >
                 <Carousal images={gallery} />
               </div>

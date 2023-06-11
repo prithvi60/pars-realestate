@@ -3,21 +3,20 @@
 @tailwind utilities;
 @font-face {
   font-family: "Hero";
-  src: url("/fonts/PlayfairDisplay-Bold.ttf");
+  src: url("/fonts/CormorantGaramond-SemiBold.ttf");
 }
 @font-face {
   font-family: "Headings";
-  src: url("/fonts/Raleway-Bold.ttf");
+  src: url("/fonts/PlayfairDisplay-Bold.ttf");
 }
 @font-face {
   font-family: "Headings2";
-  src: url("/fonts/ARIALBD.ttf");
+  src: url("/fonts/Lora-MediumItalic.ttf");
 }
 @font-face {
   font-family: "Bodys";
-  src: url("/fonts/Lora-MediumItalic.ttf");
+  src: url("/fonts/Acumin-RPro.otf");
 }
-
 
 html,
 body {
@@ -28,6 +27,9 @@ body {
   background-color: #f2f1ef;
   overflow-x: hidden;
   color: #ffffff;
+}
+body::selection {
+  background: #dbc07c;
 }
 body::-webkit-scrollbar {
   width: 0.1em;
@@ -70,11 +72,6 @@ a {
       format("svg");
 }
 
-.Avenir {
-  font-family: AvenirNextW10-Bold;
-  font-display: swap;
-}
-
 .grr {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -101,6 +98,12 @@ a {
 
 .tr04 {
   transition: 0.4s;
+}
+input[type="text"],
+input[type="email"],
+.input {
+  border: 2px solid #dbc07c;
+  padding-left: 2%;
 }
 
 .clearNav {
