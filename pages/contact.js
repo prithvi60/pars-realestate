@@ -11,13 +11,23 @@ export default function contact() {
     // window is accessible here.
     setWidth(window.innerWidth);
   }, []);
+  const [message, setMessage] = useState("");
+  const sendMail = async () => {
+    try {
+      setMessage("Sending test mail");
+      const response = await fetch("http://localhost:3000/api/mail");
+      const body = await response.json();
+      if (body.ok) {
+        setMessage("Successfully send test mail");
+      }
+    } catch (error) {
+      console.log(error);
+      // handle the error
+    }
+  };
   return (
     <div className="relative">
-      <div
-        className="py-3"
-
-        style={{ background: "#908f8f" }}
-      >
+      <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
       <div
@@ -137,6 +147,7 @@ export default function contact() {
                 <div class="mb-6 mt-6">
                   <button
                     type="submit"
+                    onClick={sendMail}
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
                     CONTACT US

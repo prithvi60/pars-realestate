@@ -28,7 +28,7 @@ export default function clients() {
         >
           OUR CLIENTS SAY
         </div>
-        <div className="w-full mr-2" style={{ height: "400px" }}>
+        <div className="w-full mr-2 mb-2" style={{ height: "100%" }}>
           <TestimonialCarousal />
         </div>
       </section>

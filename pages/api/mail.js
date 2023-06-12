@@ -1,6 +1,6 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-export default (req, res) => {
-  res.statusCode = 200
-  res.json({ name: 'John Doe' })
+import { TestMail } from "../../service/aws-ses";
+export default async function checkUserAPI(request, response) {
+  // Receivers mail can be pars mail
+  const result = await TestMail("prithvin19@gmail.com");
+  response.json(result);
 }

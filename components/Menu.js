@@ -78,7 +78,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT <span style={{ color: "#dbc07c" }}>LIFE</span>
+                INTERMONT <span style={{ color: "#dbc07c" }} className="font-heading2">LIFE</span>
               </a>
             </motion.div>
           ) : (
@@ -100,7 +100,7 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT LIFE
+                INTERMONT <span style={{ color: "#dbc07c" }} className="font-heading2">LIFE</span>
               </a>
             </div>
           )}
@@ -162,7 +162,7 @@ export default function Menu({ home }) {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </div>
-        <ul className="flex flex-col mt-20 md:mt-0 h-screen md:h-auto  items-center justify-even text-center text-white-100 font-heading">
+        <ul className="flex flex-col mt-20 md:mt-0 h-screen md:h-auto  items-center justify-even text-center text-white-100 font-title">
           <motion.li
             className="border-b  my-4 uppercase"
             whileHover={{ scale: 1.1 }}

@@ -50,7 +50,7 @@ export default function Footer() {
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <a
               href="/"
-              className="text-sm  hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight font-heading"
+              className="text-sm  hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight font-body"
               style={{ color: "white" }}
             >
               Copyright © 2023 Intermont. All rights reserved

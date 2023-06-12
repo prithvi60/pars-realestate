@@ -3,19 +3,19 @@
 @tailwind utilities;
 @font-face {
   font-family: "Hero";
-  src: url("/fonts/CormorantGaramond-SemiBold.ttf");
+  src: url("/fonts/Raleway-Bold.ttf");
 }
 @font-face {
   font-family: "Headings";
-  src: url("/fonts/PlayfairDisplay-Bold.ttf");
+  src: url("/fonts/Raleway-Regular.ttf");
 }
 @font-face {
   font-family: "Headings2";
-  src: url("/fonts/Lora-MediumItalic.ttf");
+  src: url("/fonts/WorkSans-ExtraLight.ttf");
 }
 @font-face {
   font-family: "Bodys";
-  src: url("/fonts/Acumin-RPro.otf");
+  src: url("/fonts/Avenir LT 35 Light Regular.ttf");
 }
 
 html,

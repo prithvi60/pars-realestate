@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Slider from "react-slick";
-import C1 from "../public/images/clients/dummy.jpg";
+import C1 from "../public/images/clients/client1.jpg";
+import C2 from "../public/images/clients/client2.jpg";
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -35,15 +37,44 @@ function SamplePrevArrow(props) {
   );
 }
 export const TestimonialCarousal = () => {
-  const images = [C1, C1, C1, C1];
+  const reviews = [
+    {
+      image: C1,
+      name: "Harish",
+      review: ` I hope this note finds you in good health and high spirits. I am writing to express my sincere appreciation for the exceptional work done by you and your team on [intermont – Rank Imperial – Mandaveli]
+  Your commitment to delivering high-quality craftsmanship and attention to detail truly exceeded my expectations. From the initial planning stages to the final touches, every aspect of your work demonstrated a level of professionalism and expertise that is commendable. The dedication and passion you exhibited throughout the construction process were evident in the outcome. The project was completed within the promised timeline. Your team's strong work ethic and collaborative spirit were instrumental in creating a seamless workflow. I was particularly impressed by your ability to effectively communicate and coordinate with other contractors and suppliers involved in the project. It made the entire process run smoothly, resulting in a successful and well-executed construction endeavor.
+  
+  Moreover, your responsiveness and willingness to address any concerns or queries along the way were truly appreciated. Your prompt action in resolving any issues that arose ensured minimal disruption and ensured our satisfaction as clients.
+  
+  I want to express my gratitude for the extra mile you went to ensure the outcome was nothing short of remarkable. 
+  
+  Please convey my heartfelt appreciation to your entire team, as their collective contribution and unwavering dedication played a crucial role in the triumph of this undertaking. I wholeheartedly recommend Intermont Builder to anyone in search of extraordinary builders who consistently achieve exceptional results.
+  
+  Once again, thank you for your exceptional work. I look forward to the opportunity to work together on future projects.
+    
+  
+  Regards,
+  
+  Harish Balasubramanian 
+  intermont – Rank Imperial – Mandaveli`,
+    },
+    {
+      image: C2,
+      name: "Satish",
+      review: `Prior to choosing Intermont, we walked through numerous new construction homes. After seeing Intermont, it was clear that the quality and attention to detail was next level. It was great co-ordination with Mr.Lokesh throughout the construction process. They were easy to get in touch with and quick to respond to any questions that came up. They were on time, within the budget, and listened to our needs.
+      We would certainly recommend Intermont, and Thank you Mr.Lokesh for helping take our dream and make it a reality!!
+      Best Wishes,
+      M.Sathish`,
+    },
+  ];
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     nextArrow: <SampleNextArrow />,
@@ -68,12 +99,12 @@ export const TestimonialCarousal = () => {
   };
   return (
     <Slider {...settings}>
-      {images.map((image, idx) => {
+      {reviews.map((item, idx) => {
         return (
           <div key={idx}>
             <div className="flex flex-col items-center gap-2 ">
               <Image
-                src={image}
+                src={item.image}
                 alt="Picture of the artist"
                 placeholder="blur"
                 className="rounded-full border-2 "
@@ -84,11 +115,9 @@ export const TestimonialCarousal = () => {
                   objectFit: "cover",
                 }}
               />
+              <h2 className="text-black font-title font-bold uppercase">MR. {item.name}</h2>
               <p className=" text-black text-xs md:text-sm mt-4 mx-2 text-justify font-body">
-                INTERMONT is one of the most trusted and distinguished developer
-                in the city of Chennai for over three decades. The other
-                important characteristics of Intermont are excellence in quality
-                of workmanship and commitment to time in delivery.
+                {item.review}
               </p>
             </div>
           </div>
