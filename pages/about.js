@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState,useEffect} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero1 from "../public/images/projects/hero5.jpg";
@@ -6,6 +6,12 @@ import Image from "next/image";
 import FloatingButton from "../components/FloatingButton";
 
 export default function about() {
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
   return (
     <div>
       <div className="py-3" style={{ background: "#908f8f" }}>
@@ -56,11 +62,13 @@ export default function about() {
               placeholder="blur"
               className="mb-8 md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
-                height: "100%",
-                // width: "100%",
+                height: width > 600 ? "100%" : "400px",
+                width: width > 600 ? "unset" : "100%",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 objectFit: "cover",
+                overflow: "hidden",
+                objectPosition: "center center",
               }}
             />
           </div>

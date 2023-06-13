@@ -72,7 +72,10 @@ export default function TabsComponent({
           <div className="p-3 mt-6 bg-white border">
             <div
               className={openTab === 1 ? "block gallery relative" : "hidden"}
-              // style={{ width: "500px", height: "400px" }}
+              style={{
+                height: width > 600 ? "450px" : "400px",
+                width: width > 600 ? "700px" : "450px",
+              }}
             >
               <ImageGallery
                 items={[{ original: model.src }]}
@@ -84,15 +87,13 @@ export default function TabsComponent({
               <div
                 className={openTab === 2 ? "block relative" : "hidden"}
                 style={{
-                  height: width > 600 ? "650px" : "400px",
+                  height: width > 600 ? "450px" : "400px",
                   width: width > 600 ? "700px" : "450px",
                 }}
               >
                 <ImageGallery
                   items={plan}
                   showThumbnails={false}
-                  originalHeight={width > 600 ? "350px" : "400px"}
-                  originalWidth={width > 600 ? "700px" : "450px"}
                   showPlayButton={false}
                   autoPlay={true}
                 />
@@ -101,7 +102,6 @@ export default function TabsComponent({
             <div className={openTab === 3 ? "block relative" : "hidden"}>
               <iframe
                 src={location}
-                // width={width > 600 ? "500" : "300"}
                 height={width > 600 ? "450px" : "400px"}
                 width={width > 600 ? "700px" : "100%"}
                 style={{ border: "0" }}
@@ -114,7 +114,7 @@ export default function TabsComponent({
                 className={openTab === 4 ? "block relative" : "hidden"}
                 style={{
                   height: width > 600 ? "450px" : "400px",
-                  width: width > 600 ? "800px" : "450px",
+                  width: width > 600 ? "700px" : "450px",
                 }}
               >
                 {/* <Carousal images={gallery} /> */}
