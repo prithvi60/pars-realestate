@@ -12,8 +12,8 @@ import G2 from "../../public/images/projects/opal/gallery2.jpg";
 import G3 from "../../public/images/projects/opal/gallery3.jpg";
 import G4 from "../../public/images/projects/opal/gallery4.jpg";
 
-const plan = [Plan1, Plan2, Plan3];
-const gallery = [G1, G2, G3, G4];
+const plan = [{original:Plan1.src}, {original:Plan2.src}, {original:Plan3.src}];
+const gallery = [{original:G1.src}, {original:G2.src}, {original:G3.src}, {original:G4.src}];
 
 export default function three() {
   // const onButtonClick = () => {

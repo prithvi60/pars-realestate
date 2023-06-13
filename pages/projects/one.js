@@ -8,7 +8,7 @@ import Plan1 from "../../public/images/projects/one/plan1.jpg";
 import Plan2 from "../../public/images/projects/one/plan2.jpg";
 import Plan3 from "../../public/images/projects/one/plan3.jpg";
 
-const plan = [Plan1, Plan2, Plan3];
+const plan = [{ original: Plan1.src, thumbnail: Plan1.src }, { original: Plan2.src, thumbnail: Plan2.src }, { original: Plan3.src, thumbnail: Plan3.src }];
 export default function one() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -49,7 +49,6 @@ export default function one() {
                 <button
                   onClick={onButtonClick}
                   class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
-
                 >
                   DOWNLOAD BROCHURE
                 </button>

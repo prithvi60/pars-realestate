@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Carousal } from "./Carousal";
+import ImageGallery from "react-image-gallery";
 export default function TabsComponent({
   type,
   model,
@@ -41,7 +42,7 @@ export default function TabsComponent({
                   } inline-block  px-2 md:px-4 py-2 rounded shadow cursor-pointer`}
                   style={{ background: openTab === 2 ? "#dbc07c" : "white" }}
                 >
-                 {type === "completed" ?"Plan":"Floor Plan"}
+                  {type === "completed" ? "Plan" : "Floor Plan"}
                 </div>
               </li>
             )}
@@ -72,10 +73,17 @@ export default function TabsComponent({
           </ul>
           <div className="p-3 mt-6 bg-white border">
             <div
-              className={openTab === 1 ? "block gallery" : "hidden"}
+              className={openTab === 1 ? "block gallery relative" : "hidden"}
               // style={{ width: "500px", height: "400px" }}
             >
-              <Image
+              <ImageGallery
+                items={[{ original: model.src }]}
+                showThumbnails={false}
+                showPlayButton={false}
+                // useBrowserFullscreen={false}clear
+              />
+
+              {/* <Image
                 src={model}
                 alt="Picture of the artist"
                 placeholder="blur"
@@ -87,7 +95,7 @@ export default function TabsComponent({
                   backgroundSize: "cover",
                   objectFit: "cover",
                 }}
-              />
+              /> */}
 
               {/* <Image
                 src={Hero1}
@@ -105,16 +113,24 @@ export default function TabsComponent({
             </div>
             {flat !== "imperial" && (
               <div
-                className={openTab === 2 ? "block" : "hidden"}
+                className={openTab === 2 ? "block relative" : "hidden"}
                 style={{
-                  height: width > 600 ? "450px" : "400px",
+                  height: width > 600 ? "650px" : "400px",
                   width: width > 600 ? "700px" : "450px",
                 }}
               >
-                <Carousal images={plan} />
+                {/* <Carousal images={plan} /> */}
+                <ImageGallery
+                  items={plan}
+                  showThumbnails={false}
+                  originalHeight={width > 600 ? "350px" : "400px"}
+                  originalWidth={width > 600 ? "700px" : "450px"}
+                  showPlayButton={false}
+                  autoPlay={true}
+                />
               </div>
             )}
-            <div className={openTab === 3 ? "block" : "hidden"}>
+            <div className={openTab === 3 ? "block relative" : "hidden"}>
               <iframe
                 src={location}
                 // width={width > 600 ? "500" : "300"}
@@ -127,13 +143,20 @@ export default function TabsComponent({
             </div>
             {type === "completed" && (
               <div
-                className={openTab === 4 ? "block" : "hidden"}
+                className={openTab === 4 ? "block relative" : "hidden"}
                 style={{
                   height: width > 600 ? "450px" : "400px",
                   width: width > 600 ? "800px" : "450px",
                 }}
               >
-                <Carousal images={gallery} />
+                {/* <Carousal images={gallery} /> */}
+                <ImageGallery
+                  items={gallery}
+                  showThumbnails={false}
+                  showPlayButton={false}
+                  autoPlay={true}
+
+                />
               </div>
             )}
           </div>

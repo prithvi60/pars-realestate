@@ -7,7 +7,7 @@ import TabsComponent from "../../components/Tabs";
 import Plan1 from "../../public/images/projects/w-413/plan1.png";
 import Plan2 from "../../public/images/projects/w-413/plan2.png";
 
-const plan = [Plan1, Plan2];
+const plan = [{original:Plan1.src}, {original:Plan2.src}];
 export default function two() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file

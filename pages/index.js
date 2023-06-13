@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 import FloatingButton from "../components/FloatingButton";
 
+
 export default function Home() {
   return (
     <div className="text-black font-body">
