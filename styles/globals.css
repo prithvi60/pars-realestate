@@ -163,13 +163,13 @@ input[type="email"],
   align-items: center;
 }
 .hero .slick-prev {
-  z-index: 100;
+  z-index: 10;
   left: 48%;
   margin-left: auto;
   top: 80% !important;
 }
 .hero .slick-next {
-  z-index: 100;
+  z-index: 10;
   top: 80% !important;
   right: 48%;
 }

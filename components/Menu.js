@@ -27,7 +27,7 @@ export default function Menu({ home }) {
         <span className="block h-0.5 w-5 bg-white-200"></span>
       </div>
       <div
-        className="absolute flex flex-row  items-center justify-center w-screen text-center"
+        className="absolute flex flex-row  items-center justify-center w-screen text-center pointer-events-none"
         style={{
           alignItems: home ? "center" : "initial",
           background: home ? "transparent" : "transparent",
@@ -64,6 +64,9 @@ export default function Menu({ home }) {
                 className={
                   "font-title font-bold text-3xl md:text-6xl text-white-200 justify-center"
                 }
+                style={{
+                  pointerEvents: "all",
+                }}
               >
                 INTERMONT{" "}
                 <span style={{ color: "#dbc07c" }} className="font-heading2">
@@ -88,7 +91,9 @@ export default function Menu({ home }) {
                 className={
                   "font-title font-bold text-md md:text-2xl text-white-200 border-b"
                 }
-                // style={{ textShadow: "3px 3px #000000" }}
+                style={{
+                  pointerEvents: "all",
+                }}
               >
                 INTERMONT{" "}
                 <span style={{ color: "#dbc07c" }} className="font-heading2">
@@ -126,6 +131,7 @@ export default function Menu({ home }) {
                 // textShadow: "3px 3px #000000",
                 BorderColor: "#dbc07c",
                 color: "#dbc07c",
+                pointerEvents: "all",
               }}
             >
               Read More
