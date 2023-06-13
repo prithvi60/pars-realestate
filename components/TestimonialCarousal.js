@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import C1 from "../public/images/clients/client1.jpg";
 import C2 from "../public/images/clients/client2.jpg";
 
-
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -41,22 +40,20 @@ export const TestimonialCarousal = () => {
     {
       image: C1,
       name: "Harish",
-      review: ` I hope this note finds you in good health and high spirits. I am writing to express my sincere appreciation for the exceptional work done by you and your team on [intermont – Rank Imperial – Mandaveli]
-  Your commitment to delivering high-quality craftsmanship and attention to detail truly exceeded my expectations. From the initial planning stages to the final touches, every aspect of your work demonstrated a level of professionalism and expertise that is commendable. The dedication and passion you exhibited throughout the construction process were evident in the outcome. The project was completed within the promised timeline. Your team's strong work ethic and collaborative spirit were instrumental in creating a seamless workflow. I was particularly impressed by your ability to effectively communicate and coordinate with other contractors and suppliers involved in the project. It made the entire process run smoothly, resulting in a successful and well-executed construction endeavor.
-  
-  Moreover, your responsiveness and willingness to address any concerns or queries along the way were truly appreciated. Your prompt action in resolving any issues that arose ensured minimal disruption and ensured our satisfaction as clients.
-  
-  I want to express my gratitude for the extra mile you went to ensure the outcome was nothing short of remarkable. 
-  
-  Please convey my heartfelt appreciation to your entire team, as their collective contribution and unwavering dedication played a crucial role in the triumph of this undertaking. I wholeheartedly recommend Intermont Builder to anyone in search of extraordinary builders who consistently achieve exceptional results.
-  
-  Once again, thank you for your exceptional work. I look forward to the opportunity to work together on future projects.
-    
-  
-  Regards,
-  
-  Harish Balasubramanian 
-  intermont – Rank Imperial – Mandaveli`,
+      review: ` I hope this note finds you in good health and high spirits. I am writing to express my sincere appreciation for the exceptional work done by you and your team on [Imperial – Mandaveli] Your commitment to delivering high-quality craftsmanship and attention to detail truly exceeded my expectations. From the initial planning stages to the final touches, every aspect of your work demonstrated a level of professionalism and expertise that is commendable. The dedication and passion you exhibited throughout the construction process were evident in the outcome. The project was completed within the promised timeline. Your team's strong work ethic and collaborative spirit were instrumental in creating a seamless workflow. I was particularly impressed by your ability to effectively communicate and coordinate with other contractors and suppliers involved in the project. It made the entire process run smoothly, resulting in a successful and well-executed construction endeavor.
+
+      Moreover, your responsiveness and willingness to address any concerns or queries along the way were truly appreciated. Your prompt action in resolving any issues that arose ensured minimal disruption and ensured our satisfaction as clients.
+      
+      I want to express my gratitude for the extra mile you went to ensure the outcome was nothing short of remarkable. 
+      
+      Please convey my heartfelt appreciation to your entire team, as their collective contribution and unwavering dedication played a crucial role in the triumph of this undertaking. I wholeheartedly recommend Intermont Builder to anyone in search of extraordinary builders who consistently achieve exceptional results.
+      
+      Once again, thank you for your exceptional work. I look forward to the opportunity to work together on future projects.
+        
+      
+      Regards,
+      Harish Balasubramanian 
+      Imperial, Mandaveli`,
     },
     {
       image: C2,
@@ -115,7 +112,9 @@ export const TestimonialCarousal = () => {
                   objectFit: "cover",
                 }}
               />
-              <h2 className="text-black font-title font-bold uppercase">MR. {item.name}</h2>
+              <h2 className="text-black font-title font-bold uppercase">
+                MR. {item.name}
+              </h2>
               <p className=" text-black text-xs md:text-sm mt-4 mx-2 text-justify font-body">
                 {item.review}
               </p>

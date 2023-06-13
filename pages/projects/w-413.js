@@ -76,7 +76,7 @@ export default function two() {
                 CONTACT US
               </h2>
               <p class="mb-2 text-black dark:text-neutral-300 font-heading">
-                FOR BOOKING DETAILS CONTACT
+                REACH US AT
               </p>
               <p
                 class="mb-2 text-black dark:text-neutral-300"

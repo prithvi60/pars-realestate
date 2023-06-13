@@ -37,7 +37,7 @@ export default function Menu({ home }) {
       >
         <div className="flex flex-col">
           {home ? (
-            <div className="w-screen flex justify-center">
+            <div className=" flex justify-center items-center">
               <img
                 src={"/favicon.webp"}
                 alt="logo"
@@ -45,7 +45,6 @@ export default function Menu({ home }) {
                   objectFit: "cover",
                   height: "60px",
                   width: "60px",
-                  // background: "#ffffff",
                 }}
                 className="mb-4"
               ></img>
@@ -60,29 +59,20 @@ export default function Menu({ home }) {
               className="flex md:flex-row gap-4 items-center justify-center
               text-center"
             >
-              {/* <img
-                src={"/favicon.png"}
-                alt="logo"
-                style={{
-                  objectFit: "cover",
-                  height: "60px",
-                  width: "60px",
-                  background: "#ffffff",
-                }}
-                className="mt-4 rounded-full shadow-md"
-              ></img> */}
               <a
                 href="/"
                 className={
                   "font-title font-bold text-3xl md:text-6xl text-white-200 justify-center"
                 }
-                // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT <span style={{ color: "#dbc07c" }} className="font-heading2">LIFE</span>
+                INTERMONT{" "}
+                <span style={{ color: "#dbc07c" }} className="font-heading2">
+                  LIFE
+                </span>
               </a>
             </motion.div>
           ) : (
-            <div className="flex md:flex-row gap-4 items-center text-center  ml-6 md:ml-0 mt-5 md:mt-3.5">
+            <div className="flex md:flex-row gap-4 items-center text-center justify-center  md:ml-0 mt-6 md:mt-3.5">
               <img
                 src={"/favicon.webp"}
                 alt="logo"
@@ -100,13 +90,16 @@ export default function Menu({ home }) {
                 }
                 // style={{ textShadow: "3px 3px #000000" }}
               >
-                INTERMONT <span style={{ color: "#dbc07c" }} className="font-heading2">LIFE</span>
+                INTERMONT{" "}
+                <span style={{ color: "#dbc07c" }} className="font-heading2">
+                  LIFE
+                </span>
               </a>
             </div>
           )}
           {home ? (
             <div
-              className="border-b  mt-8 flex justify-center px-10 ml-36 mr-36 border-1"
+              className="border-b  mt-4 flex justify-center px-10 ml-36 mr-36 border-1"
               style={{ borderColor: "#dbc07c" }}
             >
               {" "}

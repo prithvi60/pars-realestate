@@ -104,6 +104,7 @@ input[type="email"],
 .input {
   border: 2px solid #dbc07c;
   padding-left: 2%;
+  background: #f2f1ef;
 }
 
 .clearNav {
@@ -162,13 +163,13 @@ input[type="email"],
   align-items: center;
 }
 .hero .slick-prev {
-  z-index: 1000;
+  z-index: 100;
   left: 48%;
   margin-left: auto;
   top: 80% !important;
 }
 .hero .slick-next {
-  z-index: 1000;
+  z-index: 100;
   top: 80% !important;
   right: 48%;
 }
