@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { Carousal } from "./Carousal";
 import ImageGallery from "react-image-gallery";
 export default function TabsComponent({
   type,
@@ -80,36 +78,7 @@ export default function TabsComponent({
                 items={[{ original: model.src }]}
                 showThumbnails={false}
                 showPlayButton={false}
-                // useBrowserFullscreen={false}clear
               />
-
-              {/* <Image
-                src={model}
-                alt="Picture of the artist"
-                placeholder="blur"
-                style={{
-                  height: width > 600 ? "450px" : "400px",
-                  width: width > 600 ? "800px" : "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  objectFit: "cover",
-                }}
-              /> */}
-
-              {/* <Image
-                src={Hero1}
-                alt="Picture of the artist"
-                placeholder="blur"
-                style={{
-                  // height: "100vh",
-                  // width:"100vw",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  objectFit: "cover",
-                }}
-              /> */}
             </div>
             {flat !== "imperial" && (
               <div
@@ -119,7 +88,6 @@ export default function TabsComponent({
                   width: width > 600 ? "700px" : "450px",
                 }}
               >
-                {/* <Carousal images={plan} /> */}
                 <ImageGallery
                   items={plan}
                   showThumbnails={false}
@@ -141,7 +109,7 @@ export default function TabsComponent({
                 loading="lazy"
               ></iframe>
             </div>
-            {type === "completed" && (
+            {type === "completed" && flat !== "imperial" && (
               <div
                 className={openTab === 4 ? "block relative" : "hidden"}
                 style={{
@@ -155,7 +123,6 @@ export default function TabsComponent({
                   showThumbnails={false}
                   showPlayButton={false}
                   autoPlay={true}
-
                 />
               </div>
             )}
