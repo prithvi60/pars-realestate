@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero1 from "../../public/images/projects/imperial.png";
@@ -7,19 +7,12 @@ import TabsComponent from "../../components/Tabs";
 
 export default function four() {
   // const onButtonClick = () => {
-  //   // using Java Script method to get PDF file
-  //   fetch("/Pars.pdf").then((response) => {
-  //     response.blob().then((blob) => {
-  //       // Creating new object of PDF file
-  //       const fileURL = window.URL.createObjectURL(blob);
-  //       // Setting various property values
-  //       let alink = document.createElement("a");
-  //       alink.href = fileURL;
-  //       alink.download = "demoPDF.pdf";
-  //       alink.click();
-  //     });
-  //   });
-  // };
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
   return (
     <div className="z-5">
       <div className="py-3" style={{ background: "#908f8f" }}>
@@ -42,15 +35,30 @@ export default function four() {
                 flat={"imperial"}
                 location={`https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.112951720321!2d80.26676271482259!3d13.028478490818587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzQyLjUiTiA4MMKwMTYnMDguMiJF!5e0!3m2!1sen!2sin!4v1686397475949!5m2!1sen!2sin`}
               />
-        
             </div>
-            <div className="w-full justify-center flex flex-col mt-4">
-                <p className="text-black font-bold font-hero text-center mb-4">
-                  12 Flats 3 BHK 1414-1551 Sq.ft. Norton Street, Mandaveli,
-                  Chennai.
-                </p>
-           
-              </div>
+            <div
+              className="w-full justify-center flex flex-col mt-4"
+              style={{ marginLeft: width > 600 ? "20%" : "unset" }}
+            >
+              <p className="text-black font-bold font-hero text-left mb-4">
+                No of flats: <span className="font-normal">12 Flats</span>
+              </p>
+              <p className="text-black font-bold font-hero text-left mb-4">
+                Type: <span className="font-normal">3 BHK</span>
+              </p>
+              <p className="text-black font-bold font-hero text-left mb-4">
+                Size: <span className="font-normal">1414-1551 Sq.ft.</span>
+              </p>
+              <p className="text-black font-bold font-hero text-left mb-4">
+                Address:{" "}
+                <span className="font-normal">
+                  No: 4&6, Imperial Apartments, Norton 1st Street,
+                  Mandavelipakkam, R.A Puram, Chennai - 600004
+                </span>
+              </p>
+
+              <div></div>
+            </div>
           </div>
         </section>
       </div>

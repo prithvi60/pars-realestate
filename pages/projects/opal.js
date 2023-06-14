@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero1 from "../../public/images/hero/1.jpg";
@@ -25,20 +25,12 @@ const gallery = [
 ];
 
 export default function three() {
-  // const onButtonClick = () => {
-  //   // using Java Script method to get PDF file
-  //   fetch("/Pars.pdf").then((response) => {
-  //     response.blob().then((blob) => {
-  //       // Creating new object of PDF file
-  //       const fileURL = window.URL.createObjectURL(blob);
-  //       // Setting various property values
-  //       let alink = document.createElement("a");
-  //       alink.href = fileURL;
-  //       alink.download = "demoPDF.pdf";
-  //       alink.click();
-  //     });
-  //   });
-  // };
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
   return (
     <div className="z-5">
       <div className="py-3" style={{ background: "#908f8f" }}>
@@ -63,9 +55,25 @@ export default function three() {
                 location={`https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.3256976150583!2d80.22698591482242!3d13.014919390827462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAwJzUzLjciTiA4MMKwMTMnNDUuMCJF!5e0!3m2!1sen!2sin!4v1686397427698!5m2!1sen!2sin`}
               />
             </div>
-            <div className="w-full justify-center flex flex-col mt-4">
-              <p className="text-black font-bold font-hero text-center mb-4">
-                6 Flats 3BHK 2026 Sq.ft. Srinagar Colony, Saidapet, Chennai.
+            <div
+              className="w-full justify-center flex flex-col mt-4 "
+              style={{ marginLeft: width > 600 ? "20%" : "unset" }}
+            >
+              <p className="text-black font-bold font-hero text-left mb-4">
+                No of flats: <span className="font-normal">6 Flats</span>
+              </p>
+              <p className="text-black font-bold font-hero text-left mb-4">
+                Type: <span className="font-normal">3 BHK</span>
+              </p>
+              <p className="text-black font-bold font-hero text-left mb-4">
+                Size: <span className="font-normal">2026 Sq.ft.</span>
+              </p>
+              <p className="text-black font-bold font-hero text-left mb-4">
+                Address:{" "}
+                <span className="font-normal">
+                  No. 13, Opal Apartments, North Mada Street, Srinagar Colony,
+                  Saidapet, Chennai - 600015
+                </span>
               </p>
             </div>
             {/* <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-4">
