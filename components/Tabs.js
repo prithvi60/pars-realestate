@@ -69,7 +69,7 @@ export default function TabsComponent({
               </li>
             )}
           </ul>
-          <div className="p-3 mt-6 bg-white border">
+          <div className="md:p-3 mt-6 bg-white border">
             <div
               className={openTab === 1 ? "block gallery relative" : "hidden"}
               style={{
@@ -99,7 +99,7 @@ export default function TabsComponent({
                 />
               </div>
             )}
-            <div className={openTab === 3 ? "block relative" : "hidden"}>
+            <div className={openTab === 3 ? "block relative w-screen md:w-full px-4" : "hidden"}>
               <iframe
                 src={location}
                 height={width > 600 ? "450px" : "400px"}

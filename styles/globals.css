@@ -171,9 +171,9 @@ input[type="email"],
   top: 50% !important;
   right: 8%;
 }
-/* .image-gallery-slide .image-gallery-image{
-  width: unset !important;
-} */
+.image-gallery-slide .image-gallery-image{
+  width: 60vw !important;
+}
 .image-gallery {
   display: flex;
   justify-content: center;
@@ -188,6 +188,9 @@ input[type="email"],
   overflow: hidden;
   object-position: center center;
 }
+.image-gallery-icon{
+  color: #dbc07c;
+}
 @media only screen and (max-width: 600px) {
   .hero .slick-prev {
     left: 38%;
@@ -199,10 +202,13 @@ input[type="email"],
     width: 50%;
   }
   .image-gallery-slide img {
-    width: 300px !important;
+    width: 350px !important;
     height: 400px;
     object-fit: cover;
     overflow: hidden;
     object-position: center center;
+  }
+  .image-gallery-slide .image-gallery-image{
+    width: 80vw !important;
   }
 }
