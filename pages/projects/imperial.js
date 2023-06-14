@@ -42,7 +42,15 @@ export default function four() {
                 flat={"imperial"}
                 location={`https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.112951720321!2d80.26676271482259!3d13.028478490818587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzQyLjUiTiA4MMKwMTYnMDguMiJF!5e0!3m2!1sen!2sin!4v1686397475949!5m2!1sen!2sin`}
               />
+        
             </div>
+            <div className="w-full justify-center flex flex-col mt-4">
+                <p className="text-black font-bold font-heading text-center mb-4">
+                  12 Flats 3 BHK 1414-1551 Sq.ft. Norton Street, Mandaveli,
+                  Chennai.
+                </p>
+           
+              </div>
           </div>
         </section>
       </div>
