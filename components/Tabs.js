@@ -111,7 +111,7 @@ export default function TabsComponent({
             </div>
             {type === "completed" && flat !== "imperial" && (
               <div
-                className={openTab === 4 ? "block relative" : "hidden"}
+                className={openTab === 4 ? "block relative model" : "hidden"}
                 style={{
                   height: width > 600 ? "450px" : "400px",
                   width: width > 600 ? "700px" : "450px",
