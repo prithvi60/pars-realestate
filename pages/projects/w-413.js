@@ -31,7 +31,7 @@ export default function two() {
       <div
         class="container my-4 mx-auto px-4 md:px-6 text-black"
         // style={{
-        //   backgroundImage: "url(/pattern.svg)",
+        //
         //   backgroundRepeat: "no-repeat",
         //   backgroundPosition: "bottom",
         // }}

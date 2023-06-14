@@ -14,7 +14,7 @@ export default function clients() {
       <section
         className="px-8"
         style={{
-          backgroundImage: "url(/pattern.svg)",
+       
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}

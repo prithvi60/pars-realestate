@@ -20,7 +20,7 @@ export default function jointventure() {
       <section
         className="md:h-screen md:px-8 relative"
         style={{
-          backgroundImage: "url(/pattern.svg)",
+       
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
