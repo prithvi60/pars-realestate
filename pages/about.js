@@ -34,12 +34,12 @@ export default function about() {
             textDecorationColor: "#dbc07c",
           }}
         >
-          ABOUT INTERMONT LIVING
+          ABOUT INTERMONT LIFE
         </div>
         <div class="flex flex-wrap">
           <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
             <div className="text-left text-sm  text-black font-body mx-8">
-              Intermont Living is the brand of Pars Engineering India Pvt Ltd
+              Intermont Life is the brand of Pars Engineering India Pvt Ltd
               for its housing sector ventures. Intermont Living is established
               with the goal of upgrading people’s way of living through property
               development. The brand is jointly ventured by Pars Engineering
@@ -60,9 +60,9 @@ export default function about() {
               src={Hero1}
               alt="Picture of the artist"
               placeholder="blur"
-              className="mb-8 md:mb-24  md:absolute top-0 w-auto md:w-96"
+              className="md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
-                height: width > 600 ? "100%" : "400px",
+                height: width > 600 ? "100%" : "280px",
                 width: width > 600 ? "unset" : "100%",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",

@@ -20,7 +20,7 @@ export default function sectors() {
         }}
       >
         <div
-          className="font-bold text-black text-3xl pt-20 pb-8 font-heading text-center"
+          className="font-bold text-black text-3xl pt-20 md:pb-8 font-heading text-center"
           style={{
             textDecoration: "underline",
             textDecorationColor: "#dbc07c",
@@ -29,11 +29,11 @@ export default function sectors() {
           OTHER SECTORS
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
-        <div class="flex flex-wrap justify-center mb-8">
+        <div class="flex flex-wrap justify-center md:mb-8">
           {/* <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 font-semibold text-black">
             Content for Our venture
           </div> */}
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 md:border-r">
+          <div class=" w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 md:border-r">
             <p class="flex flex-col items-center mb-6 text-black dark:text-neutral-300 text-center">
               <img
                 src={"/parslogo.webp"}
@@ -61,7 +61,7 @@ export default function sectors() {
               cost for the benefits of its stake holders.
             </p>
           </div>
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
+          <div class=" w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
             <p class="flex flex-col items-center mb-6 text-black dark:text-neutral-300">
               <img
                 src={"/kanchilogo.png"}

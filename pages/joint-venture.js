@@ -152,16 +152,15 @@ export default function jointventure() {
               src={Hero1}
               alt="Picture of the artist"
               placeholder="blur"
-              className="mb-8 md:mb-24  md:absolute top-0 w-auto md:w-96"
+              className="md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
-                height: width > 600 ? "100%" : "400px",
+                height: width > 600 ? "100%" : "280px",
                 width: width > 600 ? "unset" : "100%",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 objectFit: "cover",
-                objectFit: "cover",
                 overflow: "hidden",
-                objectPosition: "center center"
+                // objectPosition: "center center"
               }}
             />
           </div>
