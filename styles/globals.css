@@ -188,6 +188,13 @@ input[type="email"],
   overflow: hidden;
   object-position: center center;
 }
+.model  .image-gallery-slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
 .image-gallery-icon{
   color: #dbc07c;
 }
@@ -210,5 +217,15 @@ input[type="email"],
   }
   .image-gallery-slide .image-gallery-image{
     width: 80vw !important;
+  }
+  .model  .image-gallery-slide img {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+  }
+  .model .image-gallery-slide .image-gallery-image{
+    width: 100vw !important;
   }
 }

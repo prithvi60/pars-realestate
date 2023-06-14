@@ -71,7 +71,7 @@ export default function TabsComponent({
           </ul>
           <div className="md:p-3 mt-6 bg-white border">
             <div
-              className={openTab === 1 ? "block gallery relative" : "hidden"}
+              className={openTab === 1 ? "block gallery relative model" : "hidden"}
               style={{
                 height: width > 600 ? "450px" : "400px",
                 width: width > 600 ? "700px" : "450px",
