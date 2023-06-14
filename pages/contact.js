@@ -179,7 +179,6 @@ export default function contact() {
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                   objectFit: "cover",
-                  objectFit: "cover",
                   overflow: "hidden",
                   objectPosition: "center center"
                 }}

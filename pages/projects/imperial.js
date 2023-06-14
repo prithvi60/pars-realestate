@@ -45,7 +45,7 @@ export default function four() {
         
             </div>
             <div className="w-full justify-center flex flex-col mt-4">
-                <p className="text-black font-bold font-heading text-center mb-4">
+                <p className="text-black font-bold font-hero text-center mb-4">
                   12 Flats 3 BHK 1414-1551 Sq.ft. Norton Street, Mandaveli,
                   Chennai.
                 </p>

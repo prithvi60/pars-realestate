@@ -63,7 +63,7 @@ export default function about() {
               className="md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
                 height: width > 600 ? "100%" : "280px",
-                width: width > 600 ? "100%" : "100%",
+                width: width > 600 ? "unset" : "100%",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 objectFit: "cover",

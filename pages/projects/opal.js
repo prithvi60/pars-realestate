@@ -64,7 +64,7 @@ export default function three() {
               />
             </div>
             <div className="w-full justify-center flex flex-col mt-4">
-              <p className="text-black font-bold font-heading text-center mb-4">
+              <p className="text-black font-bold font-hero text-center mb-4">
                 6 Flats 3BHK 2026 Sq.ft. Srinagar Colony, Saidapet, Chennai.
               </p>
             </div>
