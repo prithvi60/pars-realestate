@@ -62,8 +62,8 @@ export default function one() {
                 <p className="text-black font-bold font-hero text-left mb-4">
                   Address:{" "}
                   <span className="font-normal">
-                    19, Trustpakkam S St, O-Block, Jeth Nagar, Mandaveli,
-                    Chennai - 600004
+                    TRUSTPAKKAM SOUTH STREET (DEVANATHAN STREET). MANDAVELI,
+                    CHENNAI - 600028
                   </span>
                 </p>
                 <div className="flex justify-center w-full">

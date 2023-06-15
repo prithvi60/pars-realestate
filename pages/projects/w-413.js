@@ -57,7 +57,7 @@ export default function two() {
                 <p className="text-black font-bold font-hero text-left mb-4">
                   Address:{" "}
                   <span className="font-normal">
-                    6-413, W Block 4th St, W Block, Anna Nagar West Extension,
+                    W-413, W Block 4th St, W Block, Anna Nagar West Extension,
                     Chennai - 600049
                   </span>
                 </p>
