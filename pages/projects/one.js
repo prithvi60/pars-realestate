@@ -50,22 +50,25 @@ export default function one() {
                 location={`https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.131283381069!2d80.26161391482259!3d13.02731069081934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzM4LjMiTiA4MMKwMTUnNDkuNyJF!5e0!3m2!1sen!2sin!4v1686397369745!5m2!1sen!2sin`}
               />
               <div className="w-full justify-center flex flex-col mt-4">
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  No of flats: <span className="font-normal">8 Flats</span>
-                </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  Type: <span className="font-normal">3 BHK</span>
-                </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  Size: <span className="font-normal">1,404 Sq.ft.</span>
-                </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  Address:{" "}
-                  <span className="font-normal">
-                    Trustpakkam South Street (Devanathan Street). Mandaveli,
-                    Chennai - 600028
-                  </span>
-                </p>
+                <div className="mt-4 pt-4  md:mt-6 border-t border-b w-full mb-8">
+                  <p className="text-black font-bold font-hero text-left mb-4">
+                    No of flats: <span className="font-normal">8 Flats</span>
+                  </p>
+                  <p className="text-black font-bold font-hero text-left mb-4">
+                    Type: <span className="font-normal">3 BHK</span>
+                  </p>
+                  <p className="text-black font-bold font-hero text-left mb-4">
+                    Size: <span className="font-normal">1,404 Sq.ft.</span>
+                  </p>
+                  <p className="text-black font-bold font-hero text-left mb-4">
+                    Address:{" "}
+                    <span className="font-normal">
+                      Trustpakkam South Street (Devanathan Street). Mandaveli,
+                      Chennai - 600028
+                    </span>
+                  </p>
+                </div>
+
                 <div className="flex justify-center w-full">
                   <button
                     onClick={onButtonClick}

@@ -45,22 +45,25 @@ export default function two() {
                 location={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.0826862283193!2d80.19704899999999!3d13.093945999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52640e4bd817a9%3A0x2833774cd43dc9f4!2s6-413%2C%20W%20Block%204th%20St%2C%20W%20Block%2C%20Anna%20Nagar%20West%20Extension%2C%20Chennai%2C%20Tamil%20Nadu%20600049!5e0!3m2!1sen!2sin!4v1686397513198!5m2!1sen!2sin`}
               />
               <div className="w-full justify-center flex flex-col mt-4">
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  No of flats: <span className="font-normal">5 Flats</span>
-                </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  Type: <span className="font-normal">3 BHK</span>
-                </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  Size: <span className="font-normal">1,320 Sq.ft.</span>
-                </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  Address:{" "}
-                  <span className="font-normal">
-                    W-413, W Block 4th St, W Block, Anna Nagar West Extension,
-                    Chennai - 600049
-                  </span>
-                </p>
+                <div className="mt-4 pt-4  md:mt-6  border-t border-b w-full mb-8">
+                  <p className="text-black font-bold font-hero text-left mb-4 ">
+                    No of flats: <span className="font-normal">5 Flats</span>
+                  </p>
+                  <p className="text-black font-bold font-hero text-left mb-4">
+                    Type: <span className="font-normal">3 BHK</span>
+                  </p>
+                  <p className="text-black font-bold font-hero text-left mb-4">
+                    Size: <span className="font-normal">1,320 Sq.ft.</span>
+                  </p>
+                  <p className="text-black font-bold font-hero text-left mb-4 ">
+                    Address:{" "}
+                    <span className="font-normal">
+                      W-413, W Block 4th St, W Block, Anna Nagar West Extension,
+                      Chennai - 600049
+                    </span>
+                  </p>
+                </div>
+
                 <div className="flex justify-center w-full">
                   <button
                     onClick={onButtonClick}

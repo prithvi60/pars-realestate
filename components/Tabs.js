@@ -95,7 +95,7 @@ export default function TabsComponent({
                   items={plan}
                   showThumbnails={false}
                   showPlayButton={false}
-                  autoPlay={true}
+                  autoPlay={false}
                 />
               </div>
             )}
@@ -122,7 +122,7 @@ export default function TabsComponent({
                   items={gallery}
                   showThumbnails={false}
                   showPlayButton={false}
-                  autoPlay={true}
+                  autoPlay={false}
                 />
               </div>
             )}
