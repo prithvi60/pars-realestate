@@ -34,6 +34,7 @@ export const HeroCarousal = ({ images }) => {
           <div key={idx} class="">
             <Image
               src={image}
+                priority={true}
               alt="Picture of the artist"
               placeholder="blur"
               style={{

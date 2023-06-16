@@ -170,6 +170,7 @@ export default function contact() {
             <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
               <Image
                 src={Hero1}
+                priority={true}
                 alt="Picture of the artist"
                 placeholder="blur"
                 className=" md:mb-24  md:absolute top-0 w-auto md:w-96"
