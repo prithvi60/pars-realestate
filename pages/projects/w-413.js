@@ -38,7 +38,7 @@ export default function two() {
       >
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 ">
               <TabsComponent
                 model={Hero1}
                 plan={plan}
@@ -74,7 +74,7 @@ export default function two() {
                 </div>
               </div>
             </div>
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-4">
+            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3">
               <h2
                 class="mb-6 text-3xl font-bold font-heading text-center"
                 style={{

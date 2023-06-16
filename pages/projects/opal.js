@@ -46,7 +46,7 @@ export default function three() {
       >
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 flex justify-center md:px-3 lg:px-6">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 flex justify-center md:px-3">
               <TabsComponent
                 type={"completed"}
                 model={Hero1}
