@@ -71,7 +71,7 @@ export const TestimonialCarousal = () => {
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     nextArrow: <SampleNextArrow />,

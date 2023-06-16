@@ -1,4 +1,4 @@
-import React ,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero1 from "../public/images/projects/venture.jpg";
@@ -18,16 +18,15 @@ export default function jointventure() {
         <Header />
       </div>
       <section
-        className="md:h-screen md:px-8 relative"
+        className=" md:px-8 relative"
         style={{
-       
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
       >
         <div
           className="font-bold text-black text-3xl pt-20 pb-8 font-heading px-8
-          text-center shrink-0 grow-0 basis-auto  md:w-7/12 
+          text-center shrink-0 grow-0 basis-auto  
           
           "
           style={{
@@ -40,7 +39,7 @@ export default function jointventure() {
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
         <div class="flex flex-wrap font-body">
           <div
-            class="mb-3 pt-4 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-1 lg:px-4 font-normal text-black px-8 text-left text-sm"
+            class="mb-3 pt-4 w-full shrink-0 grow-0 basis-auto  md:px-48 md:text-justify font-normal text-black px-8 text-left text-sm md:pb-6"
             style={{ background: "#dbc07c" }}
           >
             We welcome all landowners looking for a fair and profitable Joint
@@ -50,7 +49,7 @@ export default function jointventure() {
             and completely transparent experience. We can’t wait to hear from
             you!
           </div>
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-2/12 md:px-4 lg:px-4 px-8 text-sm">
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto  md:px-32 text-center px-8 text-sm">
             <p class="mb-2 py-4 text-gray-700 dark:text-neutral-300 border-b">
               Reach out to Us
             </p>
@@ -65,67 +64,59 @@ export default function jointventure() {
               sales@intermontlife.com
             </p>
           </div>
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-3/12 md:px-4 lg:px-4 px-8 py-4">
+          <div class="mb-12 w-full shrink-0 grow-0 basis-auto  md:px-32 px-8 py-4">
             <form method="POST" action="https://herotofu.com/start">
-              <label class="block mb-2">
+              <label class="block mb-2 md:mb-6">
                 <span class="text-gray-700">Your name</span>
                 <input
                   type="text"
                   name="name"
                   class="
+                  md:h-10
             block
             w-full
-            border-gray-300
-            rounded-md
-            shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
+         text-black
+rounded-md
+         
           "
                   placeholder="Joe Bloggs"
                 />
               </label>
-              <label class="block mb-2">
+              <label class="block mb-2 md:mb-6">
                 <span class="text-gray-700">Email address</span>
                 <input
                   name="email"
                   type="email"
                   class="
+                  md:h-10
             block
             w-full
-            border-gray-300
-            rounded-md
-            shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
+         text-black
+rounded-md
+
+
+     
           "
                   placeholder="joe.bloggs@example.com"
                   required
                 />
               </label>
-              <label class="block mb-2">
+              <label class="block mb-2 md:mb-6">
                 <span class="text-gray-700">Message</span>
                 <textarea
                   name="message"
                   className="input
             block
             w-full
-            border-gray-300
-            rounded-md
-            shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
+         text-black
+rounded-md
+
           "
                   rows="3"
                   placeholder="Tell us what you're thinking about..."
                 ></textarea>
               </label>
-              <div class="mb-6 mt-4">
+              <div class="mb-6 mt-4 md:flex md:justify-center md:mt-8">
                 <button
                   type="submit"
                   class="inline-flex items-center  px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
@@ -147,15 +138,19 @@ export default function jointventure() {
               </div>
             </form>
           </div>
-          <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
+       
+        </div>
+        {/* </div> */}
+      </section>
+      <div class="w-full shrink-0 grow-0 basis-auto  ">
             <Image
               src={Hero1}
               alt="Picture of the artist"
               placeholder="blur"
-              className="md:mb-24  md:absolute top-0 w-auto md:w-96"
+              // className="md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
-                height: width > 600 ? "100%" : "280px",
-                width: width > 600 ? "unset" : "100%",
+                height: width > 600 ? "800px" : "280px",
+                width: width > 600 ? "100vw" : "100%",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 objectFit: "cover",
@@ -164,9 +159,6 @@ export default function jointventure() {
               }}
             />
           </div>
-        </div>
-        {/* </div> */}
-      </section>
       <Footer />
       <FloatingButton />
     </div>

@@ -12,7 +12,7 @@ export default function clients() {
         <Header />
       </div>
       <section
-        className="px-8"
+        className="px-8 md:px-32 md:pb-8"
         style={{
        
           backgroundRepeat: "no-repeat",

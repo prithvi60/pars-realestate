@@ -37,9 +37,7 @@ export default function four() {
               />
             </div>
             <div className="mt-4 md:mt-12 md:mx-48 pt-4  border-t border-b w-screen">
-              <div
-                className="w-full justify-center flex flex-col mt-4"
-              >
+              <div className="w-full justify-center flex flex-col mt-4">
                 <p className="text-black font-bold font-hero text-left mb-4 ">
                   No of flats: <span className="font-normal">12 Flats</span>
                 </p>
@@ -56,9 +54,18 @@ export default function four() {
                     Mandavelipakkam, R.A Puram, Chennai - 600004
                   </span>
                 </p>
-
-                <div></div>
               </div>
+            </div>
+            <div className="w-screen flex justify-center items-center mt-12">
+              <img
+                src={"/sold.png"}
+                alt="sold"
+                style={{
+                  objectFit: "cover",
+                  height: "100px",
+                  width: "250px",
+                }}
+              ></img>
             </div>
           </div>
         </section>

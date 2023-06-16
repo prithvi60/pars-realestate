@@ -75,6 +75,17 @@ export default function three() {
                 </p>
               </div>
             </div>
+            <div className="w-screen flex justify-center items-center mt-12">
+              <img
+                src={"/sold.png"}
+                alt="sold"
+                style={{
+                  objectFit: "cover",
+                    height: "100px",
+                    width: "250px",
+                }}
+              ></img>
+            </div>
             {/* <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-4">
               <h2
                 class="mb-6 text-3xl font-bold font-heading text-center"

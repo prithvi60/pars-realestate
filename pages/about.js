@@ -18,7 +18,7 @@ export default function about() {
         <Header />
       </div>
       <section
-        className="md:h-screen md:mx-8 relative"
+        className="md:mx-8 relative"
         style={{
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
@@ -26,7 +26,7 @@ export default function about() {
       >
         <div
           className="font-bold text-black text-3xl pt-20 pb-8 font-heading mx-8 
-          text-center shrink-0 grow-0 basis-auto  md:w-7/12 
+          text-center shrink-0 grow-0 basis-auto 
           "
           style={{
             textDecoration: "underline",
@@ -36,7 +36,7 @@ export default function about() {
           ABOUT INTERMONT LIFE
         </div>
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3 lg:px-6">
+          <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-16 md:px-3 lg:px-6">
             <div className="text-left text-sm  text-black font-body mx-8">
               Intermont Life is the brand of{" "}
               <span className="uppercase">Pars Engineering India Pvt Ltd </span>
@@ -57,26 +57,25 @@ export default function about() {
               customers after sales.
             </div>
           </div>
-
-          <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
-            <Image
-              src={Hero1}
-              alt="Picture of the artist"
-              placeholder="blur"
-              className="md:mb-24  md:absolute top-0 w-auto md:w-96"
-              style={{
-                height: width > 600 ? "100%" : "280px",
-                width: width > 600 ? "unset" : "100%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                objectFit: "cover",
-                overflow: "hidden",
-                objectPosition: "center center",
-              }}
-            />
-          </div>
         </div>
       </section>
+      <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 ">
+        <Image
+          src={Hero1}
+          alt="Picture of the artist"
+          placeholder="blur"
+          // className="md:mb-24  md:absolute top-0 w-auto md:w-96"
+          style={{
+            height: width > 600 ? "100%" : "280px",
+            width: width > 600 ? "unset" : "100%",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            objectFit: "cover",
+            overflow: "hidden",
+            objectPosition: "center center",
+          }}
+        />
+      </div>
       <Footer />
       <FloatingButton />
     </div>
