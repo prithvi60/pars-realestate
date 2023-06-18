@@ -32,8 +32,8 @@ export const HeroCarousal = ({ images }) => {
       {images.map((image, idx) => {
         return (
           <div key={idx} class="">
-            <Image
-              src={image}
+            <img
+              src={image.src}
               priority={true}
               // loading="eager"
               quality={`40`}

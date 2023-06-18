@@ -19,7 +19,7 @@ export default function four() {
         <Header />
       </div>
       <div
-        class="container my-4 mx-auto px-4 md:px-6 text-black"
+        class="my-4 mx-auto px-4 md:px-6 text-black"
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -38,16 +38,16 @@ export default function four() {
             </div>
             <div className="mt-4 md:mt-12 md:mx-48 pt-4  border-t border-b w-screen">
               <div className="w-full justify-center flex flex-col mt-4">
-                <p className="text-black font-bold font-hero text-left mb-4 ">
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4 ">
                   No of flats: <span className="font-normal">12 Flats</span>
                 </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4">
                   Type: <span className="font-normal">3 BHK</span>
                 </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
-                  Size: <span className="font-normal">1414-1551 Sq.ft.</span>
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4">
+                  Size: <span className="font-normal">1227-1551 Sq.ft.</span>
                 </p>
-                <p className="text-black font-bold font-hero text-left mb-4 ">
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4 ">
                   Address:{" "}
                   <span className="font-normal">
                     No: 4&6, Imperial Apartments, Norton 1st Street,

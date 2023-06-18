@@ -183,14 +183,14 @@ input[type="email"],
 
 .image-gallery-slide img {
   width: 700px;
-  height: 450px;
+  height: 480px;
   object-fit: cover;
   overflow: hidden;
   object-position: center center;
 }
 .model  .image-gallery-slide img {
   width: 100%;
-  height: 450px;
+  height: 480px;
   object-fit: cover;
   overflow: hidden;
   object-position: center center;

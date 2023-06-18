@@ -38,10 +38,10 @@ export default function contact() {
           backgroundPosition: "bottom",
         }}
       >
-        <section class="md:h-screen font-body relative">
+        <section class=" font-body relative">
           <div
             className="font-bold text-black text-3xl pt-20 font-heading px-8
-          text-center shrink-0 grow-0 basis-auto  md:w-7/12 
+          text-center shrink-0 grow-0 basis-auto  md:w-8/12 
           
           "
             style={{
@@ -52,8 +52,9 @@ export default function contact() {
             CONTACT US
           </div>
           <div class="flex flex-wrap">
-            <div class="mt-8 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
-              {/* <h2
+            <div className="md:w-8/12">
+              <div class="mt-8 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8">
+                {/* <h2
                 class="mb-6 text-3xl font-bold font-heading
                 text-center
                 "
@@ -64,40 +65,41 @@ export default function contact() {
               >
                 CONTACT US
               </h2> */}
-              <p
-                class="mb-4
-               text-black dark:text-neutral-300 font-heading"
-              >
-                REACH US AT
-              </p>
-              <p
-                class="mb-2 text-black dark:text-neutral-300"
-                style={{ background: "#dbc07c" }}
-              >
-                No.13, Opal Apartments, North Mada Street, Srinagar Colony,
-                Saidapet, Intermontlife.com Chennai-600015
-              </p>
-              <p class="mb-2 text-black dark:text-neutral-300 bg-gray-200">
-                +91-9788058526
-              </p>
-              <p
-                class="mb-2 text-black dark:text-neutral-300 "
-                style={{ background: "#dbc07c" }}
-              >
-                sales@intermontlife.com
-              </p>
-            </div>
-            <div class="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 px-8">
-              <form method="POST" action="https://herotofu.com/start">
-                <label
-                  class="block mb-2
-                "
+                <p
+                  class="mb-4
+               text-black dark:text-neutral-300 font-heading text-center"
                 >
-                  <span class="text-gray-700">Your name</span>
-                  <input
-                    type="text"
-                    name="name"
-                    class="
+                  REACH US AT
+                </p>
+                <p
+                  class="mb-2 text-black dark:text-neutral-300 text-center"
+                  style={{ background: "#dbc07c" }}
+                >
+                  No.13, Opal Apartments, North Mada Street, Srinagar Colony,
+                  Saidapet, Intermontlife.com Chennai-600015
+                </p>
+                <p class="mb-2 text-black dark:text-neutral-300 bg-gray-200 text-center">
+                  +91-9788058526
+                </p>
+                <p
+                  class="mb-2 text-black dark:text-neutral-300 text-center"
+                  style={{ background: "#dbc07c" }}
+                >
+                  sales@intermontlife.com
+                </p>
+              </div>
+              <div class="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8 text-center">
+                <form method="POST" action="https://herotofu.com/start">
+                  <label
+                    class="block mb-2 md:mb-4
+                "
+                  >
+                    <span class="text-gray-700">Your name</span>
+                    <input
+                      type="text"
+                      name="name"
+                      class="
+                    h-10
             block
             w-full
          
@@ -105,18 +107,19 @@ export default function contact() {
             shadow-sm
            
           "
-                    placeholder="Joe Bloggs"
-                  />
-                </label>
-                <label
-                  class="block mb-2
+                      placeholder="Joe Bloggs"
+                    />
+                  </label>
+                  <label
+                    class="block mb-2 md:mb-4
                 "
-                >
-                  <span class="text-gray-700">Email address</span>
-                  <input
-                    name="email"
-                    type="email"
-                    class="
+                  >
+                    <span class="text-gray-700">Email address</span>
+                    <input
+                      name="email"
+                      type="email"
+                      class="
+                    h-10
             block
             w-full
          
@@ -124,15 +127,15 @@ export default function contact() {
             shadow-sm
           
           "
-                    placeholder="joe.bloggs@example.com"
-                    required
-                  />
-                </label>
-                <label class="block mb-2">
-                  <span className="text-gray-700">Message</span>
-                  <textarea
-                    name="message"
-                    className="
+                      placeholder="joe.bloggs@example.com"
+                      required
+                    />
+                  </label>
+                  <label class="block mb-2 md:mb-4">
+                    <span className="text-gray-700">Message</span>
+                    <textarea
+                      name="message"
+                      className="
                     input
             block
             w-full
@@ -140,21 +143,21 @@ export default function contact() {
             rounded-md
             shadow-sm
           "
-                    rows="3"
-                    placeholder="Tell us what you're thinking about..."
-                  ></textarea>
-                </label>
-                <div class="mb-6 mt-6">
-                  <button
-                    type="submit"
-                    onClick={sendMail}
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
-                  >
-                    CONTACT US
-                  </button>
-                </div>
-                <div>
-                  {/* <div class="mt-2 text-gray-700 text-right text-xs">
+                      rows="3"
+                      placeholder="Tell us what you're thinking about..."
+                    ></textarea>
+                  </label>
+                  <div class="mb-6 mt-6">
+                    <button
+                      type="submit"
+                      onClick={sendMail}
+                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
+                    >
+                      CONTACT US
+                    </button>
+                  </div>
+                  <div>
+                    {/* <div class="mt-2 text-gray-700 text-right text-xs">
                     by &nbsp;
                     <a
                       href="https://herotofu.com"
@@ -164,12 +167,13 @@ export default function contact() {
                       the internet generation
                     </a>
                   </div> */}
-                </div>
-              </form>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
-              <Image
-                src={Hero1}
+              <img
+                src={Hero1.src}
                 priority={true}
                 alt="Picture of the artist"
                 placeholder="blur"
@@ -181,7 +185,7 @@ export default function contact() {
                   backgroundRepeat: "no-repeat",
                   objectFit: "cover",
                   overflow: "hidden",
-                  objectPosition: "center center"
+                  objectPosition: "center center",
                 }}
               />
             </div>

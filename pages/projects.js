@@ -14,7 +14,7 @@ export default function projects() {
 
       title: "ONE",
       des: `
-      8 Flats  3 BHK  1,404 Sq.ft. Devanathan Street, Mandaveli, Chennai
+      8 Flats  3 BHK  1227 Sq.ft. Devanathan Street, Mandaveli, Chennai
 
        `,
       link: `/projects/one`,
@@ -79,7 +79,7 @@ export default function projects() {
           {residential.map((item, idx) => {
             return (
               <Card
-                image={item.image}
+                image={item.image.src}
                 index={idx}
                 title={item.title}
                 des={item.des}

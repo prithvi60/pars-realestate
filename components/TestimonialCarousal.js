@@ -38,6 +38,14 @@ function SamplePrevArrow(props) {
 export const TestimonialCarousal = () => {
   const reviews = [
     {
+      image: C2,
+      name: "Satish",
+      review: `Prior to choosing Intermont, we walked through numerous new construction homes. After seeing Intermont, it was clear that the quality and attention to detail was next level. It was great co-ordination with Mr.Lokesh throughout the construction process. They were easy to get in touch with and quick to respond to any questions that came up. They were on time, within the budget, and listened to our needs.
+      We would certainly recommend Intermont, and Thank you Mr.Lokesh for helping take our dream and make it a reality!!
+      Best Wishes,
+      M.Sathish`,
+    },
+    {
       image: C1,
       name: "Harish",
       review: ` I hope this note finds you in good health and high spirits. I am writing to express my sincere appreciation for the exceptional work done by you and your team on [Imperial – Mandaveli] Your commitment to delivering high-quality craftsmanship and attention to detail truly exceeded my expectations. From the initial planning stages to the final touches, every aspect of your work demonstrated a level of professionalism and expertise that is commendable. The dedication and passion you exhibited throughout the construction process were evident in the outcome. The project was completed within the promised timeline. Your team's strong work ethic and collaborative spirit were instrumental in creating a seamless workflow. I was particularly impressed by your ability to effectively communicate and coordinate with other contractors and suppliers involved in the project. It made the entire process run smoothly, resulting in a successful and well-executed construction endeavor.
@@ -54,14 +62,6 @@ export const TestimonialCarousal = () => {
       Regards,
       Harish Balasubramanian 
       Imperial, Mandaveli`,
-    },
-    {
-      image: C2,
-      name: "Satish",
-      review: `Prior to choosing Intermont, we walked through numerous new construction homes. After seeing Intermont, it was clear that the quality and attention to detail was next level. It was great co-ordination with Mr.Lokesh throughout the construction process. They were easy to get in touch with and quick to respond to any questions that came up. They were on time, within the budget, and listened to our needs.
-      We would certainly recommend Intermont, and Thank you Mr.Lokesh for helping take our dream and make it a reality!!
-      Best Wishes,
-      M.Sathish`,
     },
   ];
   const settings = {
@@ -100,8 +100,8 @@ export const TestimonialCarousal = () => {
         return (
           <div key={idx}>
             <div className="flex flex-col items-center gap-2 ">
-              <Image
-                src={item.image}
+              <img
+                src={item.image.src}
                 alt="Picture of the artist"
                 placeholder="blur"
                 className="rounded-full border-2 "

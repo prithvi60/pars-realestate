@@ -29,7 +29,7 @@ export default function two() {
         <Header />
       </div>
       <div
-        class="container my-4 mx-auto px-4 md:px-6 text-black"
+        class=" my-4 mx-auto px-4 md:px-6 text-black"
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -46,16 +46,16 @@ export default function two() {
               />
               <div className="w-full justify-center flex flex-col mt-4">
                 <div className="mt-4 pt-4  md:mt-6  border-t border-b w-full mb-8">
-                  <p className="text-black font-bold font-hero text-left mb-4 ">
+                  <p className="text-black font-bold font-hero text-left md:text-center  mb-4 ">
                     No of flats: <span className="font-normal">5 Flats</span>
                   </p>
-                  <p className="text-black font-bold font-hero text-left mb-4">
+                  <p className="text-black font-bold font-hero text-left md:text-center  mb-4">
                     Type: <span className="font-normal">3 BHK</span>
                   </p>
-                  <p className="text-black font-bold font-hero text-left mb-4">
+                  <p className="text-black font-bold font-hero text-left md:text-center  mb-4">
                     Size: <span className="font-normal">1,320 Sq.ft.</span>
                   </p>
-                  <p className="text-black font-bold font-hero text-left mb-4 ">
+                  <p className="text-black font-bold font-hero text-left md:text-center  mb-4 ">
                     Address:{" "}
                     <span className="font-normal">
                       W-413, W Block 4th St, W Block, Anna Nagar West Extension,

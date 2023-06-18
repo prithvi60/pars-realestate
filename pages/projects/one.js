@@ -34,7 +34,7 @@ export default function one() {
         <Header />
       </div>
       <div
-        class="container my-4 mx-auto px-4 md:px-6 text-black"
+        class=" my-4 mx-auto px-4 md:px-6 text-black"
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -43,7 +43,7 @@ export default function one() {
       >
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-3">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-4">
               <TabsComponent
                 model={Hero1}
                 plan={plan}
@@ -51,16 +51,16 @@ export default function one() {
               />
               <div className="w-full justify-center flex flex-col mt-4">
                 <div className="mt-4 pt-4  md:mt-6 border-t border-b w-full mb-8">
-                  <p className="text-black font-bold font-hero text-left mb-4">
+                  <p className="text-black font-bold font-hero text-left md:text-center mb-4">
                     No of flats: <span className="font-normal">8 Flats</span>
                   </p>
-                  <p className="text-black font-bold font-hero text-left mb-4">
+                  <p className="text-black font-bold font-hero text-left md:text-center mb-4">
                     Type: <span className="font-normal">3 BHK</span>
                   </p>
-                  <p className="text-black font-bold font-hero text-left mb-4">
-                    Size: <span className="font-normal">1,404 Sq.ft.</span>
+                  <p className="text-black font-bold font-hero text-left md:text-center mb-4">
+                    Size: <span className="font-normal">1,227 Sq.ft.</span>
                   </p>
-                  <p className="text-black font-bold font-hero text-left mb-4">
+                  <p className="text-black font-bold font-hero text-left md:text-center mb-4">
                     Address:{" "}
                     <span className="font-normal">
                       Trustpakkam South Street (Devanathan Street). Mandaveli,
@@ -79,7 +79,7 @@ export default function one() {
                 </div>
               </div>
             </div>
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3">
+            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-4">
               <h2
                 class="mb-6 text-3xl font-bold font-heading text-center"
                 style={{

@@ -10,7 +10,7 @@ export default function Card({ image, title, des, link }) {
       whileTap={{ scale: 1.05 }}
     >
       <a href={link}>
-        <Image
+        <img
           class="rounded-t-lg"
           src={image}
           alt="site"

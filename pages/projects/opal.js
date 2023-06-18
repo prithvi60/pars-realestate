@@ -11,6 +11,8 @@ import G1 from "../../public/images/projects/opal/gallery1.jpg";
 import G2 from "../../public/images/projects/opal/gallery2.jpg";
 import G3 from "../../public/images/projects/opal/gallery3.jpg";
 import G4 from "../../public/images/projects/opal/gallery4.jpg";
+import G5 from "../../public/images/projects/opal/gallery5.jpg";
+
 
 const plan = [
   { original: Plan1.src },
@@ -22,6 +24,8 @@ const gallery = [
   { original: G2.src },
   { original: G3.src },
   { original: G4.src },
+  { original: G5.src },
+
 ];
 
 export default function three() {
@@ -37,7 +41,7 @@ export default function three() {
         <Header />
       </div>
       <div
-        class="container my-4 mx-auto px-4 md:px-6 text-black"
+        class=" my-4 mx-auto px-4 md:px-6 text-black"
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -57,16 +61,16 @@ export default function three() {
             </div>
             <div className="mt-4 pt-4  md:mt-12 md:mx-48 border-t border-b w-screen">
               <div className="w-full justify-center flex flex-col  ">
-                <p className="text-black font-bold font-hero text-left mb-4">
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4">
                   No of flats: <span className="font-normal">6 Flats</span>
                 </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4">
                   Type: <span className="font-normal">3 BHK</span>
                 </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4">
                   Size: <span className="font-normal">2026 Sq.ft.</span>
                 </p>
-                <p className="text-black font-bold font-hero text-left mb-4">
+                <p className="text-black font-bold font-hero  text-left md:text-center mb-4">
                   Address:{" "}
                   <span className="font-normal">
                     No. 13, Opal Apartments, North Mada Street, Srinagar Colony,
@@ -81,8 +85,8 @@ export default function three() {
                 alt="sold"
                 style={{
                   objectFit: "cover",
-                    height: "100px",
-                    width: "250px",
+                  height: "100px",
+                  width: "250px",
                 }}
               ></img>
             </div>

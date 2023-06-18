@@ -17,8 +17,8 @@ export default function TabsComponent({
 
   return (
     <div>
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center max-w-xl">
+      <div className= "mx-auto">
+        <div className="flex flex-col items-center justify-center">
           <ul className="flex space-x-2 text-center font-heading">
             <li>
               <div
@@ -75,7 +75,7 @@ export default function TabsComponent({
                 openTab === 1 ? "block gallery relative model" : "hidden"
               }
               style={{
-                height: width > 600 ? "450px" : "400px",
+                height: width > 600 ? "480px" : "400px",
                 width: width > 600 ? "700px" : "450px",
               }}
             >
@@ -89,7 +89,7 @@ export default function TabsComponent({
               <div
                 className={openTab === 2 ? "block relative" : "hidden"}
                 style={{
-                  height: width > 600 ? "450px" : "400px",
+                  height: width > 600 ? "480px" : "400px",
                   width: width > 600 ? "700px" : "450px",
                 }}
               >
@@ -110,7 +110,7 @@ export default function TabsComponent({
             >
               <iframe
                 src={location}
-                height={width > 600 ? "450px" : "400px"}
+                height={width > 600 ? "480px" : "400px"}
                 width={width > 600 ? "700px" : "100%"}
                 style={{ border: "0" }}
                 allowfullscreen=""
@@ -121,7 +121,7 @@ export default function TabsComponent({
               <div
                 className={openTab === 4 ? "block relative model" : "hidden"}
                 style={{
-                  height: width > 600 ? "450px" : "400px",
+                  height: width > 600 ? "480px" : "400px",
                   width: width > 600 ? "700px" : "450px",
                 }}
               >

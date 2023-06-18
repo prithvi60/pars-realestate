@@ -25,7 +25,7 @@ export default function completedprojects() {
       image: R2,
       title: `IMPERIAL`,
 
-      des: `12 Flats  3 BHK 1414-1551 Sq.ft. 
+      des: `12 Flats  3 BHK 1227-1551 Sq.ft. 
       Norton Street, Mandaveli,
       Chennai.`,
       link: `/projects/imperial`,
@@ -82,7 +82,7 @@ export default function completedprojects() {
           {residential.map((item, idx) => {
             return (
               <Card
-                image={item.image}
+                image={item.image.src}
                 index={idx}
                 title={item.title}
                 des={item.des}

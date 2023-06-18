@@ -57,8 +57,8 @@ export const Carousal = ({ images }) => {
       {images.map((image, idx) => {
         return (
           <div key={idx}>
-            <Image
-              src={image}
+            <img
+              src={image.src}
               alt="Picture of the artist"
               placeholder="blur"
               style={{

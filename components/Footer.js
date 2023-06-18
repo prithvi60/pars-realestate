@@ -4,7 +4,7 @@ export default function Footer() {
     style={{background:"#908f8f"}}
     >
       <div className="max-w-5xl xl:max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-        <div className="flex flex-col-reverse justify-between pt-5 pb-2 lg:flex-row bg-top ">
+        {/* <div className="flex flex-col-reverse justify-between pt-5 pb-2 lg:flex-row bg-top "> */}
           {/* <ul className="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
               <a
@@ -47,17 +47,17 @@ export default function Footer() {
               </a>
             </li>
           </ul> */}
-          <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+          <ul className="pt-5 flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row justify-center items-center">
             <a
               href="/"
-              className="text-sm  hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight font-body"
+              className="text-sm  hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight font-body text-center w-screen"
               style={{ color: "white" }}
             >
               Copyright © 2023 Intermont. All rights reserved
             </a>
           </ul>
         </div>
-      </div>
+      {/* </div> */}
     </footer>
   );
 }
