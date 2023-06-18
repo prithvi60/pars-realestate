@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero1 from "../public/images/projects/venture.jpg";
-import Image from "next/image";
 import FloatingButton from "../components/FloatingButton";
 
 export default function jointventure() {

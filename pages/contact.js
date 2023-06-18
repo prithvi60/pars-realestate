@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FloatingButton from "../components/FloatingButton";
 import Hero1 from "../public/images/projects/about.jpg";
-import Image from "next/image";
 export default function contact() {
   const [width, setWidth] = useState(null);
 
