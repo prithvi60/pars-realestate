@@ -103,7 +103,11 @@ export default function two() {
               >
                 sales@intermontlife.com
               </p>
-              <form method="POST" action="https://herotofu.com/start">
+              <form
+                method="POST"
+                action="https://public.herotofu.com/v1/0b687a30-0e6b-11ee-8267-d3eb100789b4"
+                accept-charset="UTF-8"
+              >
                 <label class="block mb-2">
                   <span class="text-gray-700">Your name</span>
                   <input
@@ -167,6 +171,14 @@ export default function two() {
                   >
                     CONTACT US
                   </button>
+                  <input
+                  name="Form Page"
+                    type="text"
+                    class="
+                      hidden
+          "
+                    value={"Intermont w-413"}
+                  />
                 </div>
               </form>
             </div>

@@ -65,7 +65,11 @@ export default function jointventure() {
               </p>
             </div>
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:px-4 lg:px-4 px-8 py-4 text-center">
-              <form method="POST" action="https://herotofu.com/start">
+              <form
+                method="POST"
+                action="https://public.herotofu.com/v1/0b687a30-0e6b-11ee-8267-d3eb100789b4"
+                accept-charset="UTF-8"
+              >
                 <label class="block mb-2">
                   <span class="text-gray-700">Your name</span>
                   <input
@@ -131,6 +135,14 @@ export default function jointventure() {
                   >
                     CONTACT US
                   </button>
+                  <input
+                  name="Form Page"
+                    type="text"
+                    class="
+                      hidden
+          "
+                    value={"Joint venture"}
+                  />
                 </div>
                 <div>
                   {/* <div class="mt-2 text-gray-700 text-right text-xs">

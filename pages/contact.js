@@ -145,6 +145,14 @@ export default function contact() {
                     >
                       CONTACT US
                     </button>
+                    <input
+                    name="Form Page"
+                      type="text"
+                      class="
+                      hidden
+          "
+                      value={"Contact"}
+                    />
                   </div>
                   <div></div>
                 </form>
