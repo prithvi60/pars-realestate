@@ -154,7 +154,7 @@ export default function jointventure() {
               placeholder="blur"
               className="md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
-                height: width > 600 ? "100%" : "280px",
+                height: width > 600 ? "100%" : "480px",
                 width: width > 600 ? "" : "100%",
                 objectFit: "cover",
                 // overflow: "hidden",

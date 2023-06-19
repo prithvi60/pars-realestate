@@ -10,21 +10,7 @@ export default function contact() {
     // window is accessible here.
     setWidth(window.innerWidth);
   }, []);
-  const [message, setMessage] = useState("");
-  // const sendMail = async () => {
-  //   try {
-  //     setMessage("Sending test mail");
-  //     // use local host
-  //     const response = await fetch("https://intermontlife.com/api/mail");
-  //     const body = await response.json();
-  //     if (body.ok) {
-  //       setMessage("Successfully send test mail");
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //     // handle the error
-  //   }
-  // };
+
   return (
     <div className="relative">
       <div className="py-3" style={{ background: "#908f8f" }}>
