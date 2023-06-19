@@ -137,7 +137,7 @@ export default function three() {
           focus:ring-indigo-200
           focus:ring-opacity-50
         "
-                    placeholder="Joe Bloggs"
+                    placeholder="Akash"
                   />
                 </label>
                 <label class="block mb-2">
@@ -152,7 +152,7 @@ export default function three() {
           rounded-md
           shadow-sm
         "
-                    placeholder="joe.bloggs@example.com"
+                    placeholder="akash.chandran@example.com"
                     required
                   />
                 </label>

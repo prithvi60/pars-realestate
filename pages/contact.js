@@ -97,7 +97,7 @@ export default function contact() {
             shadow-sm
            
           "
-                      placeholder="Joe Bloggs"
+                      placeholder="Akash"
                     />
                   </label>
                   <label
@@ -117,7 +117,7 @@ export default function contact() {
             shadow-sm
           
           "
-                      placeholder="joe.bloggs@example.com"
+                      placeholder="akash.chandran@example.com"
                       required
                     />
                   </label>

@@ -64,7 +64,7 @@ export default function jointventure() {
                 sales@intermontlife.com
               </p>
             </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:px-4 lg:px-4 px-8 py-4 text-center">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:px-4 lg:px-4 px-8 py-4 text-center text-black">
               <form
                 method="POST"
                 action="https://public.herotofu.com/v1/0b687a30-0e6b-11ee-8267-d3eb100789b4"
@@ -76,6 +76,7 @@ export default function jointventure() {
                     type="text"
                     name="name"
                     class="
+                    h-10
           block
           w-full
           border-gray-300
@@ -86,7 +87,7 @@ export default function jointventure() {
           focus:ring-indigo-200
           focus:ring-opacity-50
         "
-                    placeholder="Joe Bloggs"
+                    placeholder="Akash"
                   />
                 </label>
                 <label class="block mb-2">
@@ -95,6 +96,7 @@ export default function jointventure() {
                     name="email"
                     type="email"
                     class="
+                    h-10
           block
           w-full
           border-gray-300
@@ -105,7 +107,7 @@ export default function jointventure() {
           focus:ring-indigo-200
           focus:ring-opacity-50
         "
-                    placeholder="joe.bloggs@example.com"
+                    placeholder="akash.chandran@example.com"
                     required
                   />
                 </label>
@@ -136,7 +138,7 @@ export default function jointventure() {
                     CONTACT US
                   </button>
                   <input
-                  name="Form Page"
+                    name="Form Page"
                     type="text"
                     class="
                       hidden
@@ -247,7 +249,7 @@ export default function jointventure() {
     // rounded-md
 
     //           "
-    //                     placeholder="Joe Bloggs"
+    //                     placeholder="Akash"
     //                   />
     //                 </label>
     //                 <label class="block mb-2 md:mb-6">
@@ -263,7 +265,7 @@ export default function jointventure() {
     // rounded-md
 
     //           "
-    //                     placeholder="joe.bloggs@example.com"
+    //                     placeholder="akash.chandran@example.com"
     //                     required
     //                   />
     //                 </label>

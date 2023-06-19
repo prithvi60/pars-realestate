@@ -114,6 +114,7 @@ export default function two() {
                     type="text"
                     name="name"
                     class="
+                    h-10
           block
           w-full
           mt-1
@@ -125,7 +126,7 @@ export default function two() {
           focus:ring-indigo-200
           focus:ring-opacity-50
         "
-                    placeholder="Joe Bloggs"
+                    placeholder="Akash"
                   />
                 </label>
                 <label class="block mb-2">
@@ -134,13 +135,14 @@ export default function two() {
                     name="email"
                     type="email"
                     class="
+                    h-10
           block
           w-full
           mt-1
           rounded-md
           shadow-sm
         "
-                    placeholder="joe.bloggs@example.com"
+                    placeholder="akash.chandran@example.com"
                     required
                   />
                 </label>
