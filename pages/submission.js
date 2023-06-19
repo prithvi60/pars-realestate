@@ -5,15 +5,8 @@ import { NextSeo } from "next-seo";
 
 export default function Contact() {
   return (
-    <div className="text-black bg-white">
-      <NextSeo
-        title="404: Intermont"
-        description="404 page for all our missing pages"
-        canonical="https://localhost:3000/404"
-        openGraph={{
-          url: "https://localhost:3000/404",
-        }}
-      />
+    <div className="text-black" >
+      <NextSeo title="Form" description="Form submitted" />
       <Head>
         <title>Intermont</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,7 +16,7 @@ export default function Contact() {
       </div>
       <div className="flex flex-col justify-center mx-auto mt-52 text-center max-w-2x1">
         <h1 className="text-3xl font-bold tracking-tight text-white md:text-5xl">
-          404 – Unavailable
+          Thank you, We have received your details!
         </h1>
         <br />
         <a

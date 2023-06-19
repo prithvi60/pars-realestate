@@ -11,19 +11,20 @@ export default function contact() {
     setWidth(window.innerWidth);
   }, []);
   const [message, setMessage] = useState("");
-  const sendMail = async () => {
-    try {
-      setMessage("Sending test mail");
-      const response = await fetch("http://localhost:3000/api/mail");
-      const body = await response.json();
-      if (body.ok) {
-        setMessage("Successfully send test mail");
-      }
-    } catch (error) {
-      console.log(error);
-      // handle the error
-    }
-  };
+  // const sendMail = async () => {
+  //   try {
+  //     setMessage("Sending test mail");
+  //     // use local host
+  //     const response = await fetch("https://intermontlife.com/api/mail");
+  //     const body = await response.json();
+  //     if (body.ok) {
+  //       setMessage("Successfully send test mail");
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //     // handle the error
+  //   }
+  // };
   return (
     <div className="relative">
       <div className="py-3" style={{ background: "#908f8f" }}>
@@ -88,7 +89,11 @@ export default function contact() {
                 </p>
               </div>
               <div class="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8 text-center">
-                <form method="POST" action="https://herotofu.com/start">
+                <form
+                  method="POST"
+                  action="https://public.herotofu.com/v1/0b687a30-0e6b-11ee-8267-d3eb100789b4"
+                  accept-charset="UTF-8"
+                >
                   <label
                     class="block mb-2 md:mb-4
                 "
@@ -149,24 +154,13 @@ export default function contact() {
                   <div class="mb-6 mt-6">
                     <button
                       type="submit"
-                      onClick={sendMail}
+                      // onClick={sendMail}
                       class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                     >
                       CONTACT US
                     </button>
                   </div>
-                  <div>
-                    {/* <div class="mt-2 text-gray-700 text-right text-xs">
-                    by &nbsp;
-                    <a
-                      href="https://herotofu.com"
-                      class="hover:underline"
-                      target="_blank"
-                    >
-                      the internet generation
-                    </a>
-                  </div> */}
-                  </div>
+                  <div></div>
                 </form>
               </div>
             </div>
