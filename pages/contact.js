@@ -17,14 +17,14 @@ export default function contact() {
         <Header />
       </div>
       <div
-        class="container mx-auto  md:px-6 text-black relative"
+        class=" md:pl-6 text-black relative"
         style={{
           // backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
       >
-        <section class=" font-body relative">
+        <section class=" font-body relative" style={{ minHeight:"88vh"}}>
           <div
             className="font-bold text-black text-3xl pt-20 font-heading px-8
           text-center shrink-0 grow-0 basis-auto  md:w-8/12 
@@ -38,7 +38,7 @@ export default function contact() {
             CONTACT US
           </div>
           <div class="flex flex-wrap">
-            <div className="md:w-8/12">
+            <div className="md:w-8/12 justify-center">
               <div class="mt-8 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8">
                 {/* <h2
                 class="mb-6 text-3xl font-bold font-heading
@@ -146,7 +146,7 @@ export default function contact() {
                       CONTACT US
                     </button>
                     <input
-                    name="Form Page"
+                      name="Form Page"
                       type="text"
                       class="
                       hidden
@@ -167,7 +167,7 @@ export default function contact() {
                 className=" md:mb-24  md:absolute top-0 w-auto md:w-96"
                 style={{
                   height: width > 600 ? "100%" : "480px",
-                  width: width > 600 ? "unset" : "100%",
+                  width: width > 600 ? "inherit" : "100%",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                   objectFit: "cover",
@@ -179,9 +179,7 @@ export default function contact() {
           </div>
         </section>
       </div>
-      {/* <div className="absolute bottom-0 w-screen"> */}
       <Footer />
-      {/* </div> */}
       <FloatingButton />
     </div>
   );

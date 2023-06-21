@@ -35,6 +35,7 @@ export const HeroCarousal = ({ images }) => {
             <img
               src={image.src}
               priority={true}
+              rel="preload"
               // loading="eager"
               quality={`40`}
               alt="Picture of the artist"

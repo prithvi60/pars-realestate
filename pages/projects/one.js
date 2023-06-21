@@ -40,8 +40,9 @@ export default function one() {
         //   backgroundRepeat: "no-repeat",
         //   backgroundPosition: "bottom",
         // }}
+        style={{ minHeight:"88vh"}}
       >
-        <section class="mb-32 font-body">
+        <section class="mb-32 font-body" >
           <div class="flex flex-wrap">
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-4">
               <TabsComponent
@@ -58,7 +59,7 @@ export default function one() {
                     Type: <span className="font-normal">3 BHK</span>
                   </p>
                   <p className="text-black font-bold font-hero text-left md:text-center mb-4">
-                    Size: <span className="font-normal">1,227 Sq.ft.</span>
+                    Size: <span className="font-normal">1,404 Sq.ft.</span>
                   </p>
                   <p className="text-black font-bold font-hero text-left md:text-center mb-4">
                     Address:{" "}
@@ -89,7 +90,7 @@ export default function one() {
               >
                 CONTACT US
               </h2>
-              <p class="mb-2 text-black dark:text-neutral-300 font-heading">
+              <p class="mb-2 text-black font-heading">
                 REACH US AT
               </p>
               <p
@@ -99,11 +100,11 @@ export default function one() {
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
                 Saidapet, Intermontlife.com Chennai-600015
               </p>
-              <p class="mb-2 text-black dark:text-neutral-300 bg-gray-200">
+              <p class="mb-2 text-black bg-gray-200">
                 +91-9788058526
               </p>
               <p
-                class="mb-4 text-black dark:text-neutral-300 border-b"
+                class="mb-4 text-black border-b"
                 style={{ background: "#dbc07c" }}
               >
                 sales@intermontlife.com

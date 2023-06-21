@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 
 export default function Contact() {
   return (
-    <div className="text-black" >
+    <div className="text-black">
       <NextSeo title="Form" description="Form submitted" />
       <Head>
         <title>Intermont</title>
@@ -14,7 +14,12 @@ export default function Contact() {
       <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
-      <div className="flex flex-col justify-center mx-auto mt-52 text-center max-w-2x1">
+      <div
+        className="flex flex-col justify-center mx-auto mt-32 text-center max-w-2x1"
+        style={{
+          minHeight: "88vh",
+        }}
+      >
         <h1 className="text-3xl font-bold tracking-tight text-white md:text-5xl">
           Thank you, We have received your details!
         </h1>

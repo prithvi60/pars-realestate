@@ -30,6 +30,7 @@ export default function two() {
       </div>
       <div
         class=" my-4 mx-auto px-4 md:px-6 text-black"
+        style={{ minHeight:"88vh"}}
         // style={{
         //
         //   backgroundRepeat: "no-repeat",

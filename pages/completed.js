@@ -43,6 +43,7 @@ export default function completedprojects() {
           // backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
+          minHeight:"88vh"
         }}
       >
         <div

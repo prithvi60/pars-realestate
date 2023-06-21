@@ -14,7 +14,7 @@ export default function clients() {
       <section
         className="px-8 md:px-32 md:pb-8"
         style={{
-       
+          minHeight:"88vh",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}

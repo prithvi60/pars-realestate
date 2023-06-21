@@ -42,6 +42,7 @@ export default function three() {
       </div>
       <div
         class=" my-4 mx-auto px-4 md:px-6 text-black"
+        style={{ minHeight:"88vh"}}
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -50,7 +51,8 @@ export default function three() {
       >
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 flex justify-center md:px-3">
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 flex justify-center md:px-3"
+            >
               <TabsComponent
                 type={"completed"}
                 model={Hero1}

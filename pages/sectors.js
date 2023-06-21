@@ -15,6 +15,7 @@ export default function sectors() {
         style={{
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
+          minHeight:"88vh"
         }}
       >
         <div

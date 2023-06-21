@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className=" pb-4 text-white-200" 
+    <footer className=" pb-4 text-white-200 bottom-0 w-screen" 
     style={{background:"#908f8f"}}
     >
       <div className="max-w-5xl xl:max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
@@ -48,13 +48,12 @@ export default function Footer() {
             </li>
           </ul> */}
           <ul className="pt-5 flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row justify-center items-center">
-            <a
-              href="/"
+            <li
               className="text-sm  hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight font-body text-center w-screen"
               style={{ color: "white" }}
             >
               Copyright © 2023 Intermont. All rights reserved
-            </a>
+            </li>
           </ul>
         </div>
       {/* </div> */}

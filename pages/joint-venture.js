@@ -12,13 +12,14 @@ export default function jointventure() {
     setWidth(window.innerWidth);
   }, []);
   return (
-    <div>
+    <div className="h-screen">
       <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
       <section
-        className=" md:px-8 relative"
+        className=" md:pl-8 relative"
         style={{
+          minHeight:"88vh",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
@@ -169,7 +170,7 @@ export default function jointventure() {
               className="md:mb-24  md:absolute top-0 w-auto md:w-96"
               style={{
                 height: width > 600 ? "100%" : "480px",
-                width: width > 600 ? "" : "100%",
+                width: width > 600 ? "inherit" : "100%",
                 objectFit: "cover",
                 // overflow: "hidden",
                 objectPosition: "70% 0",
