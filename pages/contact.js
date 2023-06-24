@@ -74,11 +74,12 @@ export default function contact() {
                   sales@intermontlife.com
                 </p>
               </div>
-              <div class="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8 text-center">
+              <div class="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8 text-center md:flex md:justify-center">
                 <form
                   method="POST"
-                  action="https://public.herotofu.com/v1/0b687a30-0e6b-11ee-8267-d3eb100789b4"
+                  action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
                   accept-charset="UTF-8"
+                  className="md:px-18 lg:px-32 min-w-full"
                 >
                   <label
                     class="block mb-2 md:mb-4

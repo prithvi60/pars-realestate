@@ -23,6 +23,7 @@ export default function one() {
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
+        alink.target="blank";
         alink.download = "One_Brochure.pdf";
         alink.click();
       });
@@ -111,7 +112,7 @@ export default function one() {
               </p>
               <form
                 method="POST"
-                action="https://public.herotofu.com/v1/0b687a30-0e6b-11ee-8267-d3eb100789b4"
+                action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
                 accept-charset="UTF-8"
               >
                 <label class="block mb-2">
