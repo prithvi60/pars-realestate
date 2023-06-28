@@ -13,19 +13,27 @@ import G3 from "../../public/images/projects/opal/gallery3.jpg";
 import G4 from "../../public/images/projects/opal/gallery4.jpg";
 import G5 from "../../public/images/projects/opal/gallery5.jpg";
 
-
 const plan = [
-  { original: Plan1.src },
-  { original: Plan2.src },
-  { original: Plan3.src },
+  { src: Plan1.src,alt:"plan image" },
+  { src: Plan2.src,alt:"plan image" },
+  { src: Plan3.src,alt:"plan image" },
 ];
 const gallery = [
-  { original: G1.src },
-  { original: G2.src },
-  { original: G3.src },
-  { original: G4.src },
-  { original: G5.src },
-
+  { src: G1.src, 
+    // loading: "lazy",
+     alt: "galley image" },
+  { src: G2.src, 
+    // loading: "lazy",
+     alt: "galley image" },
+  { src: G3.src, 
+    // loading: "lazy",
+     alt: "galley image" },
+  { src: G4.src, 
+    // loading: "lazy",
+     alt: "galley image" },
+  { src: G5.src, 
+    // loading: "lazy",
+     alt: "galley image" },
 ];
 
 export default function three() {
@@ -42,7 +50,7 @@ export default function three() {
       </div>
       <div
         class=" my-4 mx-auto px-4 md:px-6 text-black"
-        style={{ minHeight:"88vh"}}
+        style={{ minHeight: "88vh" }}
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -51,8 +59,7 @@ export default function three() {
       >
         <section class="mb-32 font-body">
           <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 flex justify-center md:px-3"
-            >
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 flex justify-center md:px-3">
               <TabsComponent
                 type={"completed"}
                 model={Hero1}

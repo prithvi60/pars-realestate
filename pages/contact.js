@@ -1,15 +1,31 @@
 import React, { useState, useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FloatingButton from "../components/FloatingButton";
 import Hero1 from "../public/images/projects/about.jpg";
 export default function contact() {
   const [width, setWidth] = useState(null);
-
   useEffect(() => {
     // window is accessible here.
     setWidth(window.innerWidth);
   }, []);
+
+  const handleGetRequest = async () => {
+    try {
+      const response = await fetch("http://intermontlife.com/contact/");
+      if (response.ok) {
+        toast.success("We have received your message!");
+        const data = await response.json(); // Parse response data as JSON
+        console.log("Response data:", data);
+        // You can access the response data here
+      } else {
+        toast.error("Please try again!");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   return (
     <div className="relative">
@@ -24,7 +40,7 @@ export default function contact() {
           backgroundPosition: "bottom",
         }}
       >
-        <section class=" font-body relative" style={{ minHeight:"88vh"}}>
+        <section class=" font-body relative" style={{ minHeight: "88vh" }}>
           <div
             className="font-bold text-black text-3xl pt-20 font-heading px-8
           text-center shrink-0 grow-0 basis-auto  md:w-8/12 
@@ -80,6 +96,7 @@ export default function contact() {
                   action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
                   accept-charset="UTF-8"
                   className="md:px-18 lg:px-32 min-w-full"
+                  onSubmit={handleGetRequest}
                 >
                   <label
                     class="block mb-2 md:mb-4
@@ -93,7 +110,7 @@ export default function contact() {
                     h-10
             block
             w-full
-         
+            input
             rounded-md
             shadow-sm
            
@@ -113,7 +130,7 @@ export default function contact() {
                     h-10
             block
             w-full
-         
+            input
             rounded-md
             shadow-sm
           
@@ -130,7 +147,7 @@ export default function contact() {
                     input
             block
             w-full
-         
+         text-black
             rounded-md
             shadow-sm
           "
@@ -141,10 +158,9 @@ export default function contact() {
                   <div class="mb-6 mt-6">
                     <button
                       type="submit"
-                      // onClick={sendMail}
                       class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                     >
-                      CONTACT US
+                      SUBMIT
                     </button>
                     <input
                       name="Form Page"
@@ -182,6 +198,7 @@ export default function contact() {
       </div>
       <Footer />
       <FloatingButton />
+      <Toaster position="bottom-center" />
     </div>
   );
 }

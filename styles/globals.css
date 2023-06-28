@@ -21,7 +21,7 @@
 
 html,
 body {
-/* -webkit-text-fill-color: #000000; */
+  /* -webkit-text-fill-color: #000000; */
 
   padding: 0;
   margin: 0;
@@ -93,6 +93,9 @@ input[type="email"],
   border: 2px solid #dbc07c;
   padding-left: 2%;
   background: #f2f1ef;
+  -webkit-text-fill-color: rgb(76, 76, 76);
+  -webkit-opacity: 1;
+  opacity: 1;
 }
 
 .clearNav {
@@ -172,7 +175,7 @@ input[type="email"],
   top: 50% !important;
   right: 8%;
 }
-.image-gallery-slide .image-gallery-image{
+/* .image-gallery-slide .image-gallery-image{
   width: 60vw !important;
 }
 .image-gallery {
@@ -180,9 +183,9 @@ input[type="email"],
   justify-content: center;
   align-items: center;
   width: 100%;
-}
+} */
 
-.image-gallery-slide img {
+/* .image-gallery-slide img {
   width: 700px;
   height: 480px;
   object-fit: cover;
@@ -197,8 +200,8 @@ input[type="email"],
   object-position: center center;
 }
 .image-gallery-icon{
-  color: #dbc07c;
-}
+  color: #dbc07c; */
+/* } */
 @media only screen and (max-width: 600px) {
   .hero .slick-prev {
     left: 38%;
@@ -209,14 +212,14 @@ input[type="email"],
   .showMenuNav {
     width: 50%;
   }
-  .image-gallery-slide img {
+  /* .image-gallery-slide img {
     width: 350px !important;
     height: 400px;
     object-fit: cover;
     overflow: hidden;
     object-position: center center;
-  }
-  .image-gallery-slide .image-gallery-image{
+  } */
+  /* .image-gallery-slide .image-gallery-image{
     width: 80vw !important;
   }
   .model  .image-gallery-slide img {
@@ -228,5 +231,5 @@ input[type="email"],
   }
   .model .image-gallery-slide .image-gallery-image{
     width: 100vw !important;
-  }
+  } */
 }

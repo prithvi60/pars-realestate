@@ -1,4 +1,5 @@
 import React from "react";
+import toast, { Toaster } from "react-hot-toast";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero1 from "../../public/images/hero/hero2.jpg";
@@ -9,9 +10,9 @@ import Plan2 from "../../public/images/projects/one/plan2.jpg";
 import Plan3 from "../../public/images/projects/one/plan3.jpg";
 
 const plan = [
-  { original: Plan1.src, thumbnail: Plan1.src },
-  { original: Plan2.src, thumbnail: Plan2.src },
-  { original: Plan3.src, thumbnail: Plan3.src },
+  { src: Plan1.src, alt: "plan image" },
+  { src: Plan2.src, alt: "plan image" },
+  { src: Plan3.src, alt: "plan image" },
 ];
 export default function one() {
   const onButtonClick = () => {
@@ -23,11 +24,26 @@ export default function one() {
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.target="blank";
+        alink.target = "blank";
         alink.download = "One_Brochure.pdf";
         alink.click();
       });
     });
+  };
+  const handleGetRequest = async () => {
+    try {
+      const response = await fetch("https://intermontlife.com/projects/one/");
+      if (response.ok) {
+        toast.success("We have received your message!");
+        const data = await response.json(); // Parse response data as JSON
+        console.log("Response data:", data);
+        // You can access the response data here
+      } else {
+        toast.error("Please try again!");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
   return (
     <div className="z-5">
@@ -41,9 +57,9 @@ export default function one() {
         //   backgroundRepeat: "no-repeat",
         //   backgroundPosition: "bottom",
         // }}
-        style={{ minHeight:"88vh"}}
+        style={{ minHeight: "88vh" }}
       >
-        <section class="mb-32 font-body" >
+        <section class="mb-32 font-body">
           <div class="flex flex-wrap">
             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-4">
               <TabsComponent
@@ -91,9 +107,7 @@ export default function one() {
               >
                 CONTACT US
               </h2>
-              <p class="mb-2 text-black font-heading">
-                REACH US AT
-              </p>
+              <p class="mb-2 text-black font-heading">REACH US AT</p>
               <p
                 class="mb-2 text-black dark:text-neutral-300"
                 style={{ background: "#dbc07c" }}
@@ -101,9 +115,7 @@ export default function one() {
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
                 Saidapet, Intermontlife.com Chennai-600015
               </p>
-              <p class="mb-2 text-black bg-gray-200">
-                +91-9788058526
-              </p>
+              <p class="mb-2 text-black bg-gray-200">+91-9788058526</p>
               <p
                 class="mb-4 text-black border-b"
                 style={{ background: "#dbc07c" }}
@@ -114,13 +126,14 @@ export default function one() {
                 method="POST"
                 action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
                 accept-charset="UTF-8"
+                onSubmit={handleGetRequest}
               >
                 <label class="block mb-2">
                   <span class="text-gray-700">Your name</span>
                   <input
                     type="text"
                     name="name"
-                    class="
+                    class="  input
                     h-10
           block
           w-full
@@ -141,7 +154,7 @@ export default function one() {
                   <input
                     name="email"
                     type="email"
-                    class="
+                    class="  input
                     h-10
           block
           w-full
@@ -158,6 +171,7 @@ export default function one() {
                   <textarea
                     name="message"
                     class="input
+                    text-black
           block
           w-full
           mt-1
@@ -178,7 +192,7 @@ export default function one() {
                     type="submit"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
-                    CONTACT US
+                    SUBMIT
                   </button>
                   <input
                     name="Form Page"
@@ -196,6 +210,7 @@ export default function one() {
       </div>
       <Footer />
       <FloatingButton />
+      <Toaster position="bottom-center" />
     </div>
   );
 }

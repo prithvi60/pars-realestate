@@ -1,4 +1,5 @@
 import React from "react";
+import toast, { Toaster } from "react-hot-toast";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero1 from "../../public/images/projects/hero1.jpg";
@@ -7,7 +8,10 @@ import TabsComponent from "../../components/Tabs";
 import Plan1 from "../../public/images/projects/w-413/plan1.png";
 import Plan2 from "../../public/images/projects/w-413/plan2.png";
 
-const plan = [{ original: Plan1.src }, { original: Plan2.src }];
+const plan = [
+  { src: Plan1.src, alt: "plan image" },
+  { src: Plan2.src, alt: "plan image" },
+];
 export default function two() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -18,11 +22,26 @@ export default function two() {
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.target="blank";
+        alink.target = "blank";
         alink.download = "W-413_Brochure.pdf";
         alink.click();
       });
     });
+  };
+  const handleGetRequest = async () => {
+    try {
+      const response = await fetch("https://intermontlife.com/projects/w-413/");
+      if (response.ok) {
+        toast.success("We have received your message!");
+        const data = await response.json(); // Parse response data as JSON
+        console.log("Response data:", data);
+        // You can access the response data here
+      } else {
+        toast.error("Please try again!");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
   return (
     <div className="z-5">
@@ -31,7 +50,7 @@ export default function two() {
       </div>
       <div
         class=" my-4 mx-auto px-4 md:px-6 text-black"
-        style={{ minHeight:"88vh"}}
+        style={{ minHeight: "88vh" }}
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -109,13 +128,14 @@ export default function two() {
                 method="POST"
                 action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
                 accept-charset="UTF-8"
+                onSubmit={handleGetRequest}
               >
                 <label class="block mb-2">
                   <span class="text-gray-700">Your name</span>
                   <input
                     type="text"
                     name="name"
-                    class="
+                    class="  input
                     h-10
           block
           w-full
@@ -136,7 +156,7 @@ export default function two() {
                   <input
                     name="email"
                     type="email"
-                    class="
+                    class="  input
                     h-10
           block
           w-full
@@ -153,6 +173,7 @@ export default function two() {
                   <textarea
                     name="message"
                     class="input
+                    text-black
           block
           w-full
           mt-1
@@ -173,10 +194,10 @@ export default function two() {
                     type="submit"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
-                    CONTACT US
+                    SUBMIT
                   </button>
                   <input
-                  name="Form Page"
+                    name="Form Page"
                     type="text"
                     class="
                       hidden
@@ -191,6 +212,7 @@ export default function two() {
       </div>
       <Footer />
       <FloatingButton />
+      <Toaster position="bottom-center" />
     </div>
   );
 }

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
+import Lightbox from "react-spring-lightbox";
+import { Gallery } from "./Gallery";
+
 export default function TabsComponent({
   type,
   model,
@@ -9,6 +12,7 @@ export default function TabsComponent({
   gallery,
 }) {
   const [openTab, setOpenTab] = useState(1);
+
   const [width, setWidth] = useState(null);
   useEffect(() => {
     // window is accessible here.
@@ -17,7 +21,7 @@ export default function TabsComponent({
 
   return (
     <div>
-      <div className= "mx-auto">
+      <div className="mx-auto">
         <div className="flex flex-col items-center justify-center">
           <ul className="flex space-x-2 text-center font-heading">
             <li>
@@ -76,29 +80,20 @@ export default function TabsComponent({
               }
               style={{
                 height: width > 600 ? "480px" : "400px",
-                width: width > 600 ? "700px" : "450px",
+                width: width > 600 ? "700px" : "400px",
               }}
             >
-              <ImageGallery
-                items={[{ original: model.src }]}
-                showThumbnails={false}
-                showPlayButton={false}
-              />
+              <Gallery images={[{ src: model.src, alt: "model" }]} />
             </div>
             {flat !== "imperial" && (
               <div
                 className={openTab === 2 ? "block relative" : "hidden"}
                 style={{
                   height: width > 600 ? "480px" : "400px",
-                  width: width > 600 ? "700px" : "450px",
+                  width: width > 600 ? "700px" : "400px",
                 }}
               >
-                <ImageGallery
-                  items={plan}
-                  showThumbnails={false}
-                  showPlayButton={false}
-                  autoPlay={false}
-                />
+                <Gallery images={plan} type={"plan"} />
               </div>
             )}
             <div
@@ -122,16 +117,10 @@ export default function TabsComponent({
                 className={openTab === 4 ? "block relative model" : "hidden"}
                 style={{
                   height: width > 600 ? "480px" : "400px",
-                  width: width > 600 ? "700px" : "450px",
+                  width: width > 600 ? "700px" : "400px",
                 }}
               >
-                {/* <Carousal images={gallery} /> */}
-                <ImageGallery
-                  items={gallery}
-                  showThumbnails={false}
-                  showPlayButton={false}
-                  autoPlay={false}
-                />
+                <Gallery images={gallery} />
               </div>
             )}
           </div>
