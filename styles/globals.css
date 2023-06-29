@@ -29,6 +29,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #f2f1ef;
   overflow-x: hidden;
+
   /* color: black; */
 }
 body::selection {
@@ -177,8 +178,10 @@ input[type="email"],
 }
 
 @media only screen and (max-width: 600px) {
+  html,
   body {
-    scroll-padding-top: 200px;
+    -webkit-overflow-scrolling: touch !important;
+    overflow: auto !important;
   }
   .hero .slick-prev {
     left: 38%;
