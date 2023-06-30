@@ -44,7 +44,7 @@ export default function two() {
     }
   };
   return (
-    <div className="z-5">
+    <div className="z-5 relative">
       <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
@@ -95,35 +95,16 @@ export default function two() {
                 </div>
               </div>
             </div>
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3">
+            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-4">
               <h2
-                class="mb-6 text-3xl font-bold font-heading text-center"
+                class="mb-6 text-3xl font-bold font-heading text-center uppercase"
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "#dbc07c",
                 }}
               >
-                CONTACT US
+                Register your Interest
               </h2>
-              <p class="mb-2 text-black dark:text-neutral-300 font-heading">
-                REACH US AT
-              </p>
-              <p
-                class="mb-2 text-black dark:text-neutral-300"
-                style={{ background: "#dbc07c" }}
-              >
-                No.13, Opal Apartments, North Mada Street, Srinagar Colony,
-                Saidapet, Intermontlife.com Chennai-600015
-              </p>
-              <p class="mb-2 text-black dark:text-neutral-300 bg-gray-200">
-                +91-9788058526
-              </p>
-              <p
-                class="mb-4 text-black dark:text-neutral-300 border-b"
-                style={{ background: "#dbc07c" }}
-              >
-                sales@intermontlife.com
-              </p>
               <form
                 method="POST"
                 action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
@@ -162,7 +143,22 @@ export default function two() {
                     required
                   />
                 </label>
-                <label class="block mb-2">
+                <label class="block mb-4">
+                  <span class="text-gray-700">Phone number</span>
+                  <input
+                    type="text"
+                    name="phone numer"
+                    class="  input
+                    h-10
+          block
+          w-full
+          mt-1
+      
+        "
+                    placeholder="+91"
+                  />
+                </label>
+                {/* <label class="block mb-2">
                   <span class="text-gray-700">Message</span>
                   <textarea
                     name="message"
@@ -176,13 +172,13 @@ export default function two() {
                     rows="3"
                     placeholder="Tell us what you're thinking about..."
                   ></textarea>
-                </label>
-                <div class="mb-2 mt-4">
+                </label> */}
+                <div class="mb-6 mt-4">
                   <button
                     type="submit"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading uppercase"
                   >
-                    SUBMIT
+                    Register
                   </button>
                   <input
                     name="Form Page"
@@ -194,6 +190,21 @@ export default function two() {
                   />
                 </div>
               </form>
+              <p class="mb-2 text-black font-heading">REACH US AT</p>
+              <p
+                class="mb-2 text-black dark:text-neutral-300"
+                style={{ background: "#dbc07c" }}
+              >
+                No.13, Opal Apartments, North Mada Street, Srinagar Colony,
+                Saidapet, Chennai-600015
+              </p>
+              <p class="mb-2 text-black bg-gray-200">+91-9788058526</p>
+              <p
+                class="mb-2 text-black border-b"
+                style={{ background: "#dbc07c" }}
+              >
+                sales@intermontlife.com
+              </p>
             </div>
           </div>
         </section>

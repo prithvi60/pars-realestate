@@ -72,7 +72,7 @@ export default function jointventure() {
               </p>
               <p class="mb-2 text-gray-700 dark:text-neutral-300">
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
-                Saidapet, Intermontlife.com Chennai-600015
+                Saidapet, Chennai-600015
               </p>
               <p class="mb-2 text-gray-700 dark:text-neutral-300">
                 +91-9788058526

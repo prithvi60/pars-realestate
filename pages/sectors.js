@@ -6,7 +6,7 @@ import FloatingButton from "../components/FloatingButton";
 
 export default function sectors() {
   return (
-    <div>
+    <div className="relative">
       <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>

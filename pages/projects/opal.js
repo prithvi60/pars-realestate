@@ -44,7 +44,7 @@ export default function three() {
     setWidth(window.innerWidth);
   }, []);
   return (
-    <div className="z-5">
+    <div className="z-5 relative">
       <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>

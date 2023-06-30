@@ -78,7 +78,7 @@ export default function contact() {
                   style={{ background: "#dbc07c" }}
                 >
                   No.13, Opal Apartments, North Mada Street, Srinagar Colony,
-                  Saidapet, Intermontlife.com Chennai-600015
+                  Saidapet, Chennai-600015
                 </p>
                 <p class="mb-2 text-black dark:text-neutral-300 bg-gray-200 text-center">
                   +91-9788058526

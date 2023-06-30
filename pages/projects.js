@@ -30,7 +30,7 @@ export default function projects() {
   ];
 
   return (
-    <div>
+    <div className="relative">
       <div className="py-3" style={{ background: "#908f8f" }}>
         <Header />
       </div>
