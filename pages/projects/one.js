@@ -114,11 +114,13 @@ export default function one() {
                 onSubmit={handleGetRequest}
               >
                 <label class="block mb-2">
-                  <span class="text-gray-700">Your name</span>
+                  <span class="text-black">Your name</span>
                   <input
                     type="text"
                     name="name"
+                    required
                     class="  input
+                    font-sans
                     h-10
           block
           w-full
@@ -129,11 +131,12 @@ export default function one() {
                   />
                 </label>
                 <label class="block mb-2">
-                  <span class="text-gray-700">Email address</span>
+                  <span class="text-black">Email address</span>
                   <input
                     name="email"
-                    type="email"
+                    type="text"
                     class="  input
+                    font-sans
                     h-10
           block
           w-full
@@ -143,14 +146,18 @@ export default function one() {
         "
                     placeholder="akash.chandran@example.com"
                     required
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    title="should contain @ and .com "
                   />
                 </label>
                 <label class="block mb-4">
-                  <span class="text-gray-700">Phone number</span>
+                  <span class="text-black">Phone number</span>
                   <input
-                    type="text"
+                    type="tel"
                     name="phone numer"
+                    required
                     class="  input
+                    font-sans
                     h-10
           block
           w-full
@@ -158,6 +165,8 @@ export default function one() {
       
         "
                     placeholder="+91"
+                    pattern="[0-9]{10}"
+                    title="should contain 10 digit number"
                   />
                 </label>
                 {/* <label class="block mb-2">

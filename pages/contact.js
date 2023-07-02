@@ -6,6 +6,24 @@ import FloatingButton from "../components/FloatingButton";
 import Hero1 from "../public/images/projects/about.jpg";
 export default function contact() {
   const [width, setWidth] = useState(null);
+  // const handleFocus = (event) => {
+  //   if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+  //     const windowHeight = window.innerHeight;
+  //     const scrollPosition = windowHeight / 2;
+  //     window.scrollTo(0, scrollPosition);
+  //     event.preventDefault();
+  //     event.target.focus();
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   const inputElement = document.getElementById("multiline-input");
+  //   inputElement.addEventListener("focus", handleFocus);
+
+  //   return () => {
+  //     inputElement.removeEventListener("focus", handleFocus);
+  //   };
+  // }, []);
   useEffect(() => {
     // window is accessible here.
     setWidth(window.innerWidth);
@@ -102,11 +120,13 @@ export default function contact() {
                     class="block mb-2 md:mb-4
                 "
                   >
-                    <span class="text-gray-700">Your name</span>
+                    <span class="text-black">Your name</span>
                     <input
                       type="text"
                       name="name"
-                      class="
+                      // onFocus={handleFocus}
+                      className="
+                      font-sans
                     h-10
             block
             w-full
@@ -116,40 +136,43 @@ export default function contact() {
            
           "
                       placeholder="Akash"
+                      required
                     />
                   </label>
                   <label
                     class="block mb-2 md:mb-4
                 "
                   >
-                    <span class="text-gray-700">Email address</span>
+                    <span class="text-black">Email address</span>
                     <input
                       name="email"
-                      type="email"
-                      class="
-                    h-10
-            block
-            w-full
-            input
-            rounded-md
-            shadow-sm
-          
+                      type="text"
+                      // onFocus={handleFocus}
+                      className="
+                      font-sans
+                      h-10
+                    input
+          block
+          w-full
+      
           "
                       placeholder="akash.chandran@example.com"
                       required
+                      pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                      title="should contain @ and .com "
                     />
                   </label>
                   <label class="block mb-2 md:mb-4">
-                    <span className="text-gray-700">Message</span>
+                    <span className="text-black">Message</span>
                     <textarea
                       name="message"
+                      // onFocus={handleFocus}
                       className="
+                      font-sans
                     input
             block
             w-full
-         text-black
-            rounded-md
-            shadow-sm
+          
           "
                       rows="3"
                       placeholder="Tell us what you're thinking about..."

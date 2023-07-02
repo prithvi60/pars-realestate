@@ -98,6 +98,20 @@ input[type="email"],
   -webkit-opacity: 1;
   opacity: 1;
 }
+textarea {
+  -webkit-text-fill-color: rgb(76, 76, 76);
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+/* iOS Placeholder Color for Input */
+input::placeholder {
+  color: rgb(94, 94, 94); /* Replace with the desired color */
+}
+
+/* iOS Placeholder Color for Textarea */
+textarea::placeholder {
+  color: rgb(94, 94, 94); /* Replace with the desired color */
+}
 
 .clearNav {
   backdrop-filter: saturate(180%) blur(5px) !important;

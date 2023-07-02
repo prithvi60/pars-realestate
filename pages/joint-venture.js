@@ -7,7 +7,15 @@ import FloatingButton from "../components/FloatingButton";
 
 export default function jointventure() {
   const [width, setWidth] = useState(null);
-
+  // const handleFocus = (event) => {
+  //   if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+  //     const windowHeight = window.innerHeight;
+  //     const scrollPosition = windowHeight / 2;
+  //     window.scrollTo(0, scrollPosition);
+  //     event.preventDefault();
+  //     event.target.focus();
+  //   }
+  // };
   useEffect(() => {
     // window is accessible here.
     setWidth(window.innerWidth);
@@ -90,11 +98,14 @@ export default function jointventure() {
                 onSubmit={handleGetRequest}
               >
                 <label class="block mb-2">
-                  <span class="text-gray-700">Your name</span>
+                  <span class="text-black">Your name</span>
                   <input
                     type="text"
                     name="name"
-                    class="
+                    // onFocus={handleFocus}
+                    required
+                    className="
+                    font-sans
                     h-10
                     input
           block
@@ -105,11 +116,13 @@ export default function jointventure() {
                   />
                 </label>
                 <label class="block mb-2">
-                  <span class="text-gray-700">Email address</span>
+                  <span class="text-black">Email address</span>
                   <input
                     name="email"
-                    type="email"
-                    class="
+                    type="text"
+                    // onFocus={handleFocus}
+                    className="
+                    font-sans
                     h-10
                     input
           block
@@ -118,14 +131,17 @@ export default function jointventure() {
         "
                     placeholder="akash.chandran@example.com"
                     required
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    title="should contain @ and .com "
                   />
                 </label>
                 <label class="block mb-2">
-                  <span class="text-gray-700">Message</span>
+                  <span class="text-black">Message</span>
                   <textarea
                     name="message"
+                    // onFocus={handleFocus}
                     className="input
-                    text-black
+                    font-sans
           block
           w-full
       
