@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -13,6 +13,12 @@ const plan = [
   { src: Plan2.src, alt: "plan image" },
 ];
 export default function two() {
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
   const onButtonClick = () => {
     // using Java Script method to get PDF file
     fetch("/Brochurew413.pdf").then((response) => {
