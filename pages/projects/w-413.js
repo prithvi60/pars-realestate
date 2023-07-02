@@ -29,6 +29,9 @@ export default function two() {
     });
   };
   const handleGetRequest = async () => {
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+      toast.success("We have received your message!");
+    }
     try {
       const response = await fetch("https://intermontlife.com/projects/w-413/");
       if (response.ok) {
@@ -37,10 +40,14 @@ export default function two() {
         console.log("Response data:", data);
         // You can access the response data here
       } else {
-        toast.error("Please try again!");
+        if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+          toast.error("Please try again!");
+        }
       }
     } catch (error) {
-      console.error("Error:", error);
+      if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+        toast.error("Please try again!");
+      }
     }
   };
   return (
@@ -220,7 +227,7 @@ export default function two() {
       </div>
       <Footer />
       <FloatingButton />
-      <Toaster position="bottom-center" />
+      <Toaster position={width > 600 ? "bottom-center" : "top-center"} />
     </div>
   );
 }
