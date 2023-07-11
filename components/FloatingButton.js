@@ -15,6 +15,7 @@ export default function FloatingButton() {
       >
         <motion.img
           src="/whatsapp.gif"
+          loading="lazy"
           alt="msg"
           className="rounded-full p-2 shadow-xl"
           style={{ boxShadow: "0 0 0 2px #dbc07c" }}

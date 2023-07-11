@@ -21,7 +21,7 @@ export default function TabsComponent({
 
   return (
     <div>
-      <div className="mx-auto">
+      <div className="mx-auto carousal">
         <div className="flex flex-col items-center justify-center">
           <ul className="flex space-x-2 text-center font-heading">
             <li>

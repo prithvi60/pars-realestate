@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -36,7 +36,7 @@ export default function two() {
   };
   const handleGetRequest = async () => {
     // if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-      toast.success("We have received your message!");
+    toast.success("We have received your message!");
     // }
     try {
       const response = await fetch("https://intermontlife.com/projects/w-413/");
@@ -47,12 +47,12 @@ export default function two() {
         // You can access the response data here
       } else {
         // if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-          //  toast.success("We have received your message!");
+        //  toast.success("We have received your message!");
         // }
       }
     } catch (error) {
       // if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-        //  toast.success("We have received your message!");
+      //  toast.success("We have received your message!");
       // }
     }
   };
@@ -62,7 +62,7 @@ export default function two() {
         <Header />
       </div>
       <div
-        class=" my-4 mx-auto px-4 md:px-6 text-black"
+      className=" my-4 mx-auto px-4 md:px-6 text-black"
         style={{ minHeight: "88vh" }}
         // style={{
         //
@@ -101,7 +101,7 @@ export default function two() {
                 <div className="flex justify-center w-full">
                   <button
                     onClick={onButtonClick}
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
                     DOWNLOAD BROCHURE
                   </button>
@@ -110,7 +110,7 @@ export default function two() {
             </div>
             <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-4">
               <h2
-                class="mb-6 text-3xl font-bold font-heading text-center uppercase"
+              className="mb-6 text-3xl font-bold font-heading text-center uppercase"
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "#dbc07c",
@@ -130,7 +130,7 @@ export default function two() {
                     type="text"
                     name="name"
                     required
-                    class="  input
+                  className="  input
                     font-sans
                     h-10
           block
@@ -146,7 +146,7 @@ export default function two() {
                   <input
                     name="email"
                     type="text"
-                    class="  input
+                  className="  input
                     font-sans
                     h-10
           block
@@ -170,7 +170,7 @@ export default function two() {
                     title="should contain 10 digit number"
                     name="phone numer"
                     required
-                    class="  input
+                  className="  input
                     font-sans
                     h-10
           block
@@ -184,7 +184,7 @@ export default function two() {
                   <span class="text-black">Message</span>
                   <textarea
                     name="message"
-                    class="input
+                  className="input
                     text-black
           block
           w-full
@@ -196,16 +196,18 @@ export default function two() {
                   ></textarea>
                 </label> */}
                 <div class="mb-6 mt-4">
-                  <button
-                    type="submit"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading uppercase"
-                  >
-                    Register
-                  </button>
+                  <div className="flex justify-center md:justify-start w-full">
+                    <button
+                      type="submit"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading uppercase"
+                    >
+                      Register
+                    </button>
+                  </div>
                   <input
                     name="Form Page"
                     type="text"
-                    class="
+                  className="
                       hidden
           "
                     value={"Intermont w-413"}
@@ -214,7 +216,7 @@ export default function two() {
               </form>
               <p class="mb-2 text-black font-heading">REACH US AT</p>
               <p
-                class="mb-2 text-black dark:text-neutral-300"
+              className="mb-2 text-black dark:text-neutral-300"
                 style={{ background: "#dbc07c" }}
               >
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
@@ -222,7 +224,7 @@ export default function two() {
               </p>
               <p class="mb-2 text-black bg-gray-200">+91-9788058526</p>
               <p
-                class="mb-2 text-black border-b"
+              className="mb-2 text-black border-b"
                 style={{ background: "#dbc07c" }}
               >
                 sales@intermontlife.com

@@ -194,6 +194,20 @@ textarea::placeholder {
   top: 50% !important;
   right: 8%;
 }
+.carousal .slick-prev {
+  z-index: 1000 !important;
+  left: 2% !important;
+  background: #dbc07c !important;
+  padding: 4px !important;
+}
+.carousal .slick-next {
+  right: 2% !important;
+  background: #dbc07c !important;
+  padding: 4px !important;
+}
+.client .slick-next:before {
+ color: orange !important;
+}
 
 @media only screen and (max-width: 600px) {
   html,
@@ -212,3 +226,47 @@ textarea::placeholder {
     width: 50%;
   }
 }
+/* #root {
+  width: 700px;
+}
+*/
+/* img {
+  border: 1px solid;
+}  */
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .placeholder-image, .real-image {
+  width: 100%;
+} */
+
+.blur .real-image {
+  opacity: 0;
+}
+
+.real-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.unblur {
+  animation: unblur 1s linear;
+}
+
+@keyframes unblur {
+  from {
+    filter: blur(5px)
+  }
+  to {
+    filter: blur(0);
+  }
+}
+

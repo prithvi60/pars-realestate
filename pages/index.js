@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className="text-black font-body">
       <NextSeo
-        title="PARS"
-        description="PARS ENGINEERING INDIA PVT LTD"
+        title="Intermont Life"
+        description="Your home defines you"
         canonical="/"
         openGraph={{
           url: "/",

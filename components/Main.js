@@ -12,7 +12,7 @@ export default function Main() {
   const hero = [Hero1, Hero2, Hero3, Hero4,Hero5];
   return (
     <section
-      class="text-white-100 body-font relative"
+    className="text-white-100 body-font relative"
       style={{
         overflow: "hidden",
         height: "100vh",

@@ -13,8 +13,11 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "orange",
+        background: "orange !important",
         borderRadius: "50%",
+        padding: "0px !important",
+        top: "30%",
+        right: "-8% !important",
       }}
       onClick={onClick}
     />
@@ -29,8 +32,11 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "orange",
+        left: "-8% !important",
+        background: "orange !important",
         borderRadius: "50%",
+        top: "30%",
+        padding: "0px !important",
       }}
       onClick={onClick}
     />
@@ -86,7 +92,7 @@ export const TestimonialCarousal = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    nextArrow: <SampleNextArrow />,
+    nextArrow: <SampleNextArrow className={"client"} />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
@@ -111,7 +117,7 @@ export const TestimonialCarousal = () => {
       {reviews.map((item, idx) => {
         return (
           <div key={idx}>
-            <div className="flex flex-col items-center gap-2 ">
+            <div className="flex flex-col items-center gap-2 client carousal">
               <img
                 src={item.image.src}
                 alt="Picture of the artist"

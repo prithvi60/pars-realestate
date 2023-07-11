@@ -59,10 +59,10 @@ export default function jointventure() {
           JOINT VENTURE
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
-        <div class="flex flex-wrap font-body">
+        <div className="flex flex-wrap font-body">
           <div className="md:w-8/12 md:px-4">
             <div
-              class="mb-3 pt-4 pb-4  w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-1 lg:px-4 font-normal text-black px-8 text-center text-sm"
+              className="mb-3 pt-4 pb-4  w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-1 lg:px-4 font-normal text-black px-8 text-center text-sm"
               style={{ background: "#dbc07c" }}
             >
               We welcome all landowners looking for a fair and profitable Joint
@@ -72,22 +72,22 @@ export default function jointventure() {
               and completely transparent experience. We can’t wait to hear from
               you!
             </div>
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-4 lg:px-4 px-8 text-sm text-center">
-              <p class="mb-2 py-4 text-gray-700 dark:text-neutral-300 border-b">
+            <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-4 lg:px-4 px-8 text-sm text-center">
+              <p className="mb-2 py-4 text-gray-700 dark:text-neutral-300 border-b">
                 Reach out to Us
               </p>
-              <p class="mb-2 text-gray-700 dark:text-neutral-300">
+              <p className="mb-2 text-gray-700 dark:text-neutral-300">
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
                 Saidapet, Chennai-600015
               </p>
-              <p class="mb-2 text-gray-700 dark:text-neutral-300">
+              <p className="mb-2 text-gray-700 dark:text-neutral-300">
                 +91-9788058526
               </p>
-              <p class="mb-2 text-gray-700 dark:text-neutral-300">
+              <p className="mb-2 text-gray-700 dark:text-neutral-300">
                 sales@intermontlife.com
               </p>
             </div>
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:px-4 lg:px-4 px-8 py-4 text-center text-black md:flex md:justify-center">
+            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:px-4 lg:px-4 px-8 py-4 text-center text-black md:flex md:justify-center">
               <form
                 method="POST"
                 action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
@@ -95,8 +95,8 @@ export default function jointventure() {
                 className="md:px-18 lg:px-32 min-w-full"
                 onSubmit={handleGetRequest}
               >
-                <label class="block mb-2">
-                  <span class="text-black">Your name</span>
+                <label className="block mb-2">
+                  <span className="text-black">Your name</span>
                   <input
                     type="text"
                     name="name"
@@ -113,8 +113,8 @@ export default function jointventure() {
                     placeholder="Akash"
                   />
                 </label>
-                <label class="block mb-2">
-                  <span class="text-black">Email address</span>
+                <label className="block mb-2">
+                  <span className="text-black">Email address</span>
                   <input
                     name="email"
                     type="text"
@@ -133,8 +133,8 @@ export default function jointventure() {
                     title="should contain @ and .com "
                   />
                 </label>
-                <label class="block mb-2">
-                  <span class="text-black">Message</span>
+                <label className="block mb-2">
+                  <span className="text-black">Message</span>
                   <textarea
                     name="message"
                     // onFocus={handleFocus}
@@ -148,28 +148,28 @@ export default function jointventure() {
                     placeholder="Tell us what you're thinking about..."
                   ></textarea>
                 </label>
-                <div class="mb-6 mt-4">
+                <div className="mb-6 mt-4">
                   <button
                     type="submit"
-                    class="inline-flex items-center  px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
+                    className="inline-flex items-center  px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
                     SUBMIT
                   </button>
                   <input
                     name="Form Page"
                     type="text"
-                    class="
+                    className="
                       hidden
           "
                     value={"Joint venture"}
                   />
                 </div>
                 <div>
-                  {/* <div class="mt-2 text-gray-700 text-right text-xs">
+                  {/* <div className="mt-2 text-gray-700 text-right text-xs">
                   by &nbsp;
                   <a
                     href="https://herotofu.com"
-                    class="hover:underline"
+                    className="hover:underline"
                     target="_blank"
                   >
                     the internet generation
@@ -179,7 +179,7 @@ export default function jointventure() {
               </form>
             </div>
           </div>
-          <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
+          <div className="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
             <img
               src={Hero1.src}
               alt="Picture of the artist"

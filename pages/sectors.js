@@ -28,12 +28,12 @@ export default function sectors() {
           OTHER SECTORS
         </div>
         {/* <div className="flex flex-col md:flex-row gap-8"> */}
-        <div class="flex flex-wrap justify-center md:mb-8">
-          {/* <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 font-semibold text-black">
+        <div className="flex flex-wrap justify-center md:mb-8">
+          {/* <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 font-semibold text-black">
             Content for Our venture
           </div> */}
-          <div class=" w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 md:border-r">
-            <p class="flex flex-col items-center mb-6 text-black dark:text-neutral-300 text-center">
+          <div className=" w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6 md:border-r">
+            <p className="flex flex-col items-center mb-6 text-black dark:text-neutral-300 text-center">
               <img
                 src={"/parslogo.webp"}
                 alt="logo"
@@ -46,7 +46,7 @@ export default function sectors() {
               ></img>
               <span className="font-bold font-heading">PARS Engineering Pvt Ltd</span>
             </p>
-            <p class="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm font-body">
+            <p className="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm font-body">
               PARS Engineering India Pvt Ltd was incorporated in the year 2013,
               head quartered at Salem, Tamilnadu and having its corporate office
               at Chennai, Tamilnadu. The company holds the primary goal of
@@ -60,8 +60,8 @@ export default function sectors() {
               cost for the benefits of its stake holders.
             </p>
           </div>
-          <div class=" w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
-            <p class="flex flex-col items-center mb-6 text-black dark:text-neutral-300">
+          <div className=" w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-3 lg:px-6">
+            <p className="flex flex-col items-center mb-6 text-black dark:text-neutral-300">
               <img
                 src={"/kanchilogo.png"}
                 alt="logo"
@@ -75,7 +75,7 @@ export default function sectors() {
               ></img>
               <span className="font-bold font-heading">Kanchi Mining Projects</span>
             </p>
-            <p class="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm font-body">
+            <p className="mb-2 text-black dark:text-neutral-300 text-xs md:text-sm font-body">
               Kanchi Mining Projects Private Limited was incorporated in the
               year 2018 with its mining and processing facility located at
               Uthiramerur Taluk of Kanchipuram District. Currently, Kanchi

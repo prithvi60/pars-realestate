@@ -64,7 +64,7 @@ export default function one() {
         <Header />
       </div>
       <div
-        class=" my-4 mx-auto px-4 md:px-6 text-black"
+        className=" my-4 mx-auto px-4 md:px-6 text-black"
         // style={{
         //
         //   backgroundRepeat: "no-repeat",
@@ -72,9 +72,9 @@ export default function one() {
         // }}
         style={{ minHeight: "88vh" }}
       >
-        <section class="mb-32 font-body">
-          <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-4">
+        <section className="mb-32 font-body">
+          <div className="flex flex-wrap">
+            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-4">
               <TabsComponent
                 model={Hero1}
                 plan={plan}
@@ -103,16 +103,16 @@ export default function one() {
                 <div className="flex justify-center w-full">
                   <button
                     onClick={onButtonClick}
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
                     DOWNLOAD BROCHURE
                   </button>
                 </div>
               </div>
             </div>
-            <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-4">
+            <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-4">
               <h2
-                class="mb-6 text-3xl font-bold font-heading text-center uppercase"
+                className="mb-6 text-3xl font-bold font-heading text-center uppercase"
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "#dbc07c",
@@ -126,13 +126,13 @@ export default function one() {
                 accept-charset="UTF-8"
                 onSubmit={handleGetRequest}
               >
-                <label class="block mb-2">
-                  <span class="text-black">Your name</span>
+                <label className="block mb-2">
+                  <span className="text-black">Your name</span>
                   <input
                     type="text"
                     name="name"
                     required
-                    class="  input
+                    className="  input
                     font-sans
                     h-10
           block
@@ -143,12 +143,12 @@ export default function one() {
                     placeholder="Akash"
                   />
                 </label>
-                <label class="block mb-2">
-                  <span class="text-black">Email address</span>
+                <label className="block mb-2">
+                  <span className="text-black">Email address</span>
                   <input
                     name="email"
                     type="text"
-                    class="  input
+                    className="  input
                     font-sans
                     h-10
           block
@@ -163,13 +163,13 @@ export default function one() {
                     title="should contain @ and .com "
                   />
                 </label>
-                <label class="block mb-4">
-                  <span class="text-black">Phone number</span>
+                <label className="block mb-4">
+                  <span className="text-black">Phone number</span>
                   <input
                     type="tel"
                     name="phone numer"
                     required
-                    class="  input
+                    className="  input
                     font-sans
                     h-10
           block
@@ -182,11 +182,11 @@ export default function one() {
                     title="should contain 10 digit number"
                   />
                 </label>
-                {/* <label class="block mb-2">
-                  <span class="text-gray-700">Message</span>
+                {/* <label className="block mb-2">
+                  <span className="text-gray-700">Message</span>
                   <textarea
                     name="message"
-                    class="input
+                    className="input
                     text-black
           block
           w-full
@@ -197,34 +197,36 @@ export default function one() {
                     placeholder="Tell us what you're thinking about..."
                   ></textarea>
                 </label> */}
-                <div class="mb-6 mt-4">
+                <div className="mb-6 mt-4">
+                <div className="flex justify-center md:justify-start w-full">
                   <button
                     type="submit"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading uppercase"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading uppercase"
                   >
                     Register
                   </button>
+                  </div>
                   <input
                     name="Form Page"
                     type="text"
-                    class="
+                    className="
                       hidden
           "
                     value={"One"}
                   />
                 </div>
               </form>
-              <p class="mb-2 text-black font-heading">REACH US AT</p>
+              <p className="mb-2 text-black font-heading">REACH US AT</p>
               <p
-                class="mb-2 text-black dark:text-neutral-300"
+                className="mb-2 text-black dark:text-neutral-300"
                 style={{ background: "#dbc07c" }}
               >
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
                 Saidapet, Chennai-600015
               </p>
-              <p class="mb-2 text-black bg-gray-200">+91-9788058526</p>
+              <p className="mb-2 text-black bg-gray-200">+91-9788058526</p>
               <p
-                class="mb-2 text-black border-b"
+                className="mb-2 text-black border-b"
                 style={{ background: "#dbc07c" }}
               >
                 sales@intermontlife.com

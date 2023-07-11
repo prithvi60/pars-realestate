@@ -4,33 +4,35 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FloatingButton from "../components/FloatingButton";
 import Hero1 from "../public/images/projects/about.jpg";
+import { useRouter } from "next/router";
+import { usePathname, useSearchParams } from 'next/navigation'
 export default function contact() {
   const [width, setWidth] = useState(null);
-
+  const router = useRouter();
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+ 
+  // useEffect(() => {
+  //   const url = `${pathname}?${searchParams}`
+  //   console.log(url,"change")
+  //   // You can now use the current URL
+  //   // ...
+  // }, [pathname, searchParams])
   useEffect(() => {
     // window is accessible here.
     setWidth(window.innerWidth);
   }, []);
-
-  const handleGetRequest = async () => {
-    // if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-      toast.success("We have received your message!");
-    // }
-    try {
-      const response = await fetch("http://intermontlife.com/");
-      if (response.ok) {
-        // toast.success("We have received your message!");
-        const data = await response.json(); // Parse response data as JSON
-      } else {
-        // if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-          //  toast.success("We have received your message!");
-        // }
-      }
-    } catch (error) {
-      // if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-        //  toast.success("We have received your message!");
-      // }
-    }
+  const handleGetRequest = async (event) => {
+    toast.success("We have received your message!");
+    console.log("logging req",router.pathname);  
+    // try {
+    //   const response = await fetch("https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540");
+    //   if (response.ok) {
+    //     console.log("logging req");
+    //     router.push('/about')
+    //   } else {
+    //   }
+    // } catch (error) {}
   };
 
   return (
@@ -39,14 +41,14 @@ export default function contact() {
         <Header />
       </div>
       <div
-        class=" md:pl-6 text-black relative"
+        className=" md:pl-6 text-black relative"
         style={{
           // backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
       >
-        <section class=" font-body relative" style={{ minHeight: "88vh" }}>
+        <section className=" font-body relative" style={{ minHeight: "88vh" }}>
           <div
             className="font-bold text-black text-3xl pt-20 font-heading px-8
           text-center shrink-0 grow-0 basis-auto  md:w-8/12 
@@ -59,11 +61,11 @@ export default function contact() {
           >
             CONTACT US
           </div>
-          <div class="flex flex-wrap">
+          <div className="flex flex-wrap">
             <div className="md:w-8/12 justify-center">
-              <div class="mt-8 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8">
+              <div className="mt-8 mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8">
                 {/* <h2
-                class="mb-6 text-3xl font-bold font-heading
+                className="mb-6 text-3xl font-bold font-heading
                 text-center
                 "
                 style={{
@@ -74,29 +76,29 @@ export default function contact() {
                 CONTACT US
               </h2> */}
                 <p
-                  class="mb-4
+                  className="mb-4
                text-black dark:text-neutral-300 font-heading text-center"
                 >
                   REACH US AT
                 </p>
                 <p
-                  class="mb-2 text-black dark:text-neutral-300 text-center"
+                  className="mb-2 text-black dark:text-neutral-300 text-center"
                   style={{ background: "#dbc07c" }}
                 >
                   No.13, Opal Apartments, North Mada Street, Srinagar Colony,
                   Saidapet, Chennai-600015
                 </p>
-                <p class="mb-2 text-black dark:text-neutral-300 bg-gray-200 text-center">
+                <p className="mb-2 text-black dark:text-neutral-300 bg-gray-200 text-center">
                   +91-9788058526
                 </p>
                 <p
-                  class="mb-2 text-black dark:text-neutral-300 text-center"
+                  className="mb-2 text-black dark:text-neutral-300 text-center"
                   style={{ background: "#dbc07c" }}
                 >
                   sales@intermontlife.com
                 </p>
               </div>
-              <div class="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8 text-center md:flex md:justify-center">
+              <div className="mt-8 mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-3 lg:px-6 px-8 text-center md:flex md:justify-center">
                 <form
                   method="POST"
                   action="https://public.herotofu.com/v1/14ca3d70-11c2-11ee-b0a7-9f000c4c1540"
@@ -105,10 +107,10 @@ export default function contact() {
                   onSubmit={handleGetRequest}
                 >
                   <label
-                    class="block mb-2 md:mb-4
+                    className="block mb-2 md:mb-4
                 "
                   >
-                    <span class="text-black">Your name</span>
+                    <span className="text-black">Your name</span>
                     <input
                       type="text"
                       name="name"
@@ -128,10 +130,10 @@ export default function contact() {
                     />
                   </label>
                   <label
-                    class="block mb-2 md:mb-4
+                    className="block mb-2 md:mb-4
                 "
                   >
-                    <span class="text-black">Email address</span>
+                    <span className="text-black">Email address</span>
                     <input
                       name="email"
                       type="text"
@@ -150,7 +152,7 @@ export default function contact() {
                       title="should contain @ and .com "
                     />
                   </label>
-                  <label class="block mb-2 md:mb-4">
+                  <label className="block mb-2 md:mb-4">
                     <span className="text-black">Message</span>
                     <textarea
                       name="message"
@@ -166,17 +168,17 @@ export default function contact() {
                       placeholder="Tell us what you're thinking about..."
                     ></textarea>
                   </label>
-                  <div class="mb-6 mt-6">
+                  <div className="mb-6 mt-6">
                     <button
                       type="submit"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
+                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                     >
                       SUBMIT
                     </button>
                     <input
                       name="Form Page"
                       type="text"
-                      class="
+                      className="
                       hidden
           "
                       value={"Contact"}
@@ -186,7 +188,7 @@ export default function contact() {
                 </form>
               </div>
             </div>
-            <div class="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
+            <div className="w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12">
               <img
                 src={Hero1.src}
                 priority={true}
