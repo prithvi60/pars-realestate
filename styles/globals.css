@@ -206,7 +206,7 @@ textarea::placeholder {
   padding: 4px !important;
 }
 .client .slick-next:before {
- color: orange !important;
+  color: orange !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -233,28 +233,26 @@ textarea::placeholder {
 /* img {
   border: 1px solid;
 }  */
-
+.placeholder-image,
+.real-image {
+  width: 100vw;
+}
 .image-container {
   position: relative;
   overflow: hidden;
 }
-
-/* .placeholder-image, .real-image {
-  width: 100%;
-} */
-
-.blur .real-image {
-  opacity: 0;
-}
-
 .real-image {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.blur {
-  filter: blur(5px);
+.blur .real-image {
+  opacity: 0;
+}
+
+.blur::before{
+  backdrop-filter: blur(5px);
 }
 
 .unblur {
@@ -263,10 +261,9 @@ textarea::placeholder {
 
 @keyframes unblur {
   from {
-    filter: blur(5px)
+    backdrop-filter: blur(5px);
   }
   to {
-    filter: blur(0);
+    backdrop-filter: blur(0);
   }
 }
-
