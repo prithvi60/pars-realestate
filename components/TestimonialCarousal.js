@@ -3,6 +3,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import C1 from "../public/images/clients/client1.jpg";
 import C2 from "../public/images/clients/client2.jpg";
+import C3 from "../public/images/clients/client3.jpg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -62,6 +63,17 @@ export const TestimonialCarousal = () => {
       Regards,
       Harish Balasubramanian 
       Imperial, Mandaveli`,
+    },
+    {
+      image: C3,
+      name: "Rajesh Narayanan",
+      review: ` Owning a House is everyone's biggest dream in our lives.  At that point of juncture, we really look for someone who is loyal, reliable, trustable, supportive, and flexible in achieving our dreams.   
+
+    My search was fruitful when I met Mr. Lokesh, who focuses on great customer service, flexible and always been polite.  He really took us the entire journey of buying my Flat smoothly and made us to be one of the proud flat owners of Imperial.
+    
+    The level of construction, fittings and accessories used were premium, trendy, and looks like a star-ranked flats.
+    
+    Mr. Lokesh gesture is well appreciated and for my future ventures I will definitely partner with Intermont team needless to say.`,
     },
   ];
   const settings = {

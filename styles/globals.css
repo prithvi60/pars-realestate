@@ -105,11 +105,15 @@ textarea {
 }
 /* iOS Placeholder Color for Input */
 input::placeholder {
+  -webkit-text-fill-color: rgb(121, 121, 121);
+
   color: rgb(94, 94, 94); /* Replace with the desired color */
 }
 
 /* iOS Placeholder Color for Textarea */
 textarea::placeholder {
+  -webkit-text-fill-color: rgb(121, 121, 121);
+
   color: rgb(94, 94, 94); /* Replace with the desired color */
 }
 
