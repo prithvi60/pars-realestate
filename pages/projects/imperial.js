@@ -20,12 +20,7 @@ export default function four() {
       </div>
       <div
         className="my-4 mx-auto px-4 md:px-6 text-black"
-        style={{ minHeight:"88vh"}}
-        // style={{
-        //
-        //   backgroundRepeat: "no-repeat",
-        //   backgroundPosition: "bottom",
-        // }}
+        style={{ minHeight: "88vh" }}
       >
         <section className="mb-32 font-body">
           <div className="flex flex-wrap">

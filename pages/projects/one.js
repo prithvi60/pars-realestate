@@ -38,7 +38,7 @@ export default function one() {
   };
   const handleGetRequest = async () => {
     // if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-      toast.success("We have received your message!");
+    toast.success("We have received your message!");
     // }
     try {
       const response = await fetch("https://intermontlife.com/projects/one/");
@@ -49,12 +49,12 @@ export default function one() {
         // You can access the response data here
       } else {
         // if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-          //  toast.success("We have received your message!");
+        //  toast.success("We have received your message!");
         // }
       }
     } catch (error) {
       // if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-        //  toast.success("We have received your message!");
+      //  toast.success("We have received your message!");
       // }
     }
   };
@@ -65,11 +65,6 @@ export default function one() {
       </div>
       <div
         className=" my-4 mx-auto px-4 md:px-6 text-black"
-        // style={{
-        //
-        //   backgroundRepeat: "no-repeat",
-        //   backgroundPosition: "bottom",
-        // }}
         style={{ minHeight: "88vh" }}
       >
         <section className="mb-32 font-body">
@@ -198,13 +193,13 @@ export default function one() {
                   ></textarea>
                 </label> */}
                 <div className="mb-6 mt-4">
-                <div className="flex justify-center md:justify-start w-full">
-                  <button
-                    type="submit"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading uppercase"
-                  >
-                    Register
-                  </button>
+                  <div className="flex justify-center md:justify-start w-full">
+                    <button
+                      type="submit"
+                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading uppercase"
+                    >
+                      Register
+                    </button>
                   </div>
                   <input
                     name="Form Page"
