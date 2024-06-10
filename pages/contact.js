@@ -89,7 +89,7 @@ export default function contact() {
                   Saidapet, Chennai-600015
                 </p>
                 <p className="mb-2 text-black dark:text-neutral-300 bg-gray-200 text-center">
-                  +91-9788058526
+                  +91-9500244288
                 </p>
                 <p
                   className="mb-2 text-black dark:text-neutral-300 text-center"

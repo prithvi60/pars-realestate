@@ -1,4 +1,5 @@
 export default function Footer() {
+  let date =  new Date().getFullYear();
   return (
     <footer className=" pb-4 text-white-200 bottom-0 w-screen" 
     style={{background:"#908f8f"}}
@@ -52,7 +53,7 @@ export default function Footer() {
               className="text-sm  hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight font-body text-center w-screen"
               style={{ color: "white" }}
             >
-              Copyright © 2023 Intermont. All rights reserved
+              Copyright © {date} Intermont. All rights reserved
             </li>
           </ul>
         </div>

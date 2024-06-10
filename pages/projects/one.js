@@ -69,7 +69,7 @@ export default function one() {
       >
         <section className="mb-32 font-body">
           <div className="flex flex-wrap">
-            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-8/12 md:px-4">
+            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0  md:px-4 justify-center">
               <TabsComponent
                 model={Hero1}
                 plan={plan}
@@ -94,18 +94,28 @@ export default function one() {
                     </span>
                   </p>
                 </div>
-
-                <div className="flex justify-center w-full">
+                <div className="w-screen flex justify-center items-center mt-12">
+              <img
+                src={"/sold.png"}
+                alt="sold"
+                style={{
+                  objectFit: "cover",
+                  height: "100px",
+                  width: "250px",
+                }}
+              ></img>
+            </div>
+                {/* <div className="flex justify-center w-full">
                   <button
                     onClick={onButtonClick}
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white-100 bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-heading"
                   >
                     DOWNLOAD BROCHURE
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
-            <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-4">
+            {/* <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-4/12 md:px-4">
               <h2
                 className="mb-6 text-3xl font-bold font-heading text-center uppercase"
                 style={{
@@ -177,21 +187,7 @@ export default function one() {
                     title="should contain 10 digit number"
                   />
                 </label>
-                {/* <label className="block mb-2">
-                  <span className="text-gray-700">Message</span>
-                  <textarea
-                    name="message"
-                    className="input
-                    text-black
-          block
-          w-full
-          mt-1
-      
-        "
-                    rows="3"
-                    placeholder="Tell us what you're thinking about..."
-                  ></textarea>
-                </label> */}
+
                 <div className="mb-6 mt-4">
                   <div className="flex justify-center md:justify-start w-full">
                     <button
@@ -219,20 +215,20 @@ export default function one() {
                 No.13, Opal Apartments, North Mada Street, Srinagar Colony,
                 Saidapet, Chennai-600015
               </p>
-              <p className="mb-2 text-black bg-gray-200">+91-9788058526</p>
+              <p className="mb-2 text-black bg-gray-200">+91-9500244288</p>
               <p
                 className="mb-2 text-black border-b"
                 style={{ background: "#dbc07c" }}
               >
                 sales@intermontlife.com
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
       <Footer />
       <FloatingButton />
-      <Toaster position={width > 600 ? "bottom-center" : "top-center"} />
+      {/* <Toaster position={width > 600 ? "bottom-center" : "top-center"} /> */}
     </div>
   );
 }

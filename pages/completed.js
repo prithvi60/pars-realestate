@@ -6,6 +6,7 @@ import Card from "../components/Card";
 
 import R1 from "../public/images/hero/1.jpg";
 import R2 from "../public/images/projects/imperial.png";
+import R3 from "../public/images/hero/hero2.jpg";
 
 export default function completedprojects() {
   //
@@ -30,6 +31,16 @@ export default function completedprojects() {
       Chennai.`,
       link: `/projects/imperial`,
     },
+    {
+      image: R3,
+
+      title: "ONE",
+      des: `
+      8 Flats  3 BHK  1404 Sq.ft. Devanathan Street, Mandaveli, Chennai
+
+       `,
+      link: `/projects/one`,
+    },
   ];
 
   return (
@@ -43,7 +54,7 @@ export default function completedprojects() {
           // backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
-          minHeight:"88vh"
+          minHeight: "88vh",
         }}
       >
         <div

@@ -4,28 +4,27 @@ import Footer from "../components/Footer";
 import FloatingButton from "../components/FloatingButton";
 import Card from "../components/Card";
 
-import R1 from "../public/images/hero/hero2.jpg";
 import R2 from "../public/images/projects/hero1.jpg";
+import R3 from "../public/images/projects/yara.jpg";
 
 export default function projects() {
   const residential = [
-    {
-      image: R1,
 
-      title: "ONE",
-      des: `
-      8 Flats  3 BHK  1404 Sq.ft. Devanathan Street, Mandaveli, Chennai
-
-       `,
-      link: `/projects/one`,
-    },
     {
       image: R2,
       title: `INTERMONT W-413`,
 
-      des: `5 Flats 3BHK 1,320 Sq.ft.
+      des: `5 Flats 3BHK 1,490 Sq.ft.
       West Extension, Anna Nagar, Chennai. `,
       link: `/projects/w-413`,
+    },
+    {
+      image: R3,
+      title: `YARA EAST COAST`,
+
+      des: `Villa, East Facing , 4,500 Sq.ft, G+2, 3 Car parking,
+      Sandeep Avenue, Palavakkam, Chennai. `,
+      link: `/projects/yara`,
     },
   ];
 
@@ -40,7 +39,7 @@ export default function projects() {
           // backgroundImage: "url(/pattern.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
-          minHeight:"88vh"
+          minHeight: "88vh",
         }}
       >
         <div

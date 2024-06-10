@@ -120,7 +120,7 @@ export default function three() {
                 Saidapet, Intermontlife.com Chennai-600015
               </p>
               <p className="mb-2 text-black dark:text-neutral-300 bg-gray-200">
-                +91-9788058526
+                +91-9500244288
               </p>
               <p
                 className="mb-4 text-black dark:text-neutral-300 border-b"

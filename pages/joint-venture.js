@@ -81,7 +81,7 @@ export default function jointventure() {
                 Saidapet, Chennai-600015
               </p>
               <p className="mb-2 text-gray-700 dark:text-neutral-300">
-                +91-9788058526
+                +91-9500244288
               </p>
               <p className="mb-2 text-gray-700 dark:text-neutral-300">
                 sales@intermontlife.com
